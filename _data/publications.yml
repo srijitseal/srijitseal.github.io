@@ -5,7 +5,7 @@
   project_page: https://broad.io/DICTrank_Predictor
   OAlink: https://pubs.acs.org/doi/10.1021/acs.jcim.3c01834
   image: DICTrank.png
-  github: srijitseal/DICTrank
+  #github: srijitseal/DICTrank
   #image_mouseover: reconfusion_after.mp4
   authors:
     - srijit
