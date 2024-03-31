@@ -1,5 +1,5 @@
- - id: DICTrank
-  title: Insights into Drug Cardiotoxicity from Biological and Chemical Data: The First Public Classifiers for FDA Drug-Induced Cardiotoxicity Rank
+- id: DICTrank
+  title: "Insights into Drug Cardiotoxicity from Biological and Chemical Data: The First Public Classifiers for FDA Drug-Induced Cardiotoxicity Rank"
   venue: Journal of Chemical Information and Modeling, 2024
   project_page: https://broad.io/DICTrank_Predictor
   OAlink: https://pubs.acs.org/doi/10.1021/acs.jcim.3c01834
@@ -11,5 +11,3 @@
     - bender
     - carpenter
     - spjuth
-
-
