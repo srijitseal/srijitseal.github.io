@@ -15,7 +15,7 @@
 - id: mitochondrial_toxicity_detection
   title: Integrating cell morphology with gene expression and chemical structure to aid mitochondrial toxicity detection
   venue: Communications Biology, 2022
-  OAlink: https://www.nature.com/articles/s42003-022-03763-5
+  OAlink: "https://www.nature.com/articles/s42003-022-03763-5"
   image: mitochondrial_toxicity_detection.webp
   authors:
     - srijit
@@ -26,10 +26,10 @@
     - bender
 
 - id: cytotoxicity_prediction
-  title: Comparison of cellular morphological descriptors and molecular fingerprints for the prediction of cytotoxicity- and proliferation-related assays
+  title: "Comparison of cellular morphological descriptors and molecular fingerprints for the prediction of cytotoxicity- and proliferation-related assays"
   venue: Chemical Research in Toxicology, 2021
-  project_page: https://www.repository.cam.ac.uk/items/00cc61cf-671b-4398-8691-a3905389dc81
-  pdf_link: https://www.repository.cam.ac.uk/bitstreams/a2e4aec2-65c8-4426-8ebc-d6cecf676473/download
+  project_page: "https://www.repository.cam.ac.uk/items/00cc61cf-671b-4398-8691-a3905389dc81"
+  pdf_link: "https://www.repository.cam.ac.uk/bitstreams/a2e4aec2-65c8-4426-8ebc-d6cecf676473/download"
   Journal_notOA_link: https://pubs.acs.org/doi/10.1021/acs.chemrestox.0c00303
   image: cytotoxicity_prediction.webp
   authors:
@@ -52,7 +52,7 @@
 - id: bioactivity_predictions_merging
   title: Merging bioactivity predictions from cell morphology and chemical fingerprint models using similarity to training data
   venue: Journal of Cheminformatics, 2023
-  OAlink: https://link.springer.com/article/10.1186/s13321-023-00723-x
+  OAlink: "https://link.springer.com/article/10.1186/s13321-023-00723-x"
   image: bioactivity_predictions_merging.webp
   github: srijitseal/Merging_Bioactivity_Predictions_CellPainting_Chemical_Structure_Similarity
   authors:
@@ -65,10 +65,10 @@
     - bender
 
 - id: pixels_to_phenotypes
-  title: From pixels to phenotypes: Integrating image-based profiling with cell health data as BioMorph features improves interpretability
+  title: "From pixels to phenotypes: Integrating image-based profiling with cell health data as BioMorph features improves interpretability"
   venue: Molecular Biology of the Cell, 2024
   project_page: https://broad.io/biomorph
-  OAlink: https://www.molbiolcell.org/doi/full/10.1091/mbc.E23-08-0298
+  OAlink: "https://www.molbiolcell.org/doi/full/10.1091/mbc.E23-08-0298"
   image: pixels_to_phenotypes.png
   github: srijitseal/BioMorph
   authors:
@@ -87,7 +87,7 @@
   github: Jaredwg2000/MolDQN_CNS
   authors:
     - horne
-    - wilson-godber
+    - wilson_godber
     - gonzalez_diaz
     - brotzakis
     - srijit
@@ -97,7 +97,7 @@
     - vendruscolo
 
 - id: liver_injury_early_detection
-  title: Improved Early Detection of Drug-Induced Liver Injury by Integrating Predicted in Vivo and in Vitro Data
+  title: "Improved Early Detection of Drug-Induced Liver Injury by Integrating Predicted in Vivo and in Vitro Data"
   venue: bioRxiv, 2024
   project_page: https://broad.io/DILIPredictor
   OAlink: https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01777
@@ -107,7 +107,7 @@
   authors:
     - srijit
     - williams
-    - hosseini-gerami
+    - hosseini_gerami
     - spjuth
     - bender
 
@@ -119,7 +119,7 @@
   arxiv: "2403.04106"
   authors:
     - lawrence
-    - el-shazly
+    - el_shazly
     - srijit
     - joshi
     - lio
@@ -129,7 +129,7 @@
     - greenig
 
 - id: PKSmart
-  title: PKSmart: An Open-Source Computational Model to Predict in vivo Pharmacokinetics of Small Molecules
+  title: PKSmart: "An Open-Source Computational Model to Predict in vivo Pharmacokinetics of Small Molecules"
   venue: bioRxiv, 2024
   project_page: https://broad.io/PKSmart
   OAlink: https://www.biorxiv.org/content/10.1101/2024.02.02.578658v1
