@@ -1,22 +1,142 @@
 srijit:
-  first_name: Srijit 
+  first_name: Srijit
   last_name: Seal
   website: https://srijitseal.com
   is_me: true
+
 bender:
   first_name: Andreas
   last_name: Bender
-  website: 
+  website: https://www.ch.cam.ac.uk/person/ab454
+
 carpenter:
-  first_name: Anne 
+  first_name: Anne
   middle_name: E.
   last_name: Carpenter
-  website: 
+  website: https://www.broadinstitute.org/bios/anne-e-carpenter
+
 spjuth:
   first_name: Ola
   last_name: Spjuth
-  website: 
+  website: https://www.katalog.uu.se/profile?id=N2-878
+
 trapotsi:
   first_name: Marianna
   last_name: Trapotsi
+  website: 
+
+yang:
+  first_name: Yang
+  last_name: Hongbin
+  website: 
+
+carreras_puigvert:
+  first_name: Jordi
+  last_name: Carreras Puigvert
+  website: https://pharmb.io/people/jordi/
+
+singh:
+  first_name: Shantanu
+  last_name: Singh
+  website: https://www.broadinstitute.org/bios/shantanu-singh
+
+liu:
+  first_name: Anika
+  last_name: Liu
+  website: 
+
+lawrence:
+  first_name: Elsa
+  last_name: Lawrence
+  website: 
+
+el_shazly:
+  first_name: Adham
+  last_name: El-Shazly
+  website: 
+
+joshi:
+  first_name: Chaitanya
+  last_name: Joshi
+  website: 
+
+lio:
+  first_name: Pietro
+  last_name: Lio
+  website: https://scholar.google.com/citations?user=4YhNJBEAAAAJ&hl=en
+
+sormanni:
+  first_name: Pietro
+  last_name: Sormanni
+  website: https://scholar.google.co.uk/citations?user=vUhYt4MuofkC&hl=en
+
+greenig:
+  first_name: Matthew
+  last_name: Greenig
+  website: 
+
+vollmers:
+  first_name: Luis
+  last_name: Vollmers
+  website: 
+
+horne:
+  first_name: Robert
+  last_name: Horne
+  website: 
+
+wilson_godber:
+  first_name: Jared
+  last_name: Wilson-Godber
+  website: 
+
+gonzalez_diaz:
+  first_name: Alicia
+  last_name: Gonzalez Diaz
+  website: 
+
+brotzakis:
+  first_name: Z. Faidon
+  last_name: Brotzakis
+  website: 
+
+gregory_r:
+  first_name: Rebecca
+  middle_name: C.
+  last_name: Gregory
+  website: 
+
+possenti:
+  first_name: Andrea
+  last_name: Possenti
+  website: 
+
+chia:
+  first_name: Sean
+  last_name: Chia
+  website: 
+
+vendruscolo:
+  first_name: Michele
+  last_name: Vendruscolo
+  website: https://scholar.google.com/citations?user=t9MyvDAAAAAJ&hl=en
+
+williams:
+  first_name: Dominic
+  last_name: Williams
+  website: 
+
+hosseini_gerami:
+  first_name: Layla
+  last_name: Hosseini Gerami
+  website: 
+
+subramanian:
+  first_name: [Given Name]
+  last_name: Subramanian
+  website: 
+
+greene:
+  first_name: Nigel
+  last_name: Greene
   website: 
