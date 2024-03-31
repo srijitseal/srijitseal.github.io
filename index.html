@@ -188,6 +188,16 @@ layout: null
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>Open Access Publication</span>
               </a>
+
+              <a class="external-link button is-small is-ghost" href="{{ publication.pdf_link }}">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper (Repository Access)</span>
+              </a>
+              
+              <a class="external-link button is-small is-ghost" href="{{ publication.Journal_notOA_link }}">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Jounral (Institutional Access)</span>
+              </a>
               
               {% if publication.github %}
               <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
@@ -196,8 +206,19 @@ layout: null
               </a>
               {% endif %}
                 
+              {% if publication.biorxiv %}
+              <a class="external-link button is-small is-ghost" href="https://www.biorxiv.org/content/{{ publication.biorxiv }}.pdf">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>PDF</span>
+              </a>
+              <a class="external-link button is-small is-ghost" href="https://www.biorxiv.org/content/{{ publication.biorxiv }}">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>bioRxiv</span>
+              </a>
+              {% endif %}
+              
               {% if publication.arxiv %}
-              <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
+              <a class="external-link button is-small is-ghost" href=" https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>PDF</span>
               </a>
