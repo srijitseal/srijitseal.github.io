@@ -79,3 +79,20 @@
     - spjuth
     - bender
 
+- id: generative_modeling_potency
+  title: Using Generative Modeling to Endow with Potency Initially Inert Compounds with Good Bioavailability and Low Toxicity
+  venue: Journal of Chemical Information and Modeling, 2024
+  OAlink: https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01777
+  image: generative_modeling_potency.webp
+  github: Jaredwg2000/MolDQN_CNS
+  authors:
+    - horne
+    - wilson_godber
+    - gonzalez_diaz
+    - brotzakis
+    - srijit
+    - gregory_r 
+    - possenti 
+    - chia
+    - vendruscolo
+
