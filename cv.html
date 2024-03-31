@@ -125,13 +125,14 @@ layout: null
             
             {% if publication.OAlink %}
               <a href="{{ publication.OAlink }}"><b>{{ publication.title }}</b></a>
-            {% elif publication.biorxiv %}
+            {% elsif publication.biorxiv %}
               <a href="https://www.biorxiv.org/content/{{ publication.biorxiv }}v1">{{ publication.title }}</b></a>
-            {% elif publication.arxiv %}
+            {% elsif publication.arxiv %}
               <a href="https://arxiv.org/abs/{{ publication.arxiv }}"><b>{{ publication.title }}</b></a>
-            {% elif publication.project_page %}
+            {% elsif publication.project_page %}
               <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
             {% endif %}
+
             
             <div class="publication-authors">
               {% for author_id in publication.authors %}
