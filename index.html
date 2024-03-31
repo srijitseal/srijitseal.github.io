@@ -179,25 +179,34 @@ layout: null
             <p class="publication-description">{{ publication.description }}</p>
             <!-- Publication Links. -->
             <div class="publication-links buttons field has-addons">
+              
+              {% if publication.project_page %}
               <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
                 <span class="icon"><i class="fas fa-globe-asia"></i></span>
                 <span>Project Page</span>
               </a>
+              {% endif %}
 
+              {% if publication.OAlink %}
               <a class="external-link button is-small is-ghost" href="{{ publication.OAlink }}">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>Open Access Publication</span>
               </a>
+              {% endif %}
 
+              {% if publication.pdf_link %}
               <a class="external-link button is-small is-ghost" href="{{ publication.pdf_link }}">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>Paper (Repository Access)</span>
               </a>
+              {% endif %}
               
+              {% if publication.Journal_notOA_link %}
               <a class="external-link button is-small is-ghost" href="{{ publication.Journal_notOA_link }}">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>Jounral (Institutional Access)</span>
               </a>
+              {% endif %}
               
               {% if publication.github %}
               <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
