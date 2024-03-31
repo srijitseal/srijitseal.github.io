@@ -38,6 +38,25 @@
     - vollmers
     - bender
 
+- id: AI_in_biology
+  title: "Understanding Biology in the Age of Artificial Intelligence"
+  venue: arXiv, 2024
+  project_page: "https://understanding.bio"
+  image: AI_in_biology.png
+  arxiv: "2403.04106"
+  authors:
+    - lawrence
+    - el_shazly
+    - srijit
+    - joshi
+    - lio
+    - singh
+    - bender
+    - sormanni
+    - greenig
+
+
+
 - id: drug_toxicity_prediction
   title: Using chemical and biological data to predict drug toxicity
   venue: SLAS Discovery, 2023
