@@ -12,7 +12,7 @@
     - carpenter
     - spjuth
 
-- id: mitochondrial_toxicity_detection
+-  id: mitochondrial_toxicity_detection
   title: Integrating cell morphology with gene expression and chemical structure to aid mitochondrial toxicity detection
   venue: Communications Biology, 2022
   OAlink: "https://www.nature.com/articles/s42003-022-03763-5"
