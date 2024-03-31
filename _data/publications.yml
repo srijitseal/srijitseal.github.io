@@ -19,4 +19,15 @@
   image: mitochondrial_toxicity_detection.webp
   authors:
     - srijit
+    
+- id: cytotoxicity_prediction
+  title: "Comparison of cellular morphological descriptors and molecular fingerprints for the prediction of cytotoxicity- and proliferation-related assays"
+  venue: Chemical Research in Toxicology, 2021
+  project_page: "https://www.repository.cam.ac.uk/items/00cc61cf-671b-4398-8691-a3905389dc81"
+  pdf_link: "https://www.repository.cam.ac.uk/bitstreams/a2e4aec2-65c8-4426-8ebc-d6cecf676473/download"
+  Journal_notOA_link: https://pubs.acs.org/doi/10.1021/acs.chemrestox.0c00303
+  image: cytotoxicity_prediction.webp
+  authors:
+    - srijit
+
   
