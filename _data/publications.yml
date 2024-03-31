@@ -13,7 +13,7 @@
     - spjuth
 
 - id: mitochondrial_toxicity_detection
-  title: Integrating cell morphology with gene expression and chemical structure to aid mitochondrial toxicity detection
+  title: Integrating Cell Morphology with Gene Expression and Chemical Structure to aid Mitochondrial Toxicity detection
   venue: Communications Biology, 2022
   OAlink: "https://www.nature.com/articles/s42003-022-03763-5"
   image: mitochondrial_toxicity_detection.webp
@@ -26,7 +26,7 @@
     - bender
 
 - id: cytotoxicity_prediction
-  title: "Comparison of cellular morphological descriptors and molecular fingerprints for the prediction of cytotoxicity- and proliferation-related assays"
+  title: "Comparison of Cellular Morphological descriptors and Molecular Fingerprints for the prediction of Cytotoxicity- and Proliferation-related assays"
   venue: Chemical Research in Toxicology, 2021
   project_page: "https://www.repository.cam.ac.uk/items/00cc61cf-671b-4398-8691-a3905389dc81"
   pdf_link: "https://www.repository.cam.ac.uk/bitstreams/a2e4aec2-65c8-4426-8ebc-d6cecf676473/download"
@@ -56,7 +56,7 @@
     - greenig
 
 - id: drug_toxicity_prediction
-  title: Using chemical and biological data to predict drug toxicity
+  title: Using Chemical and Biological data to Predict Drug Toxicity
   venue: SLAS Discovery, 2023
   OAlink: https://www.sciencedirect.com/science/article/pii/S2472555222137147
   image: drug_toxicity_prediction.jpg
@@ -67,7 +67,7 @@
     - bender
 
 - id: bioactivity_predictions_merging
-  title: Merging bioactivity predictions from cell morphology and chemical fingerprint models using similarity to training data
+  title: Merging Bioactivity Predictions from Cell Morphology and Chemical Fingerprint models using Similarity to Training data
   venue: Journal of Cheminformatics, 2023
   OAlink: "https://link.springer.com/article/10.1186/s13321-023-00723-x"
   image: bioactivity_predictions_merging.webp
