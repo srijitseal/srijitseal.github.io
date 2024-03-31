@@ -147,6 +147,22 @@
     - sormanni
     - greenig
 
+- id: PKSmart
+  title: PKSmart: "An Open-Source Computational Model to Predict in vivo Pharmacokinetics of Small Molecules"
+  venue: bioRxiv, 2024
+  project_page: https://broad.io/PKSmart
+  OAlink: https://www.biorxiv.org/content/10.1101/2024.02.02.578658v1
+  image: PKSmart.png
+  biorxiv: 10.1101/2024.02.02.578658v1.full
+  github: srijitseal/PKSmart
+  authors:
+    - srijit
+    - trapotsi
+    - subramanian
+    - spjuth
+    - greene
+    - bender
+
 
 
 
