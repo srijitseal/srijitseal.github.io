@@ -19,11 +19,9 @@
   image: mitochondrial_toxicity_detection.webp
   authors:
     - srijit
-    - carreras_puigvert
-    - trapotsi
-    - yang
-    - spjuth
     - bender
+    - carpenter
+    - spjuth
 
 - id: cytotoxicity_prediction
   title: "Comparison of cellular morphological descriptors and molecular fingerprints for the prediction of cytotoxicity- and proliferation-related assays"
@@ -34,9 +32,9 @@
   image: cytotoxicity_prediction.webp
   authors:
     - srijit
-    - yang
-    - vollmers
     - bender
+    - carpenter
+    - spjuth
 
 - id: drug_toxicity_prediction
   title: Using chemical and biological data to predict drug toxicity
@@ -44,10 +42,10 @@
   OAlink: https://www.sciencedirect.com/science/article/pii/S2472555222137147
   image: drug_toxicity_prediction.jpg
   authors:
-    - liu
     - srijit
-    - yang
     - bender
+    - carpenter
+    - spjuth
 
 - id: bioactivity_predictions_merging
   title: Merging bioactivity predictions from cell morphology and chemical fingerprint models using similarity to training data
@@ -57,12 +55,9 @@
   github: srijitseal/Merging_Bioactivity_Predictions_CellPainting_Chemical_Structure_Similarity
   authors:
     - srijit
-    - yang
-    - trapotsi
-    - singh
-    - carreras_puigvert
-    - spjuth
     - bender
+    - carpenter
+    - spjuth
 
 - id: pixels_to_phenotypes
   title: "From pixels to phenotypes: Integrating image-based profiling with cell health data as BioMorph features improves interpretability"
@@ -73,11 +68,9 @@
   github: srijitseal/BioMorph
   authors:
     - srijit
-    - carreras_puigvert
-    - singh
+    - bender
     - carpenter
     - spjuth
-    - bender
 
 - id: generative_modeling_potency
   title: Using Generative Modeling to Endow with Potency Initially Inert Compounds with Good Bioavailability and Low Toxicity
@@ -86,15 +79,10 @@
   image: generative_modeling_potency.webp
   github: Jaredwg2000/MolDQN_CNS
   authors:
-    - horne
-    - wilson_godber
-    - gonzalez_diaz
-    - brotzakis
     - srijit
-    - gregory_r 
-    - possenti 
-    - chia
-    - vendruscolo
+    - bender
+    - carpenter
+    - spjuth
 
 - id: liver_injury_early_detection
   title: "Improved Early Detection of Drug-Induced Liver Injury by Integrating Predicted in Vivo and in Vitro Data"
@@ -106,10 +94,9 @@
   github: srijitseal/DILI
   authors:
     - srijit
-    - williams
-    - hosseini_gerami
-    - spjuth
     - bender
+    - carpenter
+    - spjuth
 
 - id: AI_in_biology
   title: Understanding Biology in the Age of Artificial Intelligence"
@@ -118,15 +105,10 @@
   image: AI_in_biology.png
   arxiv: "2403.04106"
   authors:
-    - lawrence
-    - el_shazly
     - srijit
-    - joshi
-    - lio
-    - singh
     - bender
-    - sormanni
-    - greenig
+    - carpenter
+    - spjuth
 
 - id: PKSmart
   title: PKSmart: "An Open-Source Computational Model to Predict in vivo Pharmacokinetics of Small Molecules"
@@ -138,8 +120,6 @@
   github: srijitseal/PKSmart
   authors:
     - srijit
-    - trapotsi
-    - subramanian
-    - spjuth
-    - greene
     - bender
+    - carpenter
+    - spjuth
