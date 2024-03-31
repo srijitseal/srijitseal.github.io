@@ -123,15 +123,15 @@ layout: null
         <div class="columns">
           <div class="column is-four-fifths">
             
-            {% if publication.OAlink  %}
+            {% if publication.OAlink %}
               <a href="{{ publication.OAlink }}"><b>{{ publication.title }}</b></a>
-            {% elif  publication.biorxiv %}
-              <a href="{{ publication.biorxiv }}"><b>{{ publication.title }}</b></a>
-            {% elif  publication.arxiv %}
-              <a href="{{ publication.arxiv }}"><b>{{ publication.title }}</b></a> 
-            {% elif  publication.project_page %}
+            {% elif publication.biorxiv %}
+              <a href="https://www.biorxiv.org/content/{{ publication.biorxiv }}v1">{{ publication.title }}</b></a>
+            {% elif publication.arxiv %}
+              <a href="https://arxiv.org/abs/{{ publication.arxiv }}"><b>{{ publication.title }}</b></a>
+            {% elif publication.project_page %}
               <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
-            {%endif %}
+            {% endif %}
             
             <div class="publication-authors">
               {% for author_id in publication.authors %}
