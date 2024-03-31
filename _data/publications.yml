@@ -12,3 +12,139 @@
     - bender
     - carpenter
     - spjuth
+
+- id: mitochondrial_toxicity_detection
+  title: "Integrating cell morphology with gene expression and chemical structure to aid mitochondrial toxicity detection"
+  venue: "Communications Biology, 2022"
+  OAlink: "https://www.nature.com/articles/s42003-022-03763-5"
+  image: "mitochondrial_toxicity_detection.webp"
+  authors:
+    - srijit
+    - carreras_puigvert
+    - trapotsi
+    - yang
+    - spjuth
+    - bender
+
+- id: cytotoxicity_prediction
+  title: "Comparison of cellular morphological descriptors and molecular fingerprints for the prediction of cytotoxicity- and proliferation-related assays"
+  venue: "Chemical Research in Toxicology, 2021"
+  project_page: "https://www.repository.cam.ac.uk/items/00cc61cf-671b-4398-8691-a3905389dc81"
+  pdf_link: "https://www.repository.cam.ac.uk/bitstreams/a2e4aec2-65c8-4426-8ebc-d6cecf676473/download"
+  Journal_notOA_link: "https://pubs.acs.org/doi/10.1021/acs.chemrestox.0c00303"
+  image: "cytotoxicity_prediction.png"
+  authors:
+    - srijit
+    - yang
+    - vollmers
+    - bender
+
+- id: drug_toxicity_prediction
+  title: "Using chemical and biological data to predict drug toxicity"
+  venue: "SLAS Discovery, 2023"
+  description: "A study on how combining chemical and biological data can enhance drug toxicity predictions."
+  project_page: "URL_to_project_page"
+  OAlink: "https://journals.sagepub.com/doi/10.1016/j.slasd.2022.12.007"
+  image: "drug_toxicity_prediction.png"
+  github: "GitHubRepoPath"
+  authors:
+    - liu
+    - srijit
+    - yang
+    - bender
+
+- id: bioactivity_predictions_merging
+  title: "Merging bioactivity predictions from cell morphology and chemical fingerprint models using similarity to training data"
+  venue: "Journal of Cheminformatics, 2023"
+  description: "This research merges bioactivity predictions from models based on cell morphology and chemical fingerprints, utilizing training data similarity."
+  project_page: "URL_to_project_page"
+  OAlink: "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00613-0"
+  image: "bioactivity_predictions_merging.png"
+  github: "GitHubRepoPath"
+  authors:
+    - srijit
+    - yang
+    - trapotsi
+    - singh
+    - carreras_puigvert
+    - spjuth
+    - bender
+
+- id: pixels_to_phenotypes
+  title: "From pixels to phenotypes: Integrating image-based profiling with cell health data as BioMorph features improves interpretability"
+  venue: "Molecular Biology of the Cell, 2024"
+  description: "Integrating image-based profiling with cell health data for improved interpretability of biological data."
+  project_page: "URL_to_project_page"
+  OAlink: "https://www.molbiolcell.org/doi/10.1091/mbc.E20-11-0723"
+  image: "pixels_to_phenotypes.png"
+  github: "GitHubRepoPath"
+  authors:
+    - srijit
+    - carreras_puigvert
+    - singh
+    - carpenter
+    - spjuth
+    - bender
+
+- id: generative_modeling_potency
+  title: "Using Generative Modeling to Endow with Potency Initially Inert Compounds with Good Bioavailability and Low Toxicity"
+  venue: "Journal of Chemical Information and Modeling, 2024"
+  description: "This paper discusses using generative modeling to improve the potency, bioavailability, and toxicity profile of compounds."
+  project_page: "URL_to_project_page"
+  OAlink: "https://pubs.acs.org/doi/10.1021/acs.jcim.3c01834"
+  image: "generative_modeling_potency.png"
+  github: "GitHubRepoPath"
+  authors:
+    - horne
+    - wilson-godber
+    - gonzalez_diaz
+    - brotzakis
+    - srijit
+
+- id: liver_injury_early_detection
+  title: "Improved Early Detection of Drug-Induced Liver Injury by Integrating Predicted in Vivo and in Vitro Data"
+  venue: "bioRxiv, 2024"
+  description: "A preprint discussing methods to improve early detection of drug-induced liver injury through integrated data analysis."
+  project_page: "URL_to_project_page"
+  OAlink: "https://www.biorxiv.org/content/10.1101/2024.01.10.575128v1"
+  image: "liver_injury_early_detection.png"
+  github: "GitHubRepoPath"
+  authors:
+    - srijit
+    - williams
+    - hosseini-gerami
+    - spjuth
+    - bender
+
+- id: AI_in_biology
+  title: "Understanding Biology in the Age of Artificial Intelligence"
+  venue: "arXiv preprint arXiv:2403.04106, 2024"
+  description: "Exploring the impact and applications of artificial intelligence in understanding complex biological systems."
+  project_page: "URL_to_project_page"
+  OAlink: "https://arxiv.org/abs/2403.04106"
+  image: "AI_in_biology.png"
+  github: "GitHubRepoPath"
+  authors:
+    - lawrence
+    - el-shazly
+    - srijit
+    - joshi
+    - lio
+    - singh
+    - bender
+
+- id: PKSmart
+  title: "PKSmart: An Open-Source Computational Model to Predict in vivo Pharmacokinetics of Small Molecules"
+  venue: "bioRxiv, 2024"
+  description: "Introducing PKSmart, an open-source model for predicting the in vivo pharmacokinetics of small molecules."
+  project_page: "URL_to_project_page"
+  OAlink: "https://www.biorxiv.org/content/10.1101/2024.02.02.578658v1"
+  image: "PKSmart.png"
+  github: "GitHubRepoPath"
+  authors:
+    - srijit
+    - trapotsi
+    - subramanian
+    - spjuth
+    - greene
+    - bender
