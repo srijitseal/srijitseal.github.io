@@ -30,4 +30,14 @@
   authors:
     - srijit
 
+- id: drug_toxicity_prediction
+  title: Using chemical and biological data to predict drug toxicity
+  venue: SLAS Discovery, 2023
+  OAlink: https://www.sciencedirect.com/science/article/pii/S2472555222137147
+  image: drug_toxicity_prediction.jpg
+  authors:
+    - srijit
+    - bender
+
+
   
