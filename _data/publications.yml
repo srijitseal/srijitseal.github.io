@@ -128,23 +128,6 @@
     - spjuth
     - bender
 
-- id: AI_in_biology
-  title: "Understanding Biology in the Age of Artificial Intelligence"
-  venue: arXiv, 2024
-  project_page: "https://understanding.bio"
-  image: AI_in_biology.png
-  arxiv: "2403.04106"
-  authors:
-    - lawrence
-    - el_shazly
-    - srijit
-    - joshi
-    - lio
-    - singh
-    - bender
-    - sormanni
-    - greenig
-
 - id: PKSmart
   title: "PKSmart: An Open-Source Computational Model to Predict in vivo Pharmacokinetics of Small Molecules"
   venue: bioRxiv, 2024
