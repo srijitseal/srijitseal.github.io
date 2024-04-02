@@ -133,7 +133,8 @@ layout: null
         <ul>
           {% for talk in site.data.upcoming_talks %}
           <li>
-            <b>{{ talk.date }}, {{ talk.location }}, {{ talk.venue }} </b>: {{ talk.title | markdownify | remove: '<p>' | remove: '</p>' }}
+            <b><a href="{{ talk.venue_url }}" target="_blank">{{ talk.venue }}</a></b>: {{ talk.title | markdownify | remove: '<p>' | remove: '</p>' }}
+            <br>{{ talk.date }}, {{ talk.location }}</p>
           </li>
           {% endfor %}
         </ul>
