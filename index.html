@@ -127,13 +127,13 @@ layout: null
   <section class="section">
     <div class="container is-max-desktop">
 
-      <!-- News. -->
-      <h2 class="title is-3">News</h2>
+      <!-- Upcoming  -->
+      <h2 class="title is-3">Upcoming Talks</h2>
       <div class="content">
         <ul>
-          {% for news in site.data.news %}
+          {% for talk in site.data.upcoming_talks %}
           <li>
-            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
+            <b>{{ talk.date }}, {{ talk.location }}, {{ talk.venue }} </b>: {{ talk.title | markdownify | remove: '<p>' | remove: '</p>' }}
           </li>
           {% endfor %}
         </ul>
@@ -243,6 +243,21 @@ layout: null
               
             </div>
             <!--/ Publication Links. -->
+
+
+      <!-- News. -->
+      <h2 class="title is-3">News</h2>
+      <div class="content">
+        <ul>
+          {% for news in site.data.news %}
+          <li>
+            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+                  
           </div>
         </div>
       </div>
