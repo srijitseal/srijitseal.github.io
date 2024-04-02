@@ -1,4 +1,5 @@
-- date: March 2024
-  description: Hello World
-  
-  
+- date: Mar 2024
+  description: >-
+    [Calibrated prediction of scarce adverse drug reaction labels with conditional neural processes](https://dmlr.ai/) 
+    has been accepted in DMLR at ICLR 2024. This work introduces a meta-learning approach with neural processes to significantly enhance the accuracy 
+    and calibration of adverse drug reaction (ADR) classification.
