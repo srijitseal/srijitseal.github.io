@@ -1,0 +1,29 @@
+# Mentor
+- id: Mentor
+  title: Research Supervisor and Mentor
+  venue: Broad Institute of MIT and Harvard
+  items:
+    - name: Graduate Students
+      bullets:
+        - subject: Gang Liu, 2024
+          text: Learning representations from -omics data
+          # dates: Spring 2024
+    - name: Undergraduate Students
+      bullets:
+        - subject: Adit Shah, 2024
+          text: Benchmarking Cell Painting
+          # dates: Winter 2022 - Present
+        - subject: Nathan Chortek, 2023
+          text: Differentiable Rendering
+          # dates: Spring 2024
+
+# Teaching
+- id: cambridge-ta
+  title: Undergraduate Teaching
+  venue: University of Cambridge
+  items:
+    - name: "First Year Courses: Chemistry"
+      bullets:
+        - text: Organized and led weekly supervision
+        - text: Over 20+ students
+      dates: "2020-2023"
