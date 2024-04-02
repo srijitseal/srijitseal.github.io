@@ -1,0 +1,95 @@
+- id: slas-europe-2024
+  title: MolToxNet: A realistic benchmark dataset for Machine Learning in Drug Discovery
+  venue: SLAS Europe 2024 Conference and Exhibition
+  date: February 2024
+  location: Boston, US
+- id: aidd-research-2022
+  title: The Applications of Machine learning in Drug Discovery
+  venue: AIDD Research Workshops, KU Leuven
+  date: October 2022
+  location: Belgium
+- id: lj-centre-2022
+  title: "Machine learning in drug discovery: Application to Cell Painting data"
+  venue: Lennard Jones Centre, University of Cambridge
+  date: July 2022
+  location: UK
+- id: slas-europe-2022
+  title: Applications of Cell Painting in Drug Safety Prediction
+  venue: SLAS Europe 2022 Conference and Exhibition
+  date: May 2022
+  location: Dublin, Ireland
+- id: bts-congress-2022
+  title: Using Cell Morphology with Gene Expression and Chemical Structure to Improve Prediction of Mitochondrial Toxicity
+  venue: British Toxicology Society Congress
+  date: April 2022
+  location: Newcastle, UK
+- id: broad-institute-2023-1
+  title: Driving Biomedical Discoveries with Cell Painting and Machine Learning
+  venue: Cancer Program Retreat, Broad Institute of MIT and Harvard
+  date: November 2023
+  location: US
+- id: broad-institute-2023-2
+  title: "AI in Drug Discovery: Drug Toxicity in the Chemical Space using a Biological Lens"
+  venue: Imaging Platform, Broad Institute of MIT and Harvard
+  date: March 2023
+  location: US
+- id: chemoinformatics-2022
+  title: An Introduction to Chemoinformatics
+  venue: British Toxicology Society, in silico/MDT workshop
+  date: November 2022
+  location: UK
+- id: iit-ism-2022
+  venue: Indian Institute of Technology (Indian School of Mines) Dhanbad
+  date: September 2022
+  location: India
+- id: st-stephens-2022
+  venue: St. Stephen’s College, University of Delhi
+  date: August 2022
+  location: New Delhi, India
+- id: shiv-nadar-2022
+  venue: Shiv Nadar University
+  date: August 2022
+  location: Uttar Pradesh, India
+- id: tcs-innovation-2022
+  title: "Building Predictive Models of small molecule Toxicity: A Machine Learning-based Approach"
+  venue: TCS Innovation labs
+  date: October 2022
+  location: Chennai, India
+- id: iit-kharagpur-2022
+  venue: Indian Institute of Technology (IIT) Kharagpur
+  date: September 2022
+  location: India
+- id: jubilant-biosys-2022
+  venue: Jubilant Biosys Limited
+  date: September 2022
+  location: Bengaluru, India
+- id: syngene-2022
+  venue: Syngene International Ltd. India
+  date: November 2022
+  location: Bengaluru, India
+- id: ibab-2022
+  title: Applications of Machine learning in Drug Safety and Toxicity Prediction
+  venue: Institute of Bioinformatics and Applied Biotechnology (IBAB)
+  date: September 2022
+  location: Bengaluru, India
+- id: jadavpur-2022
+  venue: Jadavpur University
+  date: September 2022
+  location: Kolkata, India
+- id: bose-institute-2022
+  venue: Bose Institute
+  date: September 2022
+  location: Kolkata, India
+- id: niper-kolkata-2022
+  venue: National Institute of Pharmaceutical Education and Research (NIPER) Kolkata
+  date: September 2022
+  location: India
+- id: iisc-2022
+  title: Interpretable Machine Learning Models in Data-driven Drug Discovery
+  venue: Indian Institute of Science (IISc)
+  date: September 2022
+  location: Bengaluru, India
+- id: csir-iicb-2022
+  venue: CSIR-Indian Institute of Chemical Biology
+  date: September 2022
+  location: Kolkata, India
