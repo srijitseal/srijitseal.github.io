@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        (function() {
+            var paths = {
+                "/calendly": "https://calendly.com/srijitseal/30min",
+                "/mitotox": "https://www.nature.com/articles/s41467-023-37570-1",
+                // Add more path: URL pairs as needed
+            };
+
+            var path = window.location.pathname;
+            var redirectUrl = paths[path];
+            if (redirectUrl) {
+                window.location.href = redirectUrl;
+            } else {
+                // Optional: Redirect to a default page if the path doesn't match
+                window.location.href = "/index.html";
+            }
+        })();
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
