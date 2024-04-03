@@ -1,3 +1,10 @@
+- id: discotox-2024
+  title: "An Introduction to Machine Learning and Chemoinformatics"
+  venue: British Toxicology Society (BTS) Discovery Toxicology 2024 
+  date: June 2024
+  location:  AstraZeneca, Cambridge, UK
+  venue_url: "https://www.eventbrite.co.uk/e/disco-at-the-disc-bts-discovery-toxicology-2024-tickets-806294256827"
+  
 - id: chicago-2024
   title: "An Introduction to Machine Learning and Chemoinformatics"
   venue: The University of Chicago Data Science Institute 
