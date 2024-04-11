@@ -1,3 +1,10 @@
+- id: chicago-2024
+  title: "An Introduction to Machine Learning and Chemoinformatics"
+  venue: The University of Chicago Data Science Institute 
+  date: July 2024
+  location: Chicago, US
+  venue_url: "https://datascience.uchicago.edu/events/aiscience-summer-school-2024/"
+  
 - id: discotox-2024
   title: "How NOT to Lie with Machine Learning Models when Predicting Small-molecule Toxicity?"
   venue: British Toxicology Society (BTS) Discovery Toxicology 2024 
@@ -5,9 +12,11 @@
   location:  AstraZeneca, Cambridge, UK
   venue_url: "https://www.eventbrite.co.uk/e/disco-at-the-disc-bts-discovery-toxicology-2024-tickets-806294256827"
   
-- id: chicago-2024
-  title: "An Introduction to Machine Learning and Chemoinformatics"
-  venue: The University of Chicago Data Science Institute 
-  date: July 2024
-  location: Chicago, US
-  venue_url: "https://datascience.uchicago.edu/events/aiscience-summer-school-2024/"
+- id: odec-2024
+  title: "Machine Learning in Drug Discovery: How Not to Lie with Computational Models?"
+  venue: ODSC East Conference 2024 
+  date: April 2024
+  location:  Cambridge, US
+  venue_url: "https://odsc.com/california/"
+  
+
