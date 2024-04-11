@@ -136,6 +136,16 @@ subramanian:
   last_name: Subramanian
   website: 
 
+garcia_ortegon:
+  first_name: Miguel 
+  last_name: García-Ortegón
+  website: https://mgarort.me/
+
+bacallado:
+  first_name: Sergio 
+  last_name: Bacallado
+  website: https://www.dpmms.cam.ac.uk/~sb2116/
+  
 greene:
   first_name: Nigel
   last_name: Greene
