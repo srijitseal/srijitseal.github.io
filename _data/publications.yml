@@ -149,7 +149,7 @@
 - id: CNS_sideeffect
   title: "Calibrated prediction of scarce adverse drug reaction labels with conditional neural processes"
   venue: ICLR 2024 DMLR Workshop
-  OAlink: https://srijitseal.com/pdf_publications//69_calibrated_prediction_of_scarc_SSeal.pdf
+  OAlink: https://srijitseal.com/pdf_publications/69_calibrated_prediction_of_scarc_SSeal.pdf
   image: CNS_sideeffects.png
   authors:
     - garcia_ortegon
