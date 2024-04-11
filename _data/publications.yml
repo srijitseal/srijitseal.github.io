@@ -8,9 +8,13 @@
   #image_mouseover: reconfusion_after.mp4
   authors:
     - srijit
+    - spjuth
+    - hosseini_gerami
+    - garcia_ortegon
+    - singh
     - bender
     - carpenter
-    - spjuth
+
 
 - id: mitochondrial_toxicity_detection
   title: Integrating Cell Morphology with Gene Expression and Chemical Structure to aid Mitochondrial Toxicity detection
@@ -141,6 +145,18 @@
     - spjuth
     - greene
     - bender
+
+- id: CNS_sideeffect
+  title: "Calibrated prediction of scarce adverse drug reaction labels with conditional neural processes"
+  venue: ICLR 2024 DMLR Workshop
+  OAlink: https://srijitseal.com/pdf_publications//69_calibrated_prediction_of_scarc_SSeal.pdf
+  image: CNS_sideeffects.png
+  authors:
+    - garcia_ortegon
+    - srijit
+    - singh
+    - bender
+    - bacallado
 
 
 
