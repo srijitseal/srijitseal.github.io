@@ -50,6 +50,37 @@ layout: null
 
 <body>
 
+   <!-- Navigation bar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/favicon.ico" alt="Logo">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="cv.html">
+          CV
+        </a>
+        <a class="navbar-item" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
+          Cheminformatics Meetings
+        </a>
+        <a class="navbar-item" href="https://github.com/{{ site.github_username }}">
+          Lecture Slides
+        </a>
+        <a class="navbar-item" href="https://twitter.com/{{ site.twitter_username }}">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </nav>
+  
   <section class="hero">
     <div class="hero-body container is-max-desktop">
       <div class="columns is-vcentered">
@@ -69,10 +100,11 @@ layout: null
           <div class="content has-text-justified">
             {{ site.description | markdownify }}
             <div class="buttons">
-              <a class="external-link button is-light" href="cv.html">
+              
+              <!-- <a class="external-link button is-light" href="cv.html">
                 <span class="icon"><i class="fas fa-file"></i></span>
                 <span>CV</span>
-              </a>
+              </a> -->
 
               <a class="external-link button is-light"
                 href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
@@ -128,7 +160,7 @@ layout: null
     <div class="container is-max-desktop">
 
       <!-- Upcoming  -->
-      <h2 class="title is-3">Upcoming Talks</h2>
+      <h2 class="title is-3">Upcoming and Past Talks</h2>
       <div class="content">
         <ul>
           {% for talk in site.data.upcoming_talks %}
