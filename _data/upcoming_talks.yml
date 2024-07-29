@@ -1,16 +1,16 @@
 - id: -2024
   title: "Lecture Series for Master's Program: Artificial Intelligence and Machine Learning in Drug Discovery"
   venue: University of Milan
-  date: July 2024
+  date: March 2025
   location: Milan, Italy (More details coming soon)
   venue_url: ""
   
-- id: chicago-2024
-  title: "An Introduction to Machine Learning and Chemoinformatics"
-  venue: The University of Chicago Data Science Institute 
-  date: July 2024
-  location: Chicago, US
-  venue_url: "https://datascience.uchicago.edu/events/aiscience-summer-school-2024/"
+- id: ascctox-2024
+  title: "Pharmacokinetic Parameters and Cell Morphology Data for Predicting Toxicity"
+  venue: American Society for Cellular and Computational Toxicology (ASCCT) 
+  date: October 2024
+  location: Research Triangle Park, North Carolina , US
+  venue_url: "https://www.ascctox.org/annual-meeting"
   
 - id: chicago-2024
   title: "An Introduction to Machine Learning and Chemoinformatics"
