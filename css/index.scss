@@ -8,33 +8,16 @@
     font-weight: 700;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-}
-
 .navbar-menu {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .navbar-start {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
-.navbar-brand {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.navbar-burger {
-  position: absolute;
-  right: 1rem;
-}
 
 .portrait {
     border-radius: 2%;
