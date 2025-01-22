@@ -1,3 +1,19 @@
+- id: CPReview
+  title: "Cell Painting: a decade of discovery and innovation in cellular imaging"
+  venue: Nature Methods, 2024
+  Journal_notOA_link: https://www.nature.com/articles/s41592-024-02528-8
+  OAlink: https://rdcu.be/d2vHH
+  image: CPReview.jpg
+  authors:
+    - srijit
+    - trapotsi
+    - spjuth
+    - carreras_puigvert
+    - greene
+    - singh
+    - bender
+    - carpenter
+  
 - id: DICTrank
   title: "Insights into Drug Cardiotoxicity from Biological and Chemical Data: The First Public Classifiers for FDA Drug-Induced Cardiotoxicity Rank"
   venue: Journal of Chemical Information and Modeling, 2024
