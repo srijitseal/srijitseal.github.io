@@ -25,11 +25,12 @@ email: seal@broad.mit.edu
 description: >-
   I am a researcher in chemoinformatics, centered on using machine learning techniques, particularly modeling, and interpretation of the Cell Painting assay, to predict drug bioactivity, safety, and toxicity. 
   <br>
-  I am currently based at [Broad Institute of MIT and Harvard](https://www.broadinstitute.org) where I am advised by
+  I am currently a Senior Scientist at [Merck US](https://www.merck.com/). I completed my postdoc at the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org) where I was advised by
   [Anne Carpenter](https://www.broadinstitute.org/bios/anne-e-carpenter) and [Shantanu Singh](https://www.broadinstitute.org/bios/shantanu-singh). 
   <br>
-  I am also a final year Ph.D. student at the  [University of Cambridge](https://https://www.cam.ac.uk/) where I am advised by
+  I completed my PhD at the [University of Cambridge](https://https://www.cam.ac.uk/) where I was advised by
   [Andreas Bender](https://www.ch.cam.ac.uk/person/ab454)
+  I also serve on the Board of Directors at the [American Society for Cellular and Computational Toxicology](https://www.ascctox.org/).
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://srijitseal.com" # the base hostname & protocol for your site, e.g. http://example.com
