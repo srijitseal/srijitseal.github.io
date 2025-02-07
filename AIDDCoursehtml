@@ -71,6 +71,7 @@
     <h3>Course Outline</h3>
     <ul>
       <li>Fundamentals of Predictive Modeling</li>
+      <li>Standardising SMILES
       <li>Exercise 1: Regression Approach to Target Prediction</li>
       <li>Exercise 2: Classification Models for Mitochondrial Toxicity</li>
       <li>Exercise 3: I Got Some Pretty Models. What's Next?</li>
@@ -82,6 +83,7 @@
     <h3>Hands-on Course Links</h3>
     <ul>
       <li><a href="https://colab.research.google.com/drive/15yksF81YtkwwwL853SuLIVW3h8yHYqtA?usp=sharing" target="_blank">Background in Programming & ML Models</a></li>
+      <li><a href = "https://colab.research.google.com/drive/1f4T3ymRxtYZRTe8xIpuR5hOgzkcuOohk?usp=sharing" target="_blank">Standardizing SMILES</a></li>
       <li><a href="https://colab.research.google.com/drive/1rkt95bjiIw6B0RvG7qs9nN0xUGmMyvGi?usp=sharing" target="_blank">hERG Inhibition & Mitochondrial Toxicity Models</a></li>
       <li><a href="https://colab.research.google.com/drive/1PekfbxYkhiellh-OucKbqwmNfYJQs1gY?usp=sharing" target="_blank">Pharmacokinetic Models</a></li>
       <li><a href="https://colab.research.google.com/drive/1F1jaLes2Kn6VpzRRs4aPov7F8HP2vGqx?usp=sharing" target="_blank">Applicability Domain & Real-World Usefulness</a></li>
