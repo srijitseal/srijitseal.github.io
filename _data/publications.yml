@@ -1,3 +1,12 @@
+- id: Advice
+  title: "Advice for Bad Computational Toxicologistsg"
+  venue: NAM Journal, 2025
+  OAlink: https://srijitseal.com/pdf_publications/Advice_Bad_Computational_Toxicologists_v3.pdf
+  image: advicebad.png
+  authors:
+    - srijit
+    - hartung
+
 - id: CPReview
   title: "Cell Painting: a decade of discovery and innovation in cellular imaging"
   venue: Nature Methods, 2024
