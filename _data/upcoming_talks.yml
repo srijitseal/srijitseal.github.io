@@ -3,7 +3,14 @@
   venue: International Conference on Intelligent Biology and Medicine (ICIBM 2025)
   date: August 2025
   location: Columbus, Ohio, US
-  venue_url: "https://icibm2025.iaibm.org"
+  venue_url: "https://icibm2025.iaibm.org
+
+- id: SBP-2025
+  title: "AI for Spatial Omics"
+  venue: 2nd American Spatial Biology Congress Global Engage" 
+  date: June 2025
+  location: Philadelphia, PA, US
+  venue_url: "https://global-engage.com/product/american-spatial-biology/"
   
 - id: GTA-2025
   title: "GTA Annual Meeting: The Last Mile: Opportunities to Bridge Research and Increase Impact in Human and Environmental Health Science"
