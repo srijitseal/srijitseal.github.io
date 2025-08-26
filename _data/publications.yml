@@ -2,7 +2,7 @@
   title: "Progress and new challenges in image-based profiling"
   venue: arXiv, 2025
   arxiv: "2508.05800"
-  image: progress_image_profiling.png
+  image: progress.png
   authors:
     - serrano
     - peters
@@ -21,7 +21,7 @@
   title: "Machine Learning for Toxicity Prediction Using Chemical Structures: Pillars for Success in the Real World"
   venue: Chemical Research in Toxicology, 2025
   OAlink: https://pubs.acs.org/doi/10.1021/acs.chemrestox.5c00033
-  image: ML_toxicity_pillars.png
+  image: giant.png
   authors:
     - srijit
     - mahale
@@ -52,8 +52,8 @@
 - id: small_molecule_bioactivity
   title: "Small molecule bioactivity benchmarks are often well-predicted by counting cells"
   venue: bioRxiv, 2025
-  biorxiv: "2025.04.27.650853"
-  image: small_molecule_bioactivity.png
+  biorxiv: 10.1101/2025.04.27.650853v1
+  image: cellcount.png
   authors:
     - srijit
     - dee
@@ -68,7 +68,8 @@
 - id: cell_painting_hepatocytes
   title: "Cell Painting for cytotoxicity and mode-of-action analysis in primary human hepatocytes"
   venue: bioRxiv, 2025
-  image: cell_painting_hepatocytes.png
+  biorxiv: 10.1101/2025.01.22.634152v1
+  image: jesspaper.png
   authors:
     - ewald
     - titterton
