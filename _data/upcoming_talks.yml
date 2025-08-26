@@ -1,9 +1,3 @@
-- id: biotechx-usa-2025
-  title: "Cell Painting Gallery"
-  venue: BioTechX USA 2025
-  date: September 2025
-  location: Philadelphia, PA, US
-  venue_url: "https://www.biotechx.com/usa/"
 
 - id: ascct-2025-ce-course
   title: "AI Agents in Toxicology"
@@ -12,19 +6,26 @@
   location: Washington, DC, US
   venue_url: "https://www.ascctox.org/"
 
-- id: nc3rs-bts-webinar-2025
-  title: "Joint Webinar - AI Applications in Toxicology (with Natalie Burden)"
-  venue: National Centre for the Replacement, Refinement and Reduction of Animals in Research (NC3Rs) & British Toxicology Society (BTS) Joint Webinar
-  date: September 25, 2025, 14:00 - 16:00
-  location: Online
-  venue_url: "https://nc3rs.org.uk/events/artificial-intelligence-safety-assessment-perspectives-future"
-
 - id: fsa-ai-risk-assessment-2025
   title: "Machine Learning for Toxicity Prediction Using Chemical Structures: Pillars for Success in the Real World"
   venue: Exploring the Future of Artificial Intelligence in Risk Assessment Workshop - Food Standards Agency
   date: October 2025
   location: London, UK
   venue_url: "https://cot.food.gov.uk/"
+
+- id: nc3rs-bts-webinar-2025
+  title: "Joint Webinar - AI Applications in Toxicology (with Natalie Burden)"
+  venue: National Centre for the Replacement, Refinement and Reduction of Animals in Research (NC3Rs) & British Toxicology Society (BTS) Joint Webinar
+  date: September 25, 2025, 14:00 - 16:00
+  location: Online
+  venue_url: "https://nc3rs.org.uk/events/artificial-intelligence-safety-assessment-perspectives-future"
+  
+- id: biotechx-usa-2025
+  title: "Cell Painting Gallery"
+  venue: BioTechX USA 2025
+  date: September 2025
+  location: Philadelphia, PA, US
+  venue_url: "https://www.biotechx.com/usa/"
 
 - id: SBP-2025
   title: "AI for Spatial Omics"
