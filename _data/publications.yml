@@ -1,3 +1,85 @@
+- id: Progress_image_profiling
+  title: "Progress and new challenges in image-based profiling"
+  venue: arXiv, 2025
+  arxiv: "2508.05800"
+  image: progress_image_profiling.png
+  authors:
+    - serrano
+    - peters
+    - wagner
+    - graham
+    - chen
+    - feng
+    - miranda
+    - srijit
+    - trapotsi
+    - spjuth
+    - bender
+    - carpenter
+
+- id: ML_toxicity_pillars
+  title: "Machine Learning for Toxicity Prediction Using Chemical Structures: Pillars for Success in the Real World"
+  venue: Chemical Research in Toxicology, 2025
+  OAlink: https://pubs.acs.org/doi/10.1021/acs.chemrestox.5c00033
+  image: ML_toxicity_pillars.png
+  authors:
+    - srijit
+    - mahale
+    - garcia_ortegon
+    - joshi
+    - hosseini_gerami
+    - beatson
+    - greenig
+    - shekhar
+    - patra
+    - weis
+    - mehrjou
+    - badre
+    - paisley
+    - lowe
+    - singh
+    - shah
+    - johannesson
+    - williams
+    - rouquie
+    - clevert
+    - schwab
+    - richmond
+    - nicolaou
+    - gonzalez_r
+    - bender
+
+- id: small_molecule_bioactivity
+  title: "Small molecule bioactivity benchmarks are often well-predicted by counting cells"
+  venue: bioRxiv, 2025
+  biorxiv: "2025.04.27.650853"
+  image: small_molecule_bioactivity.png
+  authors:
+    - srijit
+    - dee
+    - shah
+    - zhang
+    - titterton
+    - cabrera
+    - boiko
+    - singh
+    - carpenter
+
+- id: cell_painting_hepatocytes
+  title: "Cell Painting for cytotoxicity and mode-of-action analysis in primary human hepatocytes"
+  venue: bioRxiv, 2025
+  image: cell_painting_hepatocytes.png
+  authors:
+    - ewald
+    - titterton
+    - bauerle
+    - beatson
+    - boiko
+    - cabrera
+    - srijit
+    - singh
+    - carpenter
+    
 - id: Advice
   title: "Advice for Bad Computational Toxicologists"
   venue: NAM Journal, 2025
