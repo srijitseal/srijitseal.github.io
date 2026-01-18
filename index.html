@@ -46,6 +46,48 @@ layout: null
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
   <script src="{{ '/js/index.js' | relative_url }}"></script>
+
+  <!-- Floating calendar styles -->
+  <style>
+    #calendar-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 360px;
+      height: 600px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      border-radius: 8px;
+      overflow: hidden;
+      z-index: 9999;
+      background: #fff;
+      display: block;
+    }
+    #calendar-float .cal-header {
+      height: 36px;
+      background: #f7fafc;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 8px;
+      box-sizing: border-box;
+      border-bottom:1px solid #edf2f7;
+    }
+    #calendar-float .cal-title { font-size:13px; color:#2d3748; }
+    #calendar-float .close-btn {
+      background: transparent;
+      border: none;
+      color: #4a5568;
+      font-size: 14px;
+      cursor:pointer;
+      padding:4px 6px;
+      border-radius:4px;
+    }
+    #calendar-float iframe { border:0; width:100%; height:calc(100% - 36px); display:block; }
+    @media (max-width:480px) {
+      #calendar-float { width: 300px; height: 520px; right: 10px; bottom: 10px; }
+    }
+  </style>
 </head>
 
 <body>
@@ -134,10 +176,6 @@ layout: null
                 <span class="icon"><i class="fas fa-exclamation-triangle"></i></span>
                 <span>CV of Failures</span>
               </a>
-              
-              <!-- Google Calendar Appointment Scheduling begin -->
-              <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3atxhUwezSU5-Dpa4cnIXwpgIPUFY97DFWK-g1P6GTqk5mgcOahyC6zdfgg1iXR4obEiebAnSm?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-              <!-- end Google Calendar Appointment Scheduling -->
 
             </div>
 
@@ -316,6 +354,24 @@ layout: null
     </div>
   </footer>
 
-</body>
+  <!-- Floating calendar container -->
+  <div id="calendar-float" aria-label="Calendar appointments">
+    <div class="cal-header">
+      <div class="cal-title">Schedule time with me</div>
+      <button id="cal-close" class="close-btn" aria-label="Close calendar">✕</button>
+    </div>
+    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3atxhUwezSU5-Dpa4cnIXwpgIPUFY97DFWK-g1P6GTqk5mgcOahyC6zdfgg1iXR4obEiebAnSm?gv=true" frameborder="0"></iframe>
+  </div>
 
+  <script>
+    (function(){
+      var btn = document.getElementById('cal-close');
+      var box = document.getElementById('calendar-float');
+      if(btn && box){
+        btn.addEventListener('click', function(){ box.style.display = 'none'; });
+      }
+    })();
+  </script>
+
+</body>
 </html>
