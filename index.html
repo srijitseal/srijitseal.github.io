@@ -49,22 +49,32 @@ layout: null
 
   <!-- Floating calendar styles -->
   <style>
+    /* Floating calendar (hidden by default) */
     #calendar-float {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
+      position: fixed !important;
+      right: 20px !important;
+      bottom: 80px !important; /* leave space for the open button */
       width: 360px;
       height: 600px;
+      margin: 0;
       border: 1px solid #e2e8f0;
       box-shadow: 0 10px 30px rgba(0,0,0,0.12);
       border-radius: 8px;
       overflow: hidden;
-      z-index: 9999;
+      z-index: 99999 !important;
       background: #fff;
-      display: block;
+      display: none; /* start closed */
+      transform: none !important;
+      will-change: transform;
     }
+    #calendar-float.minimized {
+      height: 40px !important;
+      width: 240px !important;
+    }
+    #calendar-float.minimized iframe { display: none; }
+
     #calendar-float .cal-header {
-      height: 36px;
+      height: 40px;
       background: #f7fafc;
       display:flex;
       align-items:center;
@@ -74,18 +84,42 @@ layout: null
       border-bottom:1px solid #edf2f7;
     }
     #calendar-float .cal-title { font-size:13px; color:#2d3748; }
-    #calendar-float .close-btn {
+    #calendar-float .cal-actions { display:flex; gap:8px; align-items:center; }
+    #calendar-float .cal-btn {
       background: transparent;
       border: none;
       color: #4a5568;
       font-size: 14px;
       cursor:pointer;
-      padding:4px 6px;
+      padding:6px 8px;
       border-radius:4px;
     }
-    #calendar-float iframe { border:0; width:100%; height:calc(100% - 36px); display:block; }
+    #calendar-float iframe { border:0; width:100%; height:calc(100% - 40px); display:block; }
+
+    /* Open button (visible when calendar is closed) */
+    #calendar-open-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      background:#0a66c2;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:100000;
+      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+      cursor:pointer;
+      border:none;
+      font-size:20px;
+    }
+
     @media (max-width:480px) {
-      #calendar-float { width: 300px; height: 520px; right: 10px; bottom: 10px; }
+      #calendar-float { width: 300px; height: 520px; right: 10px; bottom: 80px; }
+      #calendar-float.minimized { width: 200px; }
+      #calendar-open-btn { width:44px; height:44px; right:10px; bottom:10px; }
     }
   </style>
 </head>
@@ -140,7 +174,7 @@ layout: null
               </a> -->
 
               <a class="external-link button is-light"
-                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
+                href="https://scholar.google.com/citations?user={{ site.google_scholar}}">
                 <span class="icon"><i class="ai ai-google-scholar"></i></span>
                 <span>Scholar</span>
               </a>
@@ -277,7 +311,7 @@ layout: null
 
               {% if publication.github %}
               <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
-                <span class="icon"><i class="fa fab fa-github"></i></span>
+                <span class="icon"><i class="fa fab fa-github"></span>
                 <span>Code</span>
               </a>
               {% endif %}
@@ -354,22 +388,66 @@ layout: null
     </div>
   </footer>
 
-  <!-- Floating calendar container -->
-  <div id="calendar-float" aria-label="Calendar appointments">
+  <!-- Open button (visible when calendar is closed) -->
+  <button id="calendar-open-btn" aria-label="Open calendar">📅</button>
+
+  <!-- Floating calendar container (starts closed) -->
+  <div id="calendar-float" aria-label="Calendar appointments" role="dialog" aria-hidden="true">
     <div class="cal-header">
       <div class="cal-title">Schedule time with me</div>
-      <button id="cal-close" class="close-btn" aria-label="Close calendar">✕</button>
+      <div class="cal-actions">
+        <button id="cal-minimize" class="cal-btn" aria-label="Minimize calendar">—</button>
+        <button id="cal-close" class="cal-btn" aria-label="Close calendar">✕</button>
+      </div>
     </div>
-    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3atxhUwezSU5-Dpa4cnIXwpgIPUFY97DFWK-g1P6GTqk5mgcOahyC6zdfgg1iXR4obEiebAnSm?gv=true" frameborder="0"></iframe>
+    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3atxhUwezSU5-Dpa4cnIXwpgIPUFY97DFWK-g1P6GTqk5mgcOahyC6zdfgg1iXR4obEiebAnSm?gv=true" frameborder="0" title="Google Calendar appointments"></iframe>
   </div>
 
   <script>
     (function(){
-      var btn = document.getElementById('cal-close');
+      var openBtn = document.getElementById('calendar-open-btn');
+      var closeBtn = document.getElementById('cal-close');
+      var minBtn = document.getElementById('cal-minimize');
       var box = document.getElementById('calendar-float');
-      if(btn && box){
-        btn.addEventListener('click', function(){ box.style.display = 'none'; });
+
+      function openCalendar(){
+        if(box){
+          box.style.display = 'block';
+          box.setAttribute('aria-hidden','false');
+          box.classList.remove('minimized');
+        }
+        if(openBtn) openBtn.style.display = 'none';
       }
+
+      function closeCalendar(){
+        if(box){
+          box.style.display = 'none';
+          box.setAttribute('aria-hidden','true');
+        }
+        if(openBtn) openBtn.style.display = 'flex';
+      }
+
+      function toggleMinimize(){
+        if(!box) return;
+        box.classList.toggle('minimized');
+      }
+
+      if(openBtn) openBtn.addEventListener('click', openCalendar);
+      if(closeBtn) closeBtn.addEventListener('click', closeCalendar);
+      if(minBtn) minBtn.addEventListener('click', toggleMinimize);
+
+      // Start closed on page load (already default), ensure ARIA reflects state
+      if(box) box.setAttribute('aria-hidden','true');
+
+      // Close on ESC
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape'){
+          // If box visible and not minimized, close it; if minimized, close it too
+          if(box && box.style.display === 'block'){
+            closeCalendar();
+          }
+        }
+      });
     })();
   </script>
 
