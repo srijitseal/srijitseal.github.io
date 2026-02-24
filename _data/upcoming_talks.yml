@@ -1,55 +1,6 @@
 # Srijit Seal | Upcoming Engagements 2026
 # Focus: AI Agents, Predictive Toxicology, and Drug Discovery
 
-- id: bps-bts-2026-ml-tox
-  title: "The Five Pillars of Success: Machine Learning for Toxicity Prediction"
-  venue: British Pharmacological Society & British Toxicology Society Joint Webinar
-  date: January, 2026
-  location: Online (UK)
-  website: "https://www.bps.ac.uk/events-landing"
-  status: Completed
-
-- id: mcbios-2026-ai-adverse-events
-  title: "From Data to Detection: AI-Driven Frameworks for Adverse Event Prediction"
-  venue: MCBIOS Annual Conference
-  date: March 2026
-  location: Tampa, FL, US
-  website: "https://mcbios.org"
-
-- id: drug-discovery-online-2026-ai
-  title: "Agentic Intelligence: How AI is Accelerating the Drug Discovery Lifecycle"
-  venue: Drug Discovery Online Virtual Panel
-  date: March 26, 2026
-  location: Online
-  website: "https://www.drugdiscoveryonline.com"
-
-- id: sot-2026-omics-ce
-  title: "Pitfalls in Prediction: How Not to Use Omics Data for Toxicity Forecasting"
-  venue: SOT 2026 Continuing Education (CE) Course
-  date: March 2026
-  location: San Diego, CA, US
-  website: "https://www.toxicology.org/events/am/am2026"
-
-- id: gta-2026-ai-genetic-tox
-  title: "Integrating AI into Genetic Toxicology Workflows"
-  venue: Genetic Toxicology Association (GTA) CE Course
-  date: May 6–8, 2026
-  location: Newark, DE, US
-  website: "https://gta-us.org"
-
-- id: wharton-biotech-2026
-  title: "The Toxicology Transformation: Implementing AI in Modern Risk Assessment"
-  venue: Wharton Biotech Conference
-  date: April 2026
-  location: Philadelphia, PA, US
-  website: "https://www.whartonbiotech.com"
-
-- id: biotechx-2026-ai-tox
-  title: "AI for Chemical Safety: Leveraging AI for Toxicology Pipelines"
-  venue: BioTechX 
-  date: 2026
-  location: Boston, US
-  website: "https://www.terrapinn.com/conference/biotechx"
 
 - id: act-2026-ai-agents-ce
   title: "Autonomous Discovery: Deploying AI Agents for Pharmaceutical Development"
@@ -64,6 +15,57 @@
   date: November 2026
   location: United States
   website: "https://www.actox.org"
+
+- id: biotechx-2026-ai-tox
+  title: "AI for Chemical Safety: Leveraging AI for Toxicology Pipelines"
+  venue: BioTechX 
+  date: 2026
+  location: Boston, US
+  website: "https://www.terrapinn.com/conference/biotechx"
+
+- id: wharton-biotech-2026
+  title: "The Toxicology Transformation: Implementing AI in Modern Risk Assessment"
+  venue: Wharton Biotech Conference
+  date: April 2026
+  location: Philadelphia, PA, US
+  website: "https://www.whartonbiotech.com"
+
+- id: gta-2026-ai-genetic-tox
+  title: "Integrating AI into Genetic Toxicology Workflows"
+  venue: Genetic Toxicology Association (GTA) CE Course
+  date: May 6–8, 2026
+  location: Newark, DE, US
+  website: "https://gta-us.org"
+  
+- id: drug-discovery-online-2026-ai
+  title: "Agentic Intelligence: How AI is Accelerating the Drug Discovery Lifecycle"
+  venue: Drug Discovery Online Virtual Panel
+  date: March 26, 2026
+  location: Online
+  website: "https://www.drugdiscoveryonline.com"
+  
+- id: mcbios-2026-ai-adverse-events
+  title: "From Data to Detection: AI-Driven Frameworks for Adverse Event Prediction"
+  venue: MCBIOS Annual Conference
+  date: March 2026
+  location: Tampa, FL, US
+  website: "https://mcbios.org"
+  
+
+- id: sot-2026-omics-ce
+  title: "Pitfalls in Prediction: How Not to Use Omics Data for Toxicity Forecasting"
+  venue: SOT 2026 Continuing Education (CE) Course
+  date: March 2026
+  location: San Diego, CA, US
+  website: "https://www.toxicology.org/events/am/am2026"
+  
+- id: bps-bts-2026-ml-tox
+  title: "The Five Pillars of Success: Machine Learning for Toxicity Prediction"
+  venue: British Pharmacological Society & British Toxicology Society Joint Webinar
+  date: January, 2026
+  location: Online (UK)
+  website: "https://www.bps.ac.uk/events-landing"
+  status: Completed
   
 - id: ascct-2025-ce-course
   title: "AI Agents in Toxicology"
