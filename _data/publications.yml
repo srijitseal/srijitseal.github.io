@@ -32,7 +32,7 @@
   title: "Learning Molecular Representation in a Cell"
   venue: ICLR, 2025
   project_page: https://iclr.cc/virtual/2025/poster/30563
-  OAlink: https://openreview.net/forum?id=bBgctzPkJr
+  OAlink: https://openreview.net/forum?id=BbZy8nI1si
   image: infoalign.png
   github: liugangcode/InfoAlign
   arxiv: "2406.12056"
@@ -361,6 +361,5 @@
     - singh
     - bender
     - bacallado
-
 
 
