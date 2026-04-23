@@ -16,19 +16,33 @@
   location: United States
   website: "https://www.actox.org"
 
+- id: ascct-2026-ai-agents-toxicology
+  title: "AI Agents for Toxicology"
+  venue: ASCCT 2026 Annual Meeting
+  date: October 26–29, 2026
+  location: Durham, NC, US
+  website: "https://www.ascctox.org/annual-meeting"
+
+- id: discovery-on-target-2026-target-safety
+  title: "Agentic AI for Target Safety Assessment: A Modality-Agnostic Framework for Early Discovery Decision-Making"
+  venue: Discovery on Target 2026
+  date: September 28–October 1, 2026
+  location: Boston, MA, US
+  website: "https://www.discoveryontarget.com/"
+
+- id: pcrm-summer-immersion-2026-chemical-safety-ai
+  title: "Chemical Safety Assessment with AI: How QSAR/AI Agents Collaborate with Toxicologists for Decision Making"
+  venue: 2026 Summer Immersion on Innovative Approaches in Science
+  date: June 17, 2026
+  location: Baltimore, MD, US
+  website: "https://www.pcrm.org/ethical-science/summer-immersion"
+
 - id: biotechx-2026-ai-tox
   title: "AI for Chemical Safety: Leveraging AI for Toxicology Pipelines"
-  venue: BioTechX 
+  venue: BioTechX
   date: 2026
   location: Boston, US
   website: "https://www.terrapinn.com/conference/biotechx"
-
-- id: wharton-biotech-2026
-  title: "The Toxicology Transformation: Implementing AI in Modern Risk Assessment"
-  venue: Wharton Biotech Conference
-  date: April 2026
-  location: Philadelphia, PA, US
-  website: "https://www.whartonbiotech.com"
 
 - id: gta-2026-ai-genetic-tox
   title: "Integrating AI into Genetic Toxicology Workflows"
@@ -144,4 +158,3 @@
   location:  Cambridge, US
   venue_url: "https://odsc.com/boston/"
   
-

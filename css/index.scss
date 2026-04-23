@@ -108,3 +108,13 @@
         margin-top: 0.5em !important;
     }
 }
+
+.earlier-publications {
+    margin-top: 1.5rem;
+
+    summary {
+        cursor: pointer;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+}

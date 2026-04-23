@@ -6,16 +6,6 @@ layout: null
 
 <head>
   
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z8BB08Y56"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-8Z8BB08Y56');
-  </script>
-  
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
   
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
@@ -56,7 +46,7 @@ layout: null
           <h1 class="subtitle is-5">{{ site.position }}</h1>
         </div>
         <div class="column is-narrow portrait-column">
-          <img class="portrait-image" src="./images/portrait.jpg" alt="A portrait of Keunhong Park" />
+          <img class="portrait-image" src="./images/portrait.jpg" alt="A portrait of Srijit Seal" />
         </div>
         <div class="column has-text-right">
           <p>
@@ -122,15 +112,23 @@ layout: null
         {% for publication in site.data.publications %}
         <div class="columns">
           <div class="column is-four-fifths">
-            
+            {% assign publication_url = "" %}
             {% if publication.OAlink %}
-              <a href="{{ publication.OAlink }}"><b>{{ publication.title }}</b></a>
+              {% assign publication_url = publication.OAlink %}
+            {% elsif publication.Journal_notOA_link %}
+              {% assign publication_url = publication.Journal_notOA_link %}
             {% elsif publication.biorxiv %}
-              <a href="https://www.biorxiv.org/content/{{ publication.biorxiv }}v1">{{ publication.title }}</b></a>
+              {% assign publication_url = "https://www.biorxiv.org/content/" | append: publication.biorxiv %}
             {% elsif publication.arxiv %}
-              <a href="https://arxiv.org/abs/{{ publication.arxiv }}"><b>{{ publication.title }}</b></a>
+              {% assign publication_url = "https://arxiv.org/abs/" | append: publication.arxiv %}
             {% elsif publication.project_page %}
-              <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
+              {% assign publication_url = publication.project_page %}
+            {% endif %}
+
+            {% if publication_url != "" %}
+              <a href="{{ publication_url }}"><b>{{ publication.title }}</b></a>
+            {% else %}
+              <b>{{ publication.title }}</b>
             {% endif %}
 
             
@@ -138,12 +136,13 @@ layout: null
               {% for author_id in publication.authors %}
               {% assign author = site.data.authors[author_id] %}
               <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                {% assign author_name = author.first_name | slice: 0 | append: ". " | append: author.last_name %}
                 {% if author.is_me %}
-                {{ author.first_name | slice: 0 }}. {{ author.last_name }}{% if forloop.last == false %},{%
-                endif %}
+                {{ author_name }}{% if forloop.last == false %},{% endif %}
+                {% elsif author.website and author.website != "" %}
+                <a href="{{ author.website }}">{{ author_name }}</a>{% if forloop.last == false %},{% endif %}
                 {% else %}
-                <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {{ author.last_name }}</a>{% if
-                forloop.last == false %},{% endif %}
+                {{ author_name }}{% if forloop.last == false %},{% endif %}
                 {% endif %}
               </span>
               {% endfor %}

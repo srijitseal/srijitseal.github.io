@@ -1,3 +1,50 @@
+- id: ai_agents_drug_discovery
+  title: "AI agents in drug discovery: applications and case studies"
+  venue: Drug Discovery Today, 2026
+  OAlink: https://www.sciencedirect.com/science/article/pii/S1359644626000553
+  image: ai_agents_drug_discovery.jpg
+  authors:
+    - huynh
+    - srijit
+    - dylan_reid
+    - carpenter
+    - bender
+    - spjuth
+    - aia4s
+
+- id: transfer_learning_eskape
+  title: "Transfer learning enables discovery of sub-micromolar antibacterials for ESKAPE pathogens from ultra-large chemical spaces"
+  venue: Chemical Science, 2025
+  OAlink: https://pubs.rsc.org/en/content/articlelanding/2025/sc/d5sc03055b
+  image: transfer_learning_antibacterials.gif
+  authors:
+    - garcia_ortegon
+    - srijit
+    - geddes
+    - littler
+    - guy
+    - whiteside
+    - rasmussen
+    - bender
+    - bacallado
+
+- id: infoalign
+  title: "Learning Molecular Representation in a Cell"
+  venue: ICLR, 2025
+  project_page: https://iclr.cc/virtual/2025/poster/30563
+  OAlink: https://openreview.net/forum?id=bBgctzPkJr
+  image: infoalign.png
+  github: liugangcode/InfoAlign
+  arxiv: "2406.12056"
+  authors:
+    - gang_liu
+    - srijit
+    - arevalo
+    - zhenwen_liang
+    - carpenter
+    - meng_jiang
+    - singh
+
 - id: phenqsar
   title: "PhenQSAR: A Cell Painting-Based Platform for Gene-Compound Similarity and Drug Repurposing"
   venue: online, 2025
@@ -13,7 +60,8 @@
 
 - id: Progress_image_profiling
   title: "Progress and new challenges in image-based profiling"
-  venue: arXiv, 2025
+  venue: Molecular Systems Biology, 2026
+  OAlink: https://link.springer.com/article/10.1038/s44320-026-00197-7
   arxiv: "2508.05800"
   image: progress.png
   authors:
@@ -24,11 +72,21 @@
     - chen
     - feng
     - miranda
+    - kalinin
+    - vulliard
+    - tomkinson
+    - cameron_mattson
+    - lippincott
+    - kang
+    - sitani
+    - bunten
     - srijit
-    - trapotsi
-    - spjuth
-    - bender
+    - carragher
     - carpenter
+    - singh
+    - marin_zapata
+    - caicedo
+    - way
 
 - id: ML_toxicity_pillars
   title: "Machine Learning for Toxicity Prediction Using Chemical Structures: Pillars for Success in the Real World"
@@ -63,26 +121,36 @@
     - bender
 
 - id: small_molecule_bioactivity
-  title: "Small molecule bioactivity benchmarks are often well-predicted by counting cells"
-  venue: bioRxiv, 2025
+  title: "Counting cells can accurately predict small-molecule bioactivity benchmarks"
+  venue: Nature Communications, 2026
+  OAlink: https://www.nature.com/articles/s41467-026-68725-5
   biorxiv: 10.1101/2025.04.27.650853v1
   image: cellcount.png
   authors:
     - srijit
     - dee
     - shah
+    - cerisier
     - zhang
+    - miglietta
     - titterton
     - cabrera
     - boiko
+    - beatson
+    - slabaugh
+    - taboureau
+    - carreras_puigvert
     - singh
+    - spjuth
+    - bender
     - carpenter
 
 - id: cell_painting_hepatocytes
   title: "Cell Painting for cytotoxicity and mode-of-action analysis in primary human hepatocytes"
-  venue: bioRxiv, 2025
+  venue: Cell Systems, 2026
+  OAlink: https://www.sciencedirect.com/science/article/pii/S2405471226000487
   biorxiv: 10.1101/2025.01.22.634152v1
-  image: jesspaper.png
+  image: cell_painting_hepatocytes.jpg
   authors:
     - ewald
     - titterton
@@ -90,9 +158,19 @@
     - beatson
     - boiko
     - cabrera
+    - cheah
+    - cimini
+    - gorissen
+    - harrill
+    - thouis_jones
+    - karczewski
+    - crute
+    - rouquie
     - srijit
-    - singh
+    - weisbart
+    - white
     - carpenter
+    - singh
     
 - id: Advice
   title: "Advice for Bad Computational Toxicologists"
@@ -239,9 +317,10 @@
     - vendruscolo
 
 - id: liver_injury_early_detection
-  title: "Improved Early Detection of Drug-Induced Liver Injury by Integrating Predicted in Vivo and in Vitro Data"
-  venue: bioRxiv, 2024
+  title: "Improved Detection of Drug-Induced Liver Injury by Integrating Predicted In Vivo and In Vitro Data"
+  venue: Chemical Research in Toxicology, 2024
   project_page: https://broad.io/DILIPredictor
+  OAlink: https://pubs.acs.org/doi/10.1021/acs.chemrestox.4c00015
   image: liver_injury_early_detection.png
   biorxiv: 10.1101/2024.01.10.575128v1.full
   github: srijitseal/DILI
@@ -249,22 +328,26 @@
     - srijit
     - williams
     - hosseini_gerami
+    - mahale
+    - carpenter
     - spjuth
     - bender
 
 - id: PKSmart
-  title: "PKSmart: An Open-Source Computational Model to Predict in vivo Pharmacokinetics of Small Molecules"
-  venue: bioRxiv, 2024
+  title: "PKSmart: an open-source computational model to predict intravenous pharmacokinetics of small molecules"
+  venue: Journal of Cheminformatics, 2025
   project_page: https://broad.io/PKSmart
+  OAlink: https://link.springer.com/article/10.1186/s13321-025-01066-5
   image: PKSmart.jpg
   biorxiv: 10.1101/2024.02.02.578658v1.full
   github: srijitseal/PKSmart
   authors:
     - srijit
     - trapotsi
+    - mahale
     - subramanian
-    - spjuth
     - greene
+    - spjuth
     - bender
 
 - id: CNS_sideeffect
@@ -278,7 +361,6 @@
     - singh
     - bender
     - bacallado
-
 
 
 

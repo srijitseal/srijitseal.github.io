@@ -1,12 +1,29 @@
+- date: Mar 2026
+  description: >-
+    New papers are out on [AI agents in drug discovery](https://www.sciencedirect.com/science/article/pii/S1359644626000553),
+    [Cell Painting in primary human hepatocytes](https://www.sciencedirect.com/science/article/pii/S2405471226000487),
+    and [progress and challenges in image-based profiling](https://link.springer.com/article/10.1038/s44320-026-00197-7).
+
+- date: Feb 2026
+  description: >-
+    Our paper [Counting cells can accurately predict small-molecule bioactivity benchmarks](https://www.nature.com/articles/s41467-026-68725-5)
+    is published in Nature Communications.
+
+- date: Sep 2025
+  description: >-
+    [PKSmart](https://link.springer.com/article/10.1186/s13321-025-01066-5) is published in the Journal of Cheminformatics, and our
+    [transfer learning study for ESKAPE antibacterials](https://pubs.rsc.org/en/content/articlelanding/2025/sc/d5sc03055b)
+    is published in Chemical Science.
+
 - date: Jan 2025
   description: >-
-    [pip install infoalign!](https://github.com/liugangcode/infoalign-package) Add biological information to your chemcial fingerprints, using only SMILES as input! 
-    Our paper Learning Molecular Representation in a Cell has been accepted to ICLR 2025! 
-    We introduce InfoAlign, a new approach for learning molecular representations from cellular response data, integrating features like cell morphology and gene expression. 
+    [pip install infoalign!](https://github.com/liugangcode/infoalign-package) Add biological information to your chemical fingerprints, using only SMILES as input!
+    Our paper Learning Molecular Representation in a Cell has been accepted to ICLR 2025!
+    We introduce InfoAlign, a new approach for learning molecular representations from cellular response data, integrating features like cell morphology and gene expression.
     By combining information bottleneck methods with context graphs, we’re able to extract minimal yet sufficient representations of molecules that lead to better predictions and generalization in downstream tasks like molecular property prediction and zero-shot molecule-morphology matching.
 
 - date: Mar 2024
   description: >-
-    [Calibrated prediction of scarce adverse drug reaction labels with conditional neural processes](https://dmlr.ai/) 
-    has been accepted in DMLR at ICLR 2024. This work introduces a meta-learning approach with neural processes to significantly enhance the accuracy 
+    [Calibrated prediction of scarce adverse drug reaction labels with conditional neural processes](https://dmlr.ai/)
+    has been accepted in DMLR at ICLR 2024. This work introduces a meta-learning approach with neural processes to significantly enhance the accuracy
     and calibration of adverse drug reaction (ADR) classification.
