@@ -19,21 +19,21 @@
 - id: ascct-2026-ai-ml-toxicology
   title: "AI/ML for Toxicology"
   venue: ASCCT 2026 Annual Meeting
-  date: October 26–29, 2026
+  date: October 2026
   location: Durham, NC, US
   website: "https://www.ascctox.org/annual-meeting"
 
 - id: discovery-on-target-2026-ai-ml
   title: "AI/ML for Early Discovery Decision-Making"
   venue: Discovery on Target 2026
-  date: September 28–October 1, 2026
+  date: September 2026
   location: Boston, MA, US
   website: "https://www.discoveryontarget.com/"
 
 - id: pcrm-summer-immersion-2026-ai-ml
   title: "AI/ML for Chemical Data Decision-Making"
   venue: 2026 Summer Immersion on Innovative Approaches in Science
-  date: June 17, 2026
+  date: June 2026
   location: Baltimore, MD, US
   website: "https://www.pcrm.org/ethical-science/summer-immersion"
 
@@ -47,14 +47,14 @@
 - id: gta-2026-ai-genetic-tox
   title: "Integrating AI into Genetic Toxicology Workflows"
   venue: Genetic Toxicology Association (GTA) CE Course
-  date: May 6–8, 2026
+  date: May 2026
   location: Newark, DE, US
   website: "https://gta-us.org"
   
 - id: drug-discovery-online-2026-ai
   title: "AI in the Drug Discovery Lifecycle"
   venue: Drug Discovery Online Virtual Panel
-  date: March 26, 2026
+  date: March 2026
   location: Online
   website: "https://www.drugdiscoveryonline.com"
   
@@ -76,7 +76,7 @@
 - id: bps-bts-2026-ml-tox
   title: "The Five Pillars of Success: Machine Learning for Toxicity Prediction"
   venue: British Pharmacological Society & British Toxicology Society Joint Webinar
-  date: January, 2026
+  date: January 2026
   location: Online (UK)
   website: "https://www.bps.ac.uk/events-landing"
   status: Completed
@@ -98,7 +98,7 @@
 - id: nc3rs-bts-webinar-2025
   title: "Joint Webinar - AI Applications in Toxicology"
   venue: National Centre for the Replacement, Refinement and Reduction of Animals in Research (NC3Rs) & British Toxicology Society (BTS) Joint Webinar
-  date: September 25, 2025, 14:00 - 16:00
+  date: September 2025
   location: Online
   venue_url: "https://nc3rs.org.uk/events"
   

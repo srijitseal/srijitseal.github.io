@@ -422,6 +422,8 @@ a {
 }
 
 .talk-timeline {
+    --talk-date-column: 9.5rem;
+    --talk-line-offset: 10.85rem;
     display: grid;
     gap: 0;
     max-width: 980px;
@@ -430,15 +432,15 @@ a {
 .talk-item {
     position: relative;
     display: grid;
-    grid-template-columns: 13rem minmax(0, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: var(--talk-date-column) minmax(0, 1fr);
+    gap: 2.75rem;
     padding: 0 0 1.5rem;
 }
 
 .talk-item::before {
     position: absolute;
     top: 0.4rem;
-    left: 12.85rem;
+    left: calc(var(--talk-line-offset) - 5px);
     width: 10px;
     height: 10px;
     border: 2px solid #ffffff;
@@ -452,7 +454,7 @@ a {
     position: absolute;
     top: 1rem;
     bottom: 0;
-    left: 13.15rem;
+    left: var(--talk-line-offset);
     width: 1px;
     background: var(--line);
     content: "";
@@ -471,7 +473,10 @@ a {
     color: var(--muted);
     font-size: 0.9rem;
     font-weight: 700;
+    line-height: 1.35;
+    padding-right: 0.25rem;
     text-align: right;
+    white-space: nowrap;
 }
 
 .talk-content {
