@@ -324,18 +324,19 @@ a {
 }
 
 .talk-timeline {
-    --talk-date-column: 9.5rem;
-    --talk-line-offset: 10.85rem;
+    --talk-date-column: 10.5rem;
+    --talk-gutter: 5rem;
+    --talk-line-offset: calc(var(--talk-date-column) + (var(--talk-gutter) / 2));
     display: grid;
     gap: 0;
-    max-width: 980px;
+    max-width: 1100px;
 }
 
 .talk-item {
     position: relative;
     display: grid;
     grid-template-columns: var(--talk-date-column) minmax(0, 1fr);
-    gap: 2.75rem;
+    column-gap: var(--talk-gutter);
     padding: 0 0 1.5rem;
 }
 
@@ -376,7 +377,6 @@ a {
     font-size: 0.9rem;
     font-weight: 700;
     line-height: 1.35;
-    padding-right: 0.25rem;
     text-align: right;
     white-space: nowrap;
 }
