@@ -44,135 +44,226 @@ layout: null
     <div class="container">
       <div id="navbarBasicExample" class="navbar-menu is-active is-centered">
         <div class="navbar-start" style="margin: 0 auto;">
-          <a class="navbar-item" href="https://srijitseal.com/cheminformaticsmeeting">
-            Cheminformatics Meetings
-          </a>
-          <a class="navbar-item" href="https://srijitseal.com/AIDDCourse" target="_blank" rel="noopener">
-            Lecture Slides
-          </a>
-          <a class="navbar-item" href="https://srijitseal.com/tools" target="_blank" rel="noopener">
-            Tools
-          </a>
-          <a class="navbar-item" href="https://srijitseal.com/CV" target="_blank" rel="noopener">
-            Download CV
-          </a>
+          <a class="navbar-item" href="#work">Work</a>
+          <a class="navbar-item" href="#talks">Talks</a>
+          <a class="navbar-item" href="#tutorials">Tutorials</a>
+          <a class="navbar-item" href="#publications">Publications</a>
+          <a class="navbar-item" href="https://srijitseal.com/cheminformaticsmeeting">Meetings</a>
+          <a class="navbar-item" href="https://srijitseal.com/CV" target="_blank" rel="noopener">CV</a>
         </div>
       </div>
     </div>
   </nav>
-  
-  <section class="hero">
-    <div class="hero-body container is-max-desktop">
-      <div class="columns is-vcentered">
 
-        <div class="column is-4">
-          <div class="portrait">
-            <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="A portrait of Srijit Seal" />
+  <section class="hero profile-hero">
+    <div class="hero-body container is-max-widescreen">
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">AI for drug discovery, safety, and cellular profiling</p>
+          <h1 class="title hero-title">Srijit Seal</h1>
+          <p class="hero-subtitle">
+            Principal Scientist at Human Chemical Company and Visiting Researcher at Uppsala University.
+          </p>
+          <div class="content hero-description">
+            {{ site.description | markdownify }}
           </div>
-          <center>📍 Uppsala, Sweden </center>
-          <center>📍 Cambridge, MA, US </center>
-          <center>📍 Cambridge, UK </center>
-          <center> FCPS AFHEA AMRSC PhD MPhil </center>
-          <center>srijit [dot] seal [at] uu [dot] se</center>
+
+          <div class="research-chips" aria-label="Research focus areas">
+            <span>AI Agents</span>
+            <span>Cell Painting</span>
+            <span>Computational Toxicology</span>
+            <span>Cheminformatics</span>
+            <span>Drug Discovery</span>
+          </div>
+
+          <div class="buttons hero-actions">
+            <a class="button is-primary" href="#publications">
+              <span class="icon"><i class="fas fa-file-alt"></i></span>
+              <span>Publications</span>
+            </a>
+            <a class="button is-light" href="#talks">
+              <span class="icon"><i class="fas fa-microphone"></i></span>
+              <span>Talks</span>
+            </a>
+            <a class="button is-light" href="#tutorials">
+              <span class="icon"><i class="fas fa-laptop-code"></i></span>
+              <span>Tutorials</span>
+            </a>
+          </div>
         </div>
 
-        <div class="column">
-          <h1 class="title">
-            <b>Hello, I'm Srijit Seal</b>
-          </h1>
-          <div class="content has-text-justified">
-            {{ site.description | markdownify }}
-            <div class="buttons">
-              
-              <!-- <a class="external-link button is-light" href="cv.html">
-                <span class="icon"><i class="fas fa-file"></i></span>
-                <span>CV</span>
-              </a> -->
-
-              <a class="external-link button is-light"
-                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-                <span class="icon"><i class="ai ai-google-scholar"></i></span>
-                <span>Scholar</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Github</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
-                <span class="icon"><i class="fab fa-twitter"></i></span>
-                <span>Twitter</span>
-              </a>
-
-              <br>
-
-              <a class="external-link button is-light" href="https://www.uu.se/en/contact-and-organisation/staff?query=N26-791">
-                <span class="icon"><i class="fas fa-globe-asia"></i></span>
-                <span>Uppsala University Profile</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://humanchemical.com/">
-                <span class="icon"><i class="fas fa-globe-asia"></i></span>
-                <span>Human Chemical</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://srijitseal.com/CV">
-                <span class="icon"><i class="fas fa-certificate"></i></span>
-                <span>Download CV</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://srijitseal.com/failures">
-                <span class="icon"><i class="fas fa-exclamation-triangle"></i></span>
-                <span>CV of Failures</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://srijitseal.com/agenticCV">
-                <span class="icon"><i class="fas fa-solid fa-robot"></i></span>
-                <span>CV of AI Agents</span>
-              </a>
-
-              <a>
-              <!-- Calendly badge widget begin -->
-              <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-              <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-              <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/srijitseal-vy1g/30min', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff' }); }</script>
-              <!-- Calendly badge widget end -->
-              </a>
-
+        <aside class="profile-panel" aria-label="Profile links and research signal">
+          <div class="profile-card">
+            <div class="portrait">
+              <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="A portrait of Srijit Seal" />
             </div>
-
+            <div class="profile-details">
+              <p>Uppsala, Sweden · Cambridge, MA · Cambridge, UK</p>
+              <p>FCPS AFHEA AMRSC PhD MPhil</p>
+              <p>srijit [dot] seal [at] uu [dot] se</p>
+            </div>
           </div>
+
+          <div class="signal-panel" aria-hidden="true">
+            <div class="signal-map">
+              <span class="signal-node node-a"></span>
+              <span class="signal-node node-b"></span>
+              <span class="signal-node node-c"></span>
+              <span class="signal-node node-d"></span>
+              <span class="signal-node node-e"></span>
+              <span class="signal-line line-a"></span>
+              <span class="signal-line line-b"></span>
+              <span class="signal-line line-c"></span>
+              <span class="signal-line line-d"></span>
+            </div>
+            <p>Morphology, chemistry, and agentic reasoning for safer discovery decisions.</p>
+          </div>
+
+          <div class="profile-links">
+            <a class="external-link button is-light"
+              href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" rel="noopener">
+              <span class="icon"><i class="ai ai-google-scholar"></i></span>
+              <span>Scholar</span>
+            </a>
+            <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </a>
+            <a class="external-link button is-light" href="https://www.uu.se/en/contact-and-organisation/staff?query=N26-791" target="_blank" rel="noopener">
+              <span class="icon"><i class="fas fa-university"></i></span>
+              <span>Uppsala</span>
+            </a>
+            <a class="external-link button is-light" href="https://humanchemical.com/" target="_blank" rel="noopener">
+              <span class="icon"><i class="fas fa-flask"></i></span>
+              <span>Human Chemical</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <div class="metrics-strip" aria-label="Profile highlights">
+        <div>
+          <strong>{{ site.data.publications | size }}</strong>
+          <span>publications</span>
+        </div>
+        <div>
+          <strong>18+</strong>
+          <span>TSA questions automated</span>
+        </div>
+        <div>
+          <strong>5</strong>
+          <span>open tutorials</span>
+        </div>
+        <div>
+          <strong>2026</strong>
+          <span>AI safety talks</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sections. -->
-  <section class="section">
-    <div class="container is-max-desktop">
-
-      <!-- Upcoming  -->
-      <h2 class="title is-3">Upcoming and Past Talks</h2>
-      <div class="content">
-        <ul>
-          {% for talk in site.data.upcoming_talks %}
-          <li>
-            {% assign talk_url = talk.venue_url | default: talk.website %}
-            {% if talk_url %}
-            <b><a href="{{ talk_url }}" target="_blank" rel="noopener">{{ talk.venue }}</a></b>: {{ talk.title | markdownify | remove: '<p>' | remove: '</p>' }}
-            {% else %}
-            <b>{{ talk.venue }}</b>: {{ talk.title | markdownify | remove: '<p>' | remove: '</p>' }}
-            {% endif %}
-            <br>{{ talk.date }}, {{ talk.location }}
-          </li>
-          {% endfor %}
-        </ul>
+  <section class="section section-band" id="work">
+    <div class="container is-max-widescreen">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2 class="title is-3">Featured Research</h2>
       </div>
 
-      <!-- Publications -->
+      <div class="featured-grid">
+        {% assign featured_ids = "small_molecule_bioactivity|ai_agents_drug_discovery|PKSmart|ML_toxicity_pillars" | split: "|" %}
+        {% for featured_id in featured_ids %}
+        {% assign featured_publications = site.data.publications | where: "id", featured_id %}
+        {% assign publication = featured_publications | first %}
+        {% if publication %}
+        {% assign publication_url = publication.OAlink | default: publication.project_page | default: publication.Journal_notOA_link %}
+        <article class="featured-card">
+          <div class="featured-image">
+            <img src="./images/{{ publication.image }}" alt="{{ publication.title }}" loading="lazy" />
+          </div>
+          <div class="featured-content">
+            <span class="venue-badge">{{ publication.venue }}</span>
+            <h3>{{ publication.title }}</h3>
+            {% if publication_url %}
+            <a href="{{ publication_url }}" target="_blank" rel="noopener">Read paper</a>
+            {% endif %}
+          </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
-      <h2 class="title is-3">Recent Publications</h2>
+  <section class="section" id="talks">
+    <div class="container is-max-widescreen">
+      <div class="section-heading">
+        <p class="eyebrow">Speaking</p>
+        <h2 class="title is-3">Talks & Workshops</h2>
+      </div>
+
+      <div class="talk-timeline">
+        {% for talk in site.data.upcoming_talks %}
+        {% assign talk_url = talk.venue_url | default: talk.website %}
+        <article class="talk-item {% if talk.status == 'Completed' %}is-completed{% endif %}">
+          <div class="talk-date">{{ talk.date }}</div>
+          <div class="talk-content">
+            {% if talk_url %}
+            <h3><a href="{{ talk_url }}" target="_blank" rel="noopener">{{ talk.venue }}</a></h3>
+            {% else %}
+            <h3>{{ talk.venue }}</h3>
+            {% endif %}
+            <p>{{ talk.title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            <span>{{ talk.location }}</span>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-band" id="tutorials">
+    <div class="container is-max-widescreen">
+      <div class="section-heading">
+        <p class="eyebrow">Open resources</p>
+        <h2 class="title is-3">Tutorials & Tools</h2>
+      </div>
+
+      <div class="tutorial-grid">
+        <article class="resource-card">
+          <span class="resource-kicker">Course</span>
+          <h3>Introduction to Cheminformatics and AI in Drug Discovery</h3>
+          <p>Hands-on modeling of safety data, predictive ML workflows, and AI-assisted cheminformatics.</p>
+          <a href="https://srijitseal.com/AIDDCourse" target="_blank" rel="noopener">Open course</a>
+        </article>
+        <article class="resource-card">
+          <span class="resource-kicker">New tutorial</span>
+          <h3>Leveraging Cell Painting Morphological Profiles for Machine Learning–Driven Bioactivity Prediction</h3>
+          <p>Practical workflow for turning morphology profiles into bioactivity prediction features.</p>
+          <a href="http://broad.io/cpsot" target="_blank" rel="noopener">Open tutorial</a>
+        </article>
+        <article class="resource-card">
+          <span class="resource-kicker">Agents</span>
+          <h3>AI Agents and Tool Calling in Cheminformatics</h3>
+          <p>Hands-on introduction to agentic workflows for chemistry and safety data tasks.</p>
+          <a href="https://colab.research.google.com/drive/1nuuVA-1RTLqUC2AyKBc1OHmfPzdhhyJG" target="_blank" rel="noopener">Open notebook</a>
+        </article>
+        <article class="resource-card">
+          <span class="resource-kicker">Tools</span>
+          <h3>Drug Discovery and Toxicology Utilities</h3>
+          <p>Small, reusable tools for cheminformatics, Cell Painting, and safety assessment workflows.</p>
+          <a href="https://srijitseal.com/tools" target="_blank" rel="noopener">Browse tools</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="publications">
+    <div class="container is-max-widescreen">
+      <div class="section-heading">
+        <p class="eyebrow">Publications</p>
+        <h2 class="title is-3">Recent Publications</h2>
+      </div>
+
       {% for publication in site.data.publications %}
       {% if forloop.index <= 12 %}
       {% include publication.html %}
@@ -187,23 +278,26 @@ layout: null
         {% endif %}
         {% endfor %}
       </details>
-
-
-      <!-- News. -->
-      <h2 class="title is-3">News</h2>
-      <div class="content">
-        <ul>
-          {% for news in site.data.news %}
-          <li>
-            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-
     </div>
   </section>
 
+  <section class="section section-band" id="news">
+    <div class="container is-max-widescreen">
+      <div class="section-heading">
+        <p class="eyebrow">Updates</p>
+        <h2 class="title is-3">News</h2>
+      </div>
+
+      <div class="news-list">
+        {% for news in site.data.news %}
+        <article class="news-item">
+          <time>{{ news.date }}</time>
+          <p>{{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -222,7 +316,7 @@ layout: null
         <div class="column is-8">
           <div class="content">
             <p>
-              Feel free to <a href="https://github.com/keunhong/keunhong.github.io">borrow this template</a>.
+              Srijit Seal · AI for drug discovery, chemical safety, and cellular profiling.
             </p>
           </div>
         </div>

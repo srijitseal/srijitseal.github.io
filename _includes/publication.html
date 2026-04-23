@@ -7,7 +7,7 @@
         Your browser does not support the video tag.
       </video>
       {% endif %}
-      <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
+      <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" loading="lazy" />
     </div>
   </div>
 
@@ -42,28 +42,28 @@
         {% if publication.project_page %}
         <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
           <span class="icon"><i class="fas fa-globe-asia"></i></span>
-          <span>Project Page</span>
+          <span>Project</span>
         </a>
         {% endif %}
 
         {% if publication.OAlink %}
         <a class="external-link button is-small is-ghost" href="{{ publication.OAlink }}">
           <span class="icon"><i class="fas fa-file-pdf"></i></span>
-          <span>Open Access Publication</span>
+          <span>Paper</span>
         </a>
         {% endif %}
 
         {% if publication.pdf_link %}
         <a class="external-link button is-small is-ghost" href="{{ publication.pdf_link }}">
           <span class="icon"><i class="fas fa-file-pdf"></i></span>
-          <span>Paper (Repository Access)</span>
+          <span>PDF</span>
         </a>
         {% endif %}
 
         {% if publication.Journal_notOA_link %}
         <a class="external-link button is-small is-ghost" href="{{ publication.Journal_notOA_link }}">
           <span class="icon"><i class="fas fa-file-pdf"></i></span>
-          <span>Journal (Institutional Access)</span>
+          <span>Journal</span>
         </a>
         {% endif %}
 
