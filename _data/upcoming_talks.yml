@@ -1,9 +1,9 @@
 # Srijit Seal | Upcoming Engagements 2026
-# Focus: AI Agents, Predictive Toxicology, and Drug Discovery
+# Focus: AI/ML, Predictive Modeling, and Drug Discovery
 
 
-- id: act-2026-ai-agents-ce
-  title: "Autonomous Discovery: Deploying AI Agents for Pharmaceutical Development"
+- id: act-2026-ai-workflows-ce
+  title: "Autonomous Discovery: Deploying AI Workflows for Pharmaceutical Development"
   venue: ACT 2026 Continuing Education (CE) Course
   date: November 2026
   location: United States
@@ -16,29 +16,29 @@
   location: United States
   website: "https://www.actox.org"
 
-- id: ascct-2026-ai-agents-toxicology
-  title: "AI Agents for Toxicology"
+- id: ascct-2026-ai-ml-toxicology
+  title: "AI/ML for Toxicology"
   venue: ASCCT 2026 Annual Meeting
   date: October 26–29, 2026
   location: Durham, NC, US
   website: "https://www.ascctox.org/annual-meeting"
 
-- id: discovery-on-target-2026-target-safety
-  title: "Agentic AI for Target Safety Assessment: A Modality-Agnostic Framework for Early Discovery Decision-Making"
+- id: discovery-on-target-2026-ai-ml
+  title: "AI/ML for Early Discovery Decision-Making"
   venue: Discovery on Target 2026
   date: September 28–October 1, 2026
   location: Boston, MA, US
   website: "https://www.discoveryontarget.com/"
 
-- id: pcrm-summer-immersion-2026-chemical-safety-ai
-  title: "Chemical Safety Assessment with AI: How QSAR/AI Agents Collaborate with Toxicologists for Decision Making"
+- id: pcrm-summer-immersion-2026-ai-ml
+  title: "AI/ML for Chemical Data Decision-Making"
   venue: 2026 Summer Immersion on Innovative Approaches in Science
   date: June 17, 2026
   location: Baltimore, MD, US
   website: "https://www.pcrm.org/ethical-science/summer-immersion"
 
 - id: biotechx-2026-ai-tox
-  title: "AI for Chemical Safety: Leveraging AI for Toxicology Pipelines"
+  title: "AI/ML for Toxicology Pipelines"
   venue: BioTechX
   date: 2026
   location: Boston, US
@@ -52,7 +52,7 @@
   website: "https://gta-us.org"
   
 - id: drug-discovery-online-2026-ai
-  title: "Agentic Intelligence: How AI is Accelerating the Drug Discovery Lifecycle"
+  title: "AI in the Drug Discovery Lifecycle"
   venue: Drug Discovery Online Virtual Panel
   date: March 26, 2026
   location: Online
@@ -82,15 +82,15 @@
   status: Completed
   
 - id: ascct-2025-ce-course
-  title: "AI Agents in Toxicology"
+  title: "AI/ML in Toxicology"
   venue: ASCCT 2025 CE Course
   date: October 2025
   location: Washington, DC, US
   venue_url: "https://www.ascctox.org/"
 
-- id: fsa-ai-risk-assessment-2025
+- id: fsa-ai-ml-2025
   title: "Machine Learning for Toxicity Prediction Using Chemical Structures: Pillars for Success in the Real World"
-  venue: Exploring the Future of Artificial Intelligence in Risk Assessment Workshop - Food Standards Agency
+  venue: Food Standards Agency Workshop
   date: October 2025
   location: London, UK
   venue_url: "https://cot.food.gov.uk/"
@@ -100,7 +100,7 @@
   venue: National Centre for the Replacement, Refinement and Reduction of Animals in Research (NC3Rs) & British Toxicology Society (BTS) Joint Webinar
   date: September 25, 2025, 14:00 - 16:00
   location: Online
-  venue_url: "https://nc3rs.org.uk/events/artificial-intelligence-safety-assessment-perspectives-future"
+  venue_url: "https://nc3rs.org.uk/events"
   
 - id: biotechx-usa-2025
   title: "Cell Painting Gallery"

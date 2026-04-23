@@ -59,19 +59,19 @@ layout: null
     <div class="hero-body container is-max-widescreen">
       <div class="hero-layout">
         <div class="hero-copy">
-          <p class="eyebrow">AI for drug discovery, safety, and cellular profiling</p>
+          <p class="eyebrow">AI for drug discovery and cellular profiling</p>
           <h1 class="title hero-title">Srijit Seal</h1>
           <p class="hero-subtitle">
-            Principal Scientist at Human Chemical Company and Visiting Researcher at Uppsala University.
+            Principal Scientist and Visiting Researcher at Uppsala University.
           </p>
           <div class="content hero-description">
             {{ site.description | markdownify }}
           </div>
 
           <div class="research-chips" aria-label="Research focus areas">
-            <span>AI Agents</span>
+            <span>AI for Science</span>
             <span>Cell Painting</span>
-            <span>Computational Toxicology</span>
+            <span>Bioactivity Modeling</span>
             <span>Cheminformatics</span>
             <span>Drug Discovery</span>
           </div>
@@ -120,7 +120,7 @@ layout: null
               <span class="signal-line line-c"></span>
               <span class="signal-line line-d"></span>
             </div>
-            <p>Morphology, chemistry, and agentic reasoning for safer discovery decisions.</p>
+            <p>Morphology, chemistry, and machine learning for open, reproducible discovery research.</p>
           </div>
 
           <div class="profile-links">
@@ -137,9 +137,9 @@ layout: null
               <span class="icon"><i class="fas fa-university"></i></span>
               <span>Uppsala</span>
             </a>
-            <a class="external-link button is-light" href="https://humanchemical.com/" target="_blank" rel="noopener">
-              <span class="icon"><i class="fas fa-flask"></i></span>
-              <span>Human Chemical</span>
+            <a class="external-link button is-light" href="https://srijitseal.com/CV" target="_blank" rel="noopener">
+              <span class="icon"><i class="fas fa-file-alt"></i></span>
+              <span>CV</span>
             </a>
           </div>
 
@@ -164,8 +164,8 @@ layout: null
           <span>publications</span>
         </div>
         <div>
-          <strong>18+</strong>
-          <span>TSA questions automated</span>
+          <strong>Cell Painting</strong>
+          <span>core focus</span>
         </div>
         <div>
           <strong>5</strong>
@@ -173,7 +173,7 @@ layout: null
         </div>
         <div>
           <strong>2026</strong>
-          <span>AI safety talks</span>
+          <span>conference talks</span>
         </div>
       </div>
     </div>
@@ -187,7 +187,7 @@ layout: null
       </div>
 
       <div class="featured-grid">
-        {% assign featured_ids = "small_molecule_bioactivity|ai_agents_drug_discovery|PKSmart|ML_toxicity_pillars" | split: "|" %}
+        {% assign featured_ids = "small_molecule_bioactivity|cell_painting_hepatocytes|PKSmart|ML_toxicity_pillars" | split: "|" %}
         {% for featured_id in featured_ids %}
         {% assign featured_publications = site.data.publications | where: "id", featured_id %}
         {% assign publication = featured_publications | first %}
@@ -249,7 +249,7 @@ layout: null
         <article class="resource-card">
           <span class="resource-kicker">Course</span>
           <h3>Introduction to Cheminformatics and AI in Drug Discovery</h3>
-          <p>Hands-on modeling of safety data, predictive ML workflows, and AI-assisted cheminformatics.</p>
+          <p>Hands-on modeling workflows, predictive ML, and AI-assisted cheminformatics.</p>
           <a href="https://srijitseal.com/AIDDCourse" target="_blank" rel="noopener">Open course</a>
         </article>
         <article class="resource-card">
@@ -259,15 +259,15 @@ layout: null
           <a href="http://broad.io/cpsot" target="_blank" rel="noopener">Open tutorial</a>
         </article>
         <article class="resource-card">
-          <span class="resource-kicker">Agents</span>
-          <h3>AI Agents and Tool Calling in Cheminformatics</h3>
-          <p>Hands-on introduction to agentic workflows for chemistry and safety data tasks.</p>
+          <span class="resource-kicker">Tool use</span>
+          <h3>Tool Calling in Cheminformatics</h3>
+          <p>Hands-on introduction to tool-using workflows for chemistry data tasks.</p>
           <a href="https://colab.research.google.com/drive/1nuuVA-1RTLqUC2AyKBc1OHmfPzdhhyJG" target="_blank" rel="noopener">Open notebook</a>
         </article>
         <article class="resource-card">
           <span class="resource-kicker">Tools</span>
           <h3>Drug Discovery and Toxicology Utilities</h3>
-          <p>Small, reusable tools for cheminformatics, Cell Painting, and safety assessment workflows.</p>
+          <p>Small, reusable tools for cheminformatics, Cell Painting, and reproducible research workflows.</p>
           <a href="https://srijitseal.com/tools" target="_blank" rel="noopener">Browse tools</a>
         </article>
       </div>
@@ -336,7 +336,7 @@ layout: null
         <div class="column is-8">
           <div class="content">
             <p>
-              Srijit Seal · AI for drug discovery, chemical safety, and cellular profiling.
+              Srijit Seal · AI for drug discovery, cheminformatics, and cellular profiling.
             </p>
           </div>
         </div>
