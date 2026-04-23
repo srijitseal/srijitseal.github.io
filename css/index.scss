@@ -188,7 +188,6 @@ a {
 .profile-card,
 .signal-panel,
 .linkedin-card,
-.metrics-strip,
 .featured-card,
 .resource-card,
 .news-item,
@@ -331,37 +330,6 @@ a {
     a {
         color: var(--accent-dark);
         font-weight: 700;
-    }
-}
-
-.metrics-strip {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    margin-top: 3rem;
-    overflow: hidden;
-
-    div {
-        padding: 1.1rem 1.25rem;
-        border-right: 1px solid var(--line);
-    }
-
-    div:last-child {
-        border-right: 0;
-    }
-
-    strong {
-        display: block;
-        color: var(--ink);
-        font-size: 1.65rem;
-        line-height: 1;
-    }
-
-    span {
-        display: block;
-        color: var(--muted);
-        font-size: 0.88rem;
-        font-weight: 700;
-        margin-top: 0.35rem;
     }
 }
 
@@ -712,8 +680,7 @@ a {
 
     .hero-layout,
     .featured-grid,
-    .tutorial-grid,
-    .metrics-strip {
+    .tutorial-grid {
         grid-template-columns: 1fr;
     }
 
@@ -727,15 +694,6 @@ a {
 
     .profile-links {
         grid-template-columns: 1fr;
-    }
-
-    .metrics-strip div {
-        border-right: 0;
-        border-bottom: 1px solid var(--line);
-    }
-
-    .metrics-strip div:last-child {
-        border-bottom: 0;
     }
 
     .section {
