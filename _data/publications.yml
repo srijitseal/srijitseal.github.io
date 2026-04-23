@@ -45,19 +45,6 @@
     - meng_jiang
     - singh
 
-- id: phenqsar
-  title: "PhenQSAR: A Cell Painting-Based Platform for Gene-Compound Similarity and Drug Repurposing"
-  venue: online, 2025
-  OAlink: https://srijitseal.com/pdf_publications/neurips_ai4d3_2025.pdf
-  image: phenqsar.png
-  authors:
-    - srijit
-    - mahale
-    - spjuth
-    - bender
-    - singh
-    - carpenter
-
 - id: Progress_image_profiling
   title: "Progress and new challenges in image-based profiling"
   venue: Molecular Systems Biology, 2026
@@ -361,5 +348,3 @@
     - singh
     - bender
     - bacallado
-
-
