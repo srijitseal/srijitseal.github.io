@@ -89,6 +89,10 @@ layout: null
               <span class="icon"><i class="fas fa-laptop-code"></i></span>
               <span>Tutorials</span>
             </a>
+            <a class="button is-linkedin" href="{{ site.linkedin_url }}" target="_blank" rel="noopener">
+              <span class="icon"><i class="fab fa-linkedin"></i></span>
+              <span>Follow on LinkedIn</span>
+            </a>
           </div>
         </div>
 
@@ -138,6 +142,19 @@ layout: null
               <span>Human Chemical</span>
             </a>
           </div>
+
+          <article class="linkedin-card">
+            <div class="linkedin-card-header">
+              <span class="icon"><i class="fab fa-linkedin"></i></span>
+              <span>Latest on LinkedIn</span>
+            </div>
+            <h2>{{ site.linkedin_latest_post_title }}</h2>
+            <p>{{ site.linkedin_latest_post_note }}</p>
+            <div class="linkedin-card-actions">
+              <a href="{{ site.linkedin_latest_post_url }}" target="_blank" rel="noopener">Read post</a>
+              <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener">Follow</a>
+            </div>
+          </article>
         </aside>
       </div>
 
@@ -305,10 +322,13 @@ layout: null
         <a href="mailto:{{ site.email }}">
           <i class="fas fa-envelope"></i>
         </a>
-        <a class="external-link" href="https://github.com/{{ site.github_username }}">
+        <a class="external-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
           <i class="fab fa-github"></i>
         </a>
-        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
+        <a class="external-link" href="{{ site.linkedin_url }}" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" rel="noopener">
           <i class="ai ai-google-scholar"></i>
         </a>
       </div>

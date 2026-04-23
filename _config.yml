@@ -36,6 +36,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://srijitseal.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: srijitseal
 github_username: srijitseal
+linkedin_url: https://www.linkedin.com/in/srijitseal
+linkedin_latest_post_url: https://www.linkedin.com/posts/srijitseal_allbirds-shares-jump-over-400-on-plans-to-activity-7450274316010766336--5WF
+linkedin_latest_post_title: "Allbirds shares jump over 400% on plans to pivot to AI from sneakers"
+linkedin_latest_post_note: "A quick note on one of the odder AI pivots in public markets."
 google_scholar: 0WxbtaAAAAAJ
 google_analytics: G-8Z8BB08Y56
 
