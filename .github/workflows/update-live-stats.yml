@@ -3,7 +3,7 @@ name: Update live stats
 on:
   workflow_dispatch:
   schedule:
-    - cron: "18 8 * * *"
+    - cron: "18 8 * * 1"
   push:
     branches:
       - main
