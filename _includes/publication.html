@@ -1,4 +1,6 @@
-<div class="publication-block columns">
+{% assign publication_tags = publication.tags | join: ' ' %}
+{% assign publication_metrics = site.data.publication_metrics[publication.id] %}
+<div class="publication-block columns" data-publication data-tags="{{ publication_tags | escape }}">
   <div class="column is-2">
     <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
       {% if publication.image_mouseover contains "mp4" %}
@@ -30,6 +32,9 @@
       </div>
       <div class="publication-venue">
         <span>{{ publication.venue }}</span>
+        {% if publication_metrics and publication_metrics.display %}
+        <span class="publication-citations" title="Citation count from {{ publication_metrics.source | default: 'OpenAlex' }}">Cited by {{ publication_metrics.display }}</span>
+        {% endif %}
         {% for award in publication.awards %}
         <span class="publication-venue-emph">{{ award }}</span>
         {% endfor %}

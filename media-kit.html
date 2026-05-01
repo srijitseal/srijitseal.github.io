@@ -1,0 +1,154 @@
+---
+layout: null
+permalink: /media-kit/
+---
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  {% assign seo_description = "Media kit for Srijit Seal: bio, headshot, affiliations, speaking topics, and contact information." %}
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Media Kit | {{ site.name }}</title>
+  <meta name="description" content="{{ seo_description }}">
+  <link rel="canonical" href="{{ site.url }}/media-kit/">
+  <meta property="og:title" content="Media Kit | {{ site.name }}">
+  <meta property="og:description" content="{{ seo_description }}">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="{{ site.url }}/media-kit/">
+  <meta property="og:image" content="{{ site.url }}/images/portrait.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Media Kit | {{ site.name }}">
+  <meta name="twitter:description" content="{{ seo_description }}">
+  <meta name="twitter:image" content="{{ site.url }}/images/portrait.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ site.name | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "image": {{ site.url | append: "/images/portrait.jpg" | jsonify }},
+    "jobTitle": "Principal Scientist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Human Chemical Company"
+    },
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Uppsala University"
+    },
+    "sameAs": [
+      "https://scholar.google.com/citations?user={{ site.google_scholar }}",
+      "https://github.com/{{ site.github_username }}",
+      {{ site.linkedin_url | jsonify }}
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-menu is-active is-centered">
+        <div class="navbar-start" style="margin: 0 auto;">
+          <a class="navbar-item" href="{{ '/' | relative_url }}">Home</a>
+          <a class="navbar-item" href="{{ '/#talks' | relative_url }}">Talks</a>
+          <a class="navbar-item" href="{{ '/#publications' | relative_url }}">Publications</a>
+          <a class="navbar-item" href="https://docs.google.com/document/d/e/2PACX-1vS7Iq7mcvPcIWXAFD2nKtHC6ZFMMkOAHUWeYIsdAABvkDMUD-K4NQvUib0o4xc5gAT9qCiO1Q_a7Cqu/pub" target="_blank" rel="noopener">CV</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section media-kit">
+    <div class="container is-max-widescreen">
+      <div class="media-kit-layout">
+        <aside class="media-kit-profile">
+          <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="A portrait of Srijit Seal">
+          <div class="profile-links">
+            <a class="external-link button is-light" href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" rel="noopener">
+              <span class="icon"><i class="ai ai-google-scholar"></i></span>
+              <span>Scholar</span>
+            </a>
+            <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </a>
+            <a class="external-link button is-light" href="{{ site.linkedin_url }}" target="_blank" rel="noopener">
+              <span class="icon"><i class="fab fa-linkedin"></i></span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="external-link button is-light" href="mailto:{{ site.email }}">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span>Email</span>
+            </a>
+          </div>
+        </aside>
+
+        <article class="media-kit-content">
+          <p class="eyebrow">Conference organizer resources</p>
+          <h1 class="title is-2">Media Kit</h1>
+          <p class="media-kit-lede">
+            Srijit Seal is Principal Scientist at Human Chemical Company and Visiting Researcher at Uppsala University, working at the interface of machine learning, cheminformatics, Cell Painting, and drug discovery.
+          </p>
+
+          <section class="media-kit-section">
+            <h2>Short Bio</h2>
+            <p>
+              Srijit Seal develops machine learning and cheminformatics approaches for small-molecule bioactivity, cellular morphology profiling, and computational toxicology. His research focuses on practical, reproducible modeling workflows that connect chemical structure, image-based profiles, and biological activity.
+            </p>
+          </section>
+
+          <section class="media-kit-section">
+            <h2>Affiliations</h2>
+            <p>Principal Scientist, Human Chemical Company</p>
+            <p>Visiting Researcher, Uppsala University</p>
+          </section>
+
+          <section class="media-kit-section">
+            <h2>Speaking Topics</h2>
+            <ul>
+              <li>AI/ML for drug discovery and chemical biology</li>
+              <li>Cell Painting and morphology-based profiling</li>
+              <li>Cheminformatics and bioactivity prediction</li>
+              <li>Machine learning for computational toxicology</li>
+              <li>Responsible and reproducible use of AI in scientific workflows</li>
+            </ul>
+          </section>
+
+          <section class="media-kit-section">
+            <h2>Suggested Talk</h2>
+            <p><strong>AI/ML for Drug Discovery and Cellular Profiling</strong></p>
+            <p>
+              This talk covers practical machine learning workflows for chemistry and cell morphology data, with emphasis on reproducible modeling, bioactivity prediction, and responsible use of AI in early discovery research.
+            </p>
+          </section>
+
+          <section class="media-kit-section">
+            <h2>Contact</h2>
+            <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content footer-links has-text-centered">
+        <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
+        <a class="external-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a class="external-link" href="{{ site.linkedin_url }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
