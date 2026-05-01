@@ -124,7 +124,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 0.55rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 1rem;
 
     span {
         border: 1px solid var(--line);
@@ -135,6 +135,41 @@ a {
         font-weight: 700;
         padding: 0.45rem 0.8rem;
     }
+}
+
+.live-snapshot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 0.75rem;
+    align-items: center;
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin: 0 0 1.5rem;
+}
+
+.live-stat {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: baseline;
+
+    strong {
+        color: var(--ink);
+        font-weight: 800;
+    }
+}
+
+.live-stat + .live-stat::before {
+    width: 4px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--line);
+    content: "";
+    margin: 0.45rem 0.15rem 0 0;
+}
+
+.live-updated {
+    color: var(--muted);
+    font-size: 0.82rem;
 }
 
 .button {

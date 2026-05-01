@@ -1,0 +1,40 @@
+name: Update live stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "18 8 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "_data/publications.yml"
+      - "scripts/update_live_stats.py"
+      - ".github/workflows/update-live-stats.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Refresh live stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_live_stats.py
+
+      - name: Commit updated stats
+        run: |
+          if git diff --quiet -- _data/live_stats.yml; then
+            echo "No live stats changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/live_stats.yml
+          git commit -m "Update live stats"
+          git push

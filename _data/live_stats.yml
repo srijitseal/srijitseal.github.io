@@ -1,0 +1,16 @@
+publications:
+  value: 20
+  display: "20"
+  label: "Publications"
+citations:
+  value: 622
+  display: "622"
+  label: "Citations"
+  source: "OpenAlex"
+github_stars:
+  value: 134
+  display: "134"
+  label: "GitHub stars"
+  source: "GitHub"
+updated_at: "2026-04-30"
+updated_label: "Apr 30, 2026"

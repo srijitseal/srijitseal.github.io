@@ -76,6 +76,27 @@ layout: null
             <span>Drug Discovery</span>
           </div>
 
+          {% assign live_stats = site.data.live_stats %}
+          {% if live_stats %}
+          <div class="live-snapshot" aria-label="Live research snapshot">
+            <span class="live-stat">
+              <strong>{{ live_stats.publications.display | default: live_stats.publications.value }}</strong>
+              <span>{{ live_stats.publications.label }}</span>
+            </span>
+            <span class="live-stat" title="Citation count from {{ live_stats.citations.source }}">
+              <strong>{{ live_stats.citations.display | default: live_stats.citations.value }}</strong>
+              <span>{{ live_stats.citations.label }}</span>
+            </span>
+            <span class="live-stat" title="Total public repository stars from {{ live_stats.github_stars.source }}">
+              <strong>{{ live_stats.github_stars.display | default: live_stats.github_stars.value }}</strong>
+              <span>{{ live_stats.github_stars.label }}</span>
+            </span>
+            {% if live_stats.updated_label %}
+            <span class="live-stat live-updated">Updated {{ live_stats.updated_label }}</span>
+            {% endif %}
+          </div>
+          {% endif %}
+
           <div class="buttons hero-actions">
             <a class="button is-primary" href="#publications">
               <span class="icon"><i class="fas fa-file-alt"></i></span>
