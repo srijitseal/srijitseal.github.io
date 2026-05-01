@@ -5,6 +5,8 @@ layout: null
 <html lang="en-US">
 
 <head>
+  {% assign seo_description = site.description | markdownify | strip_html | normalize_whitespace %}
+  {% assign canonical_url = site.url | append: page.url %}
 
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
 
@@ -13,6 +15,78 @@ layout: null
 
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>{{ site.name }}</title>
+  <meta name="description" content="{{ seo_description }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta property="og:title" content="{{ site.name }} | AI for drug discovery and cellular profiling">
+  <meta property="og:description" content="{{ seo_description }}">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ site.url }}/images/portrait.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.name }} | AI for drug discovery and cellular profiling">
+  <meta name="twitter:description" content="{{ seo_description }}">
+  <meta name="twitter:image" content="{{ site.url }}/images/portrait.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ site.name | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "image": {{ site.url | append: "/images/portrait.jpg" | jsonify }},
+    "jobTitle": "Principal Scientist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Human Chemical Company"
+    },
+    "affiliation": [
+      {
+        "@type": "Organization",
+        "name": "Uppsala University"
+      },
+      {
+        "@type": "Organization",
+        "name": "American Society for Cellular and Computational Toxicology"
+      }
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user={{ site.google_scholar }}",
+      "https://github.com/{{ site.github_username }}",
+      {{ site.linkedin_url | jsonify }}
+    ],
+    "knowsAbout": [
+      "Cheminformatics",
+      "Cell Painting",
+      "Drug discovery",
+      "Computational toxicology",
+      "Machine learning"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Publications by Srijit Seal",
+    "itemListElement": [
+      {% for publication in site.data.publications %}
+      {% assign publication_url = publication.OAlink | default: publication.Journal_notOA_link | default: publication.project_page %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": {{ publication.title | jsonify }},
+          "isPartOf": {
+            "@type": "Periodical",
+            "name": {{ publication.venue | jsonify }}
+          },
+          "url": {{ publication_url | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
@@ -48,6 +122,7 @@ layout: null
           <a class="navbar-item" href="#talks">Talks</a>
           <a class="navbar-item" href="#tutorials">Tutorials</a>
           <a class="navbar-item" href="#publications">Publications</a>
+          <a class="navbar-item" href="{{ '/media-kit/' | relative_url }}">Media Kit</a>
           <a class="navbar-item" href="https://srijitseal.com/cheminformaticsmeeting">Meetings</a>
           <a class="navbar-item" href="https://docs.google.com/document/d/e/2PACX-1vS7Iq7mcvPcIWXAFD2nKtHC6ZFMMkOAHUWeYIsdAABvkDMUD-K4NQvUib0o4xc5gAT9qCiO1Q_a7Cqu/pub" target="_blank" rel="noopener">CV</a>
         </div>
@@ -193,10 +268,37 @@ layout: null
         <h2 class="title is-3">Talks & Workshops</h2>
       </div>
 
+      <div class="filter-bar" role="group" aria-label="Filter talks">
+        <button class="filter-button is-active" type="button" data-talk-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-talk-filter="upcoming" aria-pressed="false">Upcoming</button>
+        <button class="filter-button" type="button" data-talk-filter="completed" aria-pressed="false">Completed</button>
+        <button class="filter-button" type="button" data-talk-filter="2026" aria-pressed="false">2026</button>
+        <button class="filter-button" type="button" data-talk-filter="2025" aria-pressed="false">2025</button>
+        <button class="filter-button" type="button" data-talk-filter="conference" aria-pressed="false">Conference</button>
+        <button class="filter-button" type="button" data-talk-filter="workshop" aria-pressed="false">Workshop</button>
+        <button class="filter-button" type="button" data-talk-filter="webinar" aria-pressed="false">Webinar</button>
+      </div>
+      <p class="filter-empty" data-talk-empty hidden>No talks match this filter.</p>
+
       <div class="talk-timeline">
         {% for talk in site.data.upcoming_talks %}
         {% assign talk_url = talk.venue_url | default: talk.website %}
-        <article class="talk-item {% if talk.status == 'Completed' %}is-completed{% endif %}">
+        {% assign talk_date_parts = talk.date | split: " " %}
+        {% assign talk_year = talk_date_parts | last %}
+        {% assign talk_title_lc = talk.title | downcase %}
+        {% assign talk_venue_lc = talk.venue | downcase %}
+        {% assign talk_location_lc = talk.location | downcase %}
+        {% assign talk_kind = "conference" %}
+        {% if talk_venue_lc contains "webinar" or talk_title_lc contains "webinar" or talk_location_lc contains "online" %}
+        {% assign talk_kind = "webinar" %}
+        {% elsif talk_venue_lc contains "workshop" or talk_title_lc contains "workshop" or talk_venue_lc contains "course" or talk_title_lc contains "course" or talk_venue_lc contains "summer immersion" %}
+        {% assign talk_kind = "workshop" %}
+        {% endif %}
+        {% assign talk_status = "upcoming" %}
+        {% if talk.status == 'Completed' %}
+        {% assign talk_status = "completed" %}
+        {% endif %}
+        <article class="talk-item {% if talk_status == 'completed' %}is-completed{% endif %}" data-talk data-date="{{ talk.date }}" data-status="{{ talk_status }}" data-explicit-status="{% if talk.status %}{{ talk_status }}{% endif %}" data-year="{{ talk_year }}" data-kind="{{ talk_kind }}">
           <div class="talk-date">{{ talk.date }}</div>
           <div class="talk-content">
             {% if talk_url %}
@@ -216,11 +318,17 @@ layout: null
   <section class="section section-band" id="tutorials">
     <div class="container is-max-widescreen">
       <div class="section-heading">
-        <p class="eyebrow">Open resources</p>
-        <h2 class="title is-3">Tutorials & Tools</h2>
+        <p class="eyebrow">Featured tools</p>
+        <h2 class="title is-3">Tools & Tutorials</h2>
       </div>
 
       <div class="tutorial-grid">
+        <article class="resource-card">
+          <span class="resource-kicker">Tool</span>
+          <h3>PKSmart</h3>
+          <p>Open-source pharmacokinetic modeling for small-molecule discovery workflows.</p>
+          <a href="https://broad.io/PKSmart" target="_blank" rel="noopener">Open PKSmart</a>
+        </article>
         <article class="resource-card">
           <span class="resource-kicker">Course</span>
           <h3>Introduction to Cheminformatics and AI in Drug Discovery</h3>
@@ -228,19 +336,13 @@ layout: null
           <a href="https://srijitseal.com/AIDDCourse" target="_blank" rel="noopener">Open course</a>
         </article>
         <article class="resource-card">
-          <span class="resource-kicker">New tutorial</span>
+          <span class="resource-kicker">Tutorial</span>
           <h3>Leveraging Cell Painting Morphological Profiles for Machine Learning–Driven Bioactivity Prediction</h3>
           <p>Practical workflow for turning morphology profiles into bioactivity prediction features.</p>
           <a href="http://broad.io/cpsot" target="_blank" rel="noopener">Open tutorial</a>
         </article>
         <article class="resource-card">
-          <span class="resource-kicker">Tool use</span>
-          <h3>Tool Calling in Cheminformatics</h3>
-          <p>Hands-on introduction to tool-using workflows for chemistry data tasks.</p>
-          <a href="https://colab.research.google.com/drive/1nuuVA-1RTLqUC2AyKBc1OHmfPzdhhyJG" target="_blank" rel="noopener">Open notebook</a>
-        </article>
-        <article class="resource-card">
-          <span class="resource-kicker">Tools</span>
+          <span class="resource-kicker">Utilities</span>
           <h3>Drug Discovery and Toxicology Utilities</h3>
           <p>Small, reusable tools for cheminformatics, Cell Painting, and reproducible research workflows.</p>
           <a href="https://srijitseal.com/tools" target="_blank" rel="noopener">Browse tools</a>
@@ -255,6 +357,18 @@ layout: null
         <p class="eyebrow">Publications</p>
         <h2 class="title is-3">Recent Publications</h2>
       </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter publications by topic">
+        <button class="filter-button is-active" type="button" data-publication-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-publication-filter="cell-painting" aria-pressed="false">Cell Painting</button>
+        <button class="filter-button" type="button" data-publication-filter="cheminformatics" aria-pressed="false">Cheminformatics</button>
+        <button class="filter-button" type="button" data-publication-filter="drug-discovery" aria-pressed="false">Drug Discovery</button>
+        <button class="filter-button" type="button" data-publication-filter="toxicology" aria-pressed="false">Toxicology</button>
+        <button class="filter-button" type="button" data-publication-filter="ai-ml" aria-pressed="false">AI/ML</button>
+        <button class="filter-button" type="button" data-publication-filter="reviews" aria-pressed="false">Reviews</button>
+        <button class="filter-button" type="button" data-publication-filter="tools" aria-pressed="false">Tools</button>
+      </div>
+      <p class="filter-empty" data-publication-empty hidden>No publications match this filter.</p>
 
       {% for publication in site.data.publications %}
       {% if forloop.index <= 12 %}

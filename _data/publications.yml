@@ -3,6 +3,9 @@
   venue: Drug Discovery Today, 2026
   OAlink: https://www.sciencedirect.com/science/article/pii/S1359644626000553
   image: ai_agents_drug_discovery.jpg
+  tags:
+    - ai-ml
+    - drug-discovery
   authors:
     - huynh
     - srijit
@@ -17,6 +20,10 @@
   venue: Chemical Science, 2025
   OAlink: https://pubs.rsc.org/en/content/articlelanding/2025/sc/d5sc03055b
   image: transfer_learning_antibacterials.gif
+  tags:
+    - ai-ml
+    - cheminformatics
+    - drug-discovery
   authors:
     - garcia_ortegon
     - srijit
@@ -36,6 +43,10 @@
   image: infoalign.png
   github: liugangcode/InfoAlign
   arxiv: "2406.12056"
+  tags:
+    - ai-ml
+    - cell-painting
+    - drug-discovery
   authors:
     - gang_liu
     - srijit
@@ -51,6 +62,9 @@
   OAlink: https://link.springer.com/article/10.1038/s44320-026-00197-7
   arxiv: "2508.05800"
   image: progress.png
+  tags:
+    - cell-painting
+    - reviews
   authors:
     - serrano
     - peters
@@ -80,6 +94,11 @@
   venue: Chemical Research in Toxicology, 2025
   OAlink: https://pubs.acs.org/doi/10.1021/acs.chemrestox.5c00033
   image: giant.png
+  tags:
+    - ai-ml
+    - cheminformatics
+    - toxicology
+    - reviews
   authors:
     - srijit
     - mahale
@@ -113,6 +132,9 @@
   OAlink: https://www.nature.com/articles/s41467-026-68725-5
   biorxiv: 10.1101/2025.04.27.650853v1
   image: cellcount.png
+  tags:
+    - cell-painting
+    - drug-discovery
   authors:
     - srijit
     - dee
@@ -138,6 +160,10 @@
   OAlink: https://www.sciencedirect.com/science/article/pii/S2405471226000487
   biorxiv: 10.1101/2025.01.22.634152v1
   image: cell_painting_hepatocytes.jpg
+  tags:
+    - cell-painting
+    - drug-discovery
+    - toxicology
   authors:
     - ewald
     - titterton
@@ -164,6 +190,9 @@
   venue: NAM Journal, 2025
   OAlink: https://srijitseal.com/pdf_publications/Advice_Bad_Computational_Toxicologists_v3.pdf
   image: advicebad.png
+  tags:
+    - toxicology
+    - reviews
   authors:
     - srijit
     - hartung
@@ -174,6 +203,9 @@
   Journal_notOA_link: https://www.nature.com/articles/s41592-024-02528-8
   OAlink: https://rdcu.be/d2vHH
   image: CPReview.png
+  tags:
+    - cell-painting
+    - reviews
   authors:
     - srijit
     - trapotsi
@@ -191,6 +223,11 @@
   OAlink: https://pubs.acs.org/doi/10.1021/acs.jcim.3c01834
   image: DICTrank.png
   github: srijitseal/DICTrank
+  tags:
+    - cheminformatics
+    - drug-discovery
+    - toxicology
+    - tools
   #image_mouseover: reconfusion_after.mp4
   authors:
     - srijit
@@ -207,6 +244,10 @@
   venue: Communications Biology, 2022
   OAlink: "https://www.nature.com/articles/s42003-022-03763-5"
   image: mitochondrial_toxicity_detection.webp
+  tags:
+    - cell-painting
+    - cheminformatics
+    - toxicology
   authors:
     - srijit
     - carreras_puigvert
@@ -222,6 +263,10 @@
   pdf_link: "https://www.repository.cam.ac.uk/bitstreams/a2e4aec2-65c8-4426-8ebc-d6cecf676473/download"
   Journal_notOA_link: https://pubs.acs.org/doi/10.1021/acs.chemrestox.0c00303
   image: cytotoxicity_prediction.webp
+  tags:
+    - cell-painting
+    - cheminformatics
+    - toxicology
   authors:
     - srijit
     - yang
@@ -234,6 +279,9 @@
   project_page: "https://understanding.bio"
   image: AI_in_biology.png
   arxiv: "2403.04106"
+  tags:
+    - ai-ml
+    - reviews
   authors:
     - lawrence
     - el_shazly
@@ -250,6 +298,10 @@
   venue: SLAS Discovery, 2023
   OAlink: https://www.sciencedirect.com/science/article/pii/S2472555222137147
   image: drug_toxicity_prediction.jpg
+  tags:
+    - cheminformatics
+    - drug-discovery
+    - toxicology
   authors:
     - liu
     - srijit
@@ -262,6 +314,10 @@
   OAlink: "https://link.springer.com/article/10.1186/s13321-023-00723-x"
   image: bioactivity_predictions_merging.webp
   github: srijitseal/Merging_Bioactivity_Predictions_CellPainting_Chemical_Structure_Similarity
+  tags:
+    - cell-painting
+    - cheminformatics
+    - drug-discovery
   authors:
     - srijit
     - yang
@@ -278,6 +334,9 @@
   OAlink: "https://www.molbiolcell.org/doi/full/10.1091/mbc.E23-08-0298"
   image: pixels_to_phenotypes.svg
   github: srijitseal/BioMorph
+  tags:
+    - cell-painting
+    - tools
   authors:
     - srijit
     - carreras_puigvert
@@ -292,6 +351,10 @@
   OAlink: https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01777
   image: generative_modeling_potency.webp
   github: Jaredwg2000/MolDQN_CNS
+  tags:
+    - ai-ml
+    - cheminformatics
+    - drug-discovery
   authors:
     - horne
     - wilson_godber
@@ -311,6 +374,10 @@
   image: liver_injury_early_detection.png
   biorxiv: 10.1101/2024.01.10.575128v1.full
   github: srijitseal/DILI
+  tags:
+    - cheminformatics
+    - toxicology
+    - tools
   authors:
     - srijit
     - williams
@@ -328,6 +395,10 @@
   image: PKSmart.jpg
   biorxiv: 10.1101/2024.02.02.578658v1.full
   github: srijitseal/PKSmart
+  tags:
+    - cheminformatics
+    - drug-discovery
+    - tools
   authors:
     - srijit
     - trapotsi
@@ -342,6 +413,10 @@
   venue: ICLR 2024 DMLR Workshop
   OAlink: https://srijitseal.com/pdf_publications/69_calibrated_prediction_of_scarc.pdf
   image: CNS_sideeffects.png
+  tags:
+    - ai-ml
+    - cheminformatics
+    - toxicology
   authors:
     - garcia_ortegon
     - srijit
