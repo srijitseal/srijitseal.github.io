@@ -1,6 +1,6 @@
 _meta:
-  updated_at: "2026-04-30"
-  updated_label: "Apr 30, 2026"
+  updated_at: "2026-05-04"
+  updated_label: "May 4, 2026"
 ai_agents_drug_discovery:
   citations: 2
   display: "2"
@@ -87,8 +87,8 @@ generative_modeling_potency:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4391130256"
 liver_injury_early_detection:
-  citations: 32
-  display: "32"
+  citations: 33
+  display: "33"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4400446175"
 PKSmart:

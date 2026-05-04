@@ -3,8 +3,8 @@ publications:
   display: "20"
   label: "Publications"
 citations:
-  value: 622
-  display: "622"
+  value: 625
+  display: "625"
   label: "Citations"
   source: "OpenAlex"
 github_stars:
@@ -12,5 +12,5 @@ github_stars:
   display: "134"
   label: "GitHub stars"
   source: "GitHub"
-updated_at: "2026-04-30"
-updated_label: "Apr 30, 2026"
+updated_at: "2026-05-04"
+updated_label: "May 4, 2026"
