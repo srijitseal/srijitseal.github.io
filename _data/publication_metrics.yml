@@ -1,6 +1,6 @@
 _meta:
-  updated_at: "2026-05-18"
-  updated_label: "May 18, 2026"
+  updated_at: "2026-05-25"
+  updated_label: "May 25, 2026"
 ai_agents_drug_discovery:
   citations: 3
   display: "3"
@@ -22,8 +22,8 @@ Progress_image_profiling:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4413110519"
 ML_toxicity_pillars:
-  citations: 78
-  display: "78"
+  citations: 81
+  display: "81"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4410038804"
 small_molecule_bioactivity:
@@ -42,8 +42,8 @@ Advice:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4409902161"
 CPReview:
-  citations: 75
-  display: "75"
+  citations: 76
+  display: "76"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4405079632"
 DICTrank:
@@ -67,8 +67,8 @@ AI_in_biology:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4392616711"
 drug_toxicity_prediction:
-  citations: 54
-  display: "54"
+  citations: 56
+  display: "56"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4315488007"
 bioactivity_predictions_merging:
