@@ -1,29 +1,29 @@
 _meta:
-  updated_at: "2026-06-08"
-  updated_label: "Jun 8, 2026"
+  updated_at: "2026-06-15"
+  updated_label: "Jun 15, 2026"
 ai_agents_drug_discovery:
-  citations: 3
-  display: "3"
-  source: "OpenAlex"
-  openalex_id: "https://openalex.org/W7140173398"
-transfer_learning_eskape:
-  citations: 3
-  display: "3"
-  source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4414245130"
-infoalign:
-  citations: 7
-  display: "7"
-  source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4399836800"
-Progress_image_profiling:
-  citations: 1
+  citations: "1"
   display: "1"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W7141130446"
+  openalex_id: "https://openalex.org/W4399493516"
+transfer_learning_eskape:
+  citations: "1"
+  display: "1"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W4399493516"
+infoalign:
+  citations: "1"
+  display: "1"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W4399493516"
+Progress_image_profiling:
+  citations: "1"
+  display: "1"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W4399493516"
 ML_toxicity_pillars:
-  citations: 89
-  display: "89"
+  citations: 92
+  display: "92"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4410038804"
 small_molecule_bioactivity:
@@ -37,10 +37,10 @@ cell_painting_hepatocytes:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4406815690"
 Advice:
-  citations: 3
-  display: "3"
+  citations: "1"
+  display: "1"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4409902161"
+  openalex_id: "https://openalex.org/W4399493516"
 CPReview:
   citations: 80
   display: "80"
@@ -72,15 +72,15 @@ drug_toxicity_prediction:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4315488007"
 bioactivity_predictions_merging:
-  citations: 35
-  display: "35"
+  citations: "1"
+  display: "1"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4379197245"
+  openalex_id: "https://openalex.org/W4399493516"
 pixels_to_phenotypes:
-  citations: 24
-  display: "24"
+  citations: "1"
+  display: "1"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4390546797"
+  openalex_id: "https://openalex.org/W4399493516"
 generative_modeling_potency:
   citations: 14
   display: "14"
@@ -92,12 +92,12 @@ liver_injury_early_detection:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4400446175"
 PKSmart:
-  citations: 4
-  display: "4"
+  citations: "1"
+  display: "1"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4414555054"
+  openalex_id: "https://openalex.org/W4399493516"
 CNS_sideeffect:
-  citations: 1
+  citations: "1"
   display: "1"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4399493516"
