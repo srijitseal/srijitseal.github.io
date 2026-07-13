@@ -8,9 +8,9 @@ citations:
   label: "Citations"
   source: "OpenAlex"
 github_stars:
-  value: 140
-  display: "140"
+  value: 143
+  display: "143"
   label: "GitHub stars"
   source: "GitHub"
-updated_at: "2026-07-06"
-updated_label: "Jul 6, 2026"
+updated_at: "2026-07-13"
+updated_label: "Jul 13, 2026"
