@@ -1,6 +1,6 @@
 _meta:
-  updated_at: "2026-07-27"
-  updated_label: "Jul 27, 2026"
+  updated_at: "2026-08-03"
+  updated_label: "Aug 3, 2026"
 ai_agents_drug_discovery:
   citations: 5
   display: "5"
@@ -22,8 +22,8 @@ Progress_image_profiling:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4399493516"
 ML_toxicity_pillars:
-  citations: 101
-  display: "101"
+  citations: 104
+  display: "104"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4410038804"
 small_molecule_bioactivity:
@@ -42,8 +42,8 @@ Advice:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4409902161"
 CPReview:
-  citations: 94
-  display: "94"
+  citations: 96
+  display: "96"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4405079632"
 DICTrank:
@@ -87,8 +87,8 @@ generative_modeling_potency:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4391130256"
 liver_injury_early_detection:
-  citations: 39
-  display: "39"
+  citations: 40
+  display: "40"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4400446175"
 PKSmart:
