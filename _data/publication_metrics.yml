@@ -1,9 +1,9 @@
 _meta:
-  updated_at: "2026-08-31"
-  updated_label: "Aug 31, 2026"
+  updated_at: "2026-09-07"
+  updated_label: "Sep 7, 2026"
 ai_agents_drug_discovery:
-  citations: 9
-  display: "9"
+  citations: 10
+  display: "10"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W7140173398"
 transfer_learning_eskape:
@@ -17,20 +17,20 @@ infoalign:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4399493516"
 Progress_image_profiling:
+  citations: 4
+  display: "4"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W7141130446"
+ML_toxicity_pillars:
+  citations: 120
+  display: "120"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W4410038804"
+small_molecule_bioactivity:
   citations: "1"
   display: "1"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4399493516"
-ML_toxicity_pillars:
-  citations: 115
-  display: "115"
-  source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4410038804"
-small_molecule_bioactivity:
-  citations: 2
-  display: "2"
-  source: "OpenAlex"
-  openalex_id: "https://openalex.org/W7128159852"
 cell_painting_hepatocytes:
   citations: 11
   display: "11"
@@ -42,13 +42,13 @@ Advice:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4409902161"
 CPReview:
-  citations: 102
-  display: "102"
+  citations: 106
+  display: "106"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4405079632"
 DICTrank:
-  citations: 48
-  display: "48"
+  citations: 50
+  display: "50"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4391429075"
 mitochondrial_toxicity_detection:
@@ -77,8 +77,8 @@ bioactivity_predictions_merging:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4379197245"
 pixels_to_phenotypes:
-  citations: 24
-  display: "24"
+  citations: 26
+  display: "26"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4390546797"
 generative_modeling_potency:
