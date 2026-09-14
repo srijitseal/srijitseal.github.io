@@ -1,9 +1,9 @@
 _meta:
-  updated_at: "2026-09-07"
-  updated_label: "Sep 7, 2026"
+  updated_at: "2026-09-14"
+  updated_label: "Sep 14, 2026"
 ai_agents_drug_discovery:
-  citations: 10
-  display: "10"
+  citations: 13
+  display: "13"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W7140173398"
 transfer_learning_eskape:
@@ -17,20 +17,20 @@ infoalign:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4399493516"
 Progress_image_profiling:
-  citations: 4
-  display: "4"
+  citations: 5
+  display: "5"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W7141130446"
 ML_toxicity_pillars:
-  citations: 120
-  display: "120"
+  citations: 123
+  display: "123"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4410038804"
 small_molecule_bioactivity:
-  citations: "1"
-  display: "1"
+  citations: 2
+  display: "2"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4399493516"
+  openalex_id: "https://openalex.org/W7128159852"
 cell_painting_hepatocytes:
   citations: 11
   display: "11"
@@ -42,8 +42,8 @@ Advice:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4409902161"
 CPReview:
-  citations: 106
-  display: "106"
+  citations: 108
+  display: "108"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4405079632"
 DICTrank:
@@ -62,15 +62,15 @@ cytotoxicity_prediction:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W3128205954"
 AI_in_biology:
-  citations: 9
-  display: "9"
+  citations: "1"
+  display: "1"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4392616711"
+  openalex_id: "https://openalex.org/W4399493516"
 drug_toxicity_prediction:
-  citations: 58
-  display: "58"
+  citations: "1"
+  display: "1"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4315488007"
+  openalex_id: "https://openalex.org/W4399493516"
 bioactivity_predictions_merging:
   citations: 35
   display: "35"
@@ -82,10 +82,10 @@ pixels_to_phenotypes:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4390546797"
 generative_modeling_potency:
-  citations: 14
-  display: "14"
+  citations: "1"
+  display: "1"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4391130256"
+  openalex_id: "https://openalex.org/W4399493516"
 liver_injury_early_detection:
   citations: 43
   display: "43"
