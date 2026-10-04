@@ -1,9 +1,54 @@
 _meta:
-  updated_at: "2026-09-28"
-  updated_label: "Sep 28, 2026"
+  updated_at: "2026-10-04"
+  updated_label: "Oct 4, 2026"
+model_validation_protocols:
+  citations: 0
+  display: "0"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W7204087051"
+nrdd_ai_discovery_review:
+  citations: 7
+  display: "7"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W7201884562"
+repuragent:
+  citations: 1
+  display: "1"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W7155213115"
+shot_ccr:
+  citations: 0
+  display: "0"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W7148403077"
+capricho:
+  citations: 0
+  display: "0"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W7214122975"
+adme_ml_chapter:
+  citations: 1
+  display: "1"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W4414436996"
+oasis_consortium:
+  citations: 13
+  display: "13"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W4414369905"
+graph_neural_processes:
+  citations: 6
+  display: "6"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W4403682236"
+step_forward_cv:
+  citations: 5
+  display: "5"
+  source: "OpenAlex"
+  openalex_id: "https://openalex.org/W4400311053"
 ai_agents_drug_discovery:
-  citations: 15
-  display: "15"
+  citations: 16
+  display: "16"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W7140173398"
 transfer_learning_eskape:
@@ -12,28 +57,28 @@ transfer_learning_eskape:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4414245130"
 infoalign:
-  citations: "1"
-  display: "1"
+  citations: 7
+  display: "7"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4399493516"
+  openalex_id: "https://openalex.org/W4399836800"
 Progress_image_profiling:
-  citations: 6
-  display: "6"
+  citations: 7
+  display: "7"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W7141130446"
 ML_toxicity_pillars:
-  citations: 132
-  display: "132"
+  citations: 133
+  display: "133"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4410038804"
 small_molecule_bioactivity:
-  citations: 3
-  display: "3"
+  citations: 4
+  display: "4"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W7128159852"
 cell_painting_hepatocytes:
-  citations: 11
-  display: "11"
+  citations: 12
+  display: "12"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4406815690"
 Advice:
@@ -42,8 +87,8 @@ Advice:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4409902161"
 CPReview:
-  citations: 112
-  display: "112"
+  citations: 114
+  display: "114"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4405079632"
 DICTrank:
@@ -62,10 +107,10 @@ cytotoxicity_prediction:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W3128205954"
 AI_in_biology:
-  citations: 9
-  display: "9"
+  citations: 0
+  display: "0"
   source: "OpenAlex"
-  openalex_id: "https://openalex.org/W4392616711"
+  openalex_id: "https://openalex.org/W7128315782"
 drug_toxicity_prediction:
   citations: 58
   display: "58"
@@ -77,8 +122,8 @@ bioactivity_predictions_merging:
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4379197245"
 pixels_to_phenotypes:
-  citations: 26
-  display: "26"
+  citations: 27
+  display: "27"
   source: "OpenAlex"
   openalex_id: "https://openalex.org/W4390546797"
 generative_modeling_potency:
