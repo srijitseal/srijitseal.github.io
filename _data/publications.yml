@@ -1,3 +1,218 @@
+- id: model_validation_protocols
+  title: "Model Validation Protocols for Machine Learning in Small Molecule Drug Discovery"
+  venue: bioRxiv, 2026
+  biorxiv: 10.64898/2026.08.19.745868
+  github: srijitseal/polaris
+  image: model_validation_protocols.jpg
+  tags:
+    - ai-ml
+    - cheminformatics
+    - drug-discovery
+  authors:
+    - srijit
+    - zalte
+    - araripe
+    - gomes
+    - korani
+    - shekhar
+    - siramshetty
+    - patra
+    - mou
+    - yu
+    - kuhn
+    - weskamp
+    - ash
+    - cheng
+    - fang
+    - price
+    - aldeghi
+    - rodriguez_perez
+    - clevert
+    - engkvist
+    - deibler
+    - rouquie
+    - reutlinger
+    - richmond
+    - ainsley
+    - ledeboer
+    - green
+    - bender
+    - wognum
+
+- id: nrdd_ai_discovery_review
+  title: "Artificial intelligence in drug discovery: what it is, where we stand and the path forward"
+  venue: Nature Reviews Drug Discovery, 2026
+  OAlink: "https://www.nature.com/articles/s41573-026-01496-2"
+  image: nrdd_ai_drug_discovery.jpg
+  tags:
+    - ai-ml
+    - drug-discovery
+    - reviews
+  authors:
+    - bender
+    - thomas
+    - scannell
+    - shaywitz
+    - ghiandoni
+    - greener
+    - pruteanu
+    - jacobson
+    - handa
+    - hirano
+    - srijit
+    - mahale
+    - schmidt
+    - ahfeldt
+    - grisoni
+    - cortes_ciriano
+
+- id: repuragent
+  title: "Human-supervised Agentic AI for Hypothesis Generation and Experimental Assistance in Drug Repurposing"
+  venue: bioRxiv, 2026
+  biorxiv: 10.64898/2026.04.20.719538
+  image: agentic_ai_repurposing.jpg
+  tags:
+    - ai-ml
+    - drug-discovery
+  authors:
+    - huynh
+    - asp
+    - ballante
+    - carreras_puigvert
+    - degrave
+    - karki
+    - nader
+    - ostling
+    - pokharel
+    - rietdijk
+    - schlotawa
+    - schmidt_l
+    - srijit
+    - seashore_ludlow
+    - aittokallio
+    - spjuth
+
+- id: shot_ccr
+  title: "SHOT-CCR: Biologically guided adversarial training for test-time adaptation in cellular morphology"
+  venue: bioRxiv, 2026
+  biorxiv: 10.64898/2026.03.31.715531
+  image: shot_ccr.jpg
+  tags:
+    - ai-ml
+    - cell-painting
+  authors:
+    - dee
+    - wenteler
+    - srijit
+    - morris
+    - slabaugh
+
+- id: capricho
+  title: "CAPRICHO: Interpretable Quality Flagging and Flexible ChEMBL Bioactivity Curation for QSAR Modeling"
+  venue: Journal of Chemical Information and Modeling, 2026
+  OAlink: "https://doi.org/10.1021/acs.jcim.6c00802"
+  image: capricho.jpg
+  tags:
+    - cheminformatics
+    - drug-discovery
+  authors:
+    - araripe
+    - srijit
+    - bequignon
+    - van_westen
+
+- id: adme_ml_chapter
+  title: "Application of machine learning and artificial intelligence methods in predictions of absorption, distribution, metabolism, and excretion properties of chemicals"
+  venue: Machine Learning and Artificial Intelligence in Toxicology and Environmental Health (book chapter), Elsevier, 2026
+  image: adme_book_chapter.jpg
+  tags:
+    - ai-ml
+    - toxicology
+    - drug-discovery
+  authors:
+    - chou
+    - li
+    - srijit
+    - lin
+
+- id: oasis_consortium
+  title: "The OASIS Consortium: integrating multi-omics technologies to transform chemical safety assessment"
+  venue: Toxicological Sciences, 2025
+  OAlink: "https://doi.org/10.1093/toxsci/kfaf128"
+  image: oasis_consortium.jpg
+  tags:
+    - toxicology
+    - drug-discovery
+  authors:
+    - rouquie
+    - bender
+    - cheah
+    - crute
+    - dalmas
+    - ewald
+    - fullerton
+    - harrill
+    - kadri
+    - kleinstreuer
+    - kramer
+    - larocca
+    - mitchell
+    - srijit
+    - singh
+    - carpenter
+
+- id: medchem_map_dl
+  title: "The medicinal chemist's map to deep learning: Concepts, applications, and case studies"
+  venue: Reference Module in Chemistry, Molecular Sciences and Chemical Engineering, Elsevier, 2025
+  OAlink: "https://doi.org/10.1016/B978-0-443-29808-0.00066-2"
+  image: medicinal_chemist_map_dl.jpg
+  tags:
+    - ai-ml
+    - drug-discovery
+    - reviews
+  authors:
+    - mahale
+    - scheufen_tieghi
+    - gogishvili
+    - huynh
+    - gomes
+    - krishna
+    - dalmas
+    - bender
+    - srijit
+
+- id: graph_neural_processes
+  title: "Graph neural processes for molecules: an evaluation on docking scores and strategies to improve generalization"
+  venue: Journal of Cheminformatics, 2024
+  OAlink: "https://doi.org/10.1186/s13321-024-00904-2"
+  image: graph_neural_processes.jpg
+  tags:
+    - ai-ml
+    - cheminformatics
+    - drug-discovery
+  authors:
+    - garcia_ortegon
+    - srijit
+    - rasmussen
+    - bender
+    - bacallado
+
+- id: step_forward_cv
+  title: "Step Forward Cross Validation for Bioactivity Prediction: Out of Distribution Validation in Drug Discovery"
+  venue: ICML 2024 Workshop on ML for Life and Material Sciences
+  biorxiv: 10.1101/2024.07.02.601740
+  image: ood_validation.jpg
+  tags:
+    - ai-ml
+    - drug-discovery
+  authors:
+    - saha
+    - vendruscolo
+    - carpenter
+    - singh
+    - bender
+    - srijit
+
 - id: ai_agents_drug_discovery
   title: "AI agents in drug discovery: applications and case studies"
   venue: Drug Discovery Today, 2026
@@ -274,8 +489,9 @@
     - bender
 
 - id: AI_in_biology
-  title: "Understanding Biology in the Age of Artificial Intelligence"
-  venue: arXiv, 2024
+  title: "Understanding biology with machine learning: compression, intelligibility, and dependency"
+  venue: Artificial Intelligence in the Life Sciences, 2026
+  OAlink: "https://doi.org/10.1016/j.ailsci.2026.100161"
   project_page: "https://understanding.bio"
   image: AI_in_biology.png
   arxiv: "2403.04106"
@@ -288,9 +504,10 @@
     - srijit
     - joshi
     - lio
-    - singh
     - bender
+    - singh
     - sormanni
+    - spjuth
     - greenig
 
 - id: drug_toxicity_prediction
