@@ -106,11 +106,11 @@ layout: null
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/css/refresh.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/css/refresh.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="{{ '/js/index.js' | relative_url }}"></script>
-  <script defer src="{{ '/js/publications.js' | relative_url }}"></script>
+  <script src="{{ '/js/index.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  <script defer src="{{ '/js/publications.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 </head>
 
 <body>
