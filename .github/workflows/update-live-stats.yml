@@ -16,9 +16,11 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 jobs:
   update:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -43,3 +45,8 @@ jobs:
           git add _data/live_stats.yml _data/publication_metrics.yml
           git commit -m "Update live stats"
           git push
+
+      - name: Rebuild the published site
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
