@@ -1,53 +1,104 @@
-# Srijit Seal | Upcoming Engagements 2026
-# Focus: AI/ML, Predictive Modeling, and Drug Discovery
+# Srijit Seal | Talks and conference engagements
+# Display month/year; use ISO end_date for automatic archival after each event.
 
 
 - id: act-2026-ai-workflows-ce
-  title: "Autonomous Discovery: Deploying AI Workflows for Pharmaceutical Development"
+  title: "From Predictive Models to Collaborative Intelligence: The Role of Agentic AI in the Future of Toxicology (CE2)"
   venue: ACT 2026 Continuing Education (CE) Course
   date: November 2026
-  location: United States
-  website: "https://www.actox.org"
+  end_date: "2026-11-18"
+  session_date: "2026-11-15"
+  session_time: "08:00"
+  session_end_time: "11:30"
+  session_timezone: CT
+  speaker_affiliation: "CE Course Chair, Human Chemical Company"
+  location: San Antonio, TX, US
+  website: "https://actam2026.eventscribe.net/fsPopup.asp?PresentationID=1795183&mode=sessionInfo"
 
 - id: act-2026-ai-professional-judgment
   title: "Maintaining Professional Judgment in AI-Driven Toxicology"
   venue: ACT 2026 Scientific Session
   date: November 2026
-  location: United States
-  website: "https://www.actox.org"
+  end_date: "2026-11-18"
+  location: San Antonio, TX, US
+  website: "https://www.actox.org/am/am2026/"
 
 - id: ascct-2026-ai-ml-toxicology
   title: "AI/ML for Toxicology"
   venue: ASCCT 2026 Annual Meeting
   date: October 2026
-  location: Durham, NC, US
+  end_date: "2026-10-29"
+  location: Durham Convention Center, Durham, NC, US
   website: "https://www.ascctox.org/annual-meeting"
 
 - id: discovery-on-target-2026-ai-ml
-  title: "AI/ML for Early Discovery Decision-Making"
+  title: "Agentic AI for Target Safety Assessment Enable Modality-Agnostic Framework for Early Discovery Decision-Making"
   venue: Discovery on Target 2026
   date: September 2026
+  end_date: "2026-10-01"
+  session_date: "2026-09-30"
+  session_time: "11:50"
+  session_timezone: EDT
+  speaker_affiliation: "Visiting Researcher, Uppsala University"
   location: Boston, MA, US
   website: "https://www.discoveryontarget.com/"
+
+- id: biotechx-2026-ai-ml-drug-discovery
+  title: "AI/ML for Drug Discovery"
+  venue: BioTechX USA 2026
+  date: September 2026
+  end_date: "2026-09-30"
+  session_date: "2026-09-29"
+  session_time: "15:50"
+  session_timezone: EDT
+  track: "AI in Drug Discovery and Development"
+  location: Hynes Convention Center, Boston, MA, US
+  website: "https://www.terrapinn.com/conference/biotechxusa/programme.stm"
+
+- id: biotechx-2026-ai-tox
+  title: "Invite Only: Building the Future of AI & Data Strategy in Life Sciences"
+  venue: BioTechX USA 2026
+  date: September 2026
+  end_date: "2026-09-30"
+  session_date: "2026-09-29"
+  session_time: "10:40"
+  session_timezone: EDT
+  track: Roundtables
+  location: Hynes Convention Center, Boston, MA, US
+  website: "https://www.terrapinn.com/conference/biotechxusa/programme.stm"
+
+- id: acs-fall-2026-validation
+  title: "Validation framework for evaluating generalization across diverse chemical data"
+  venue: ACS Fall 2026
+  date: August 2026
+  end_date: "2026-08-27"
+  status: Completed
+  location: Chicago, IL, US
+  website: "https://www.acs.org/events/fall.html"
+
+- id: acs-fall-2026-research-automation
+  title: "Agent-driven research automation: Integrating AI coding assistants into small molecule discovery workflows"
+  venue: ACS Fall 2026
+  date: August 2026
+  end_date: "2026-08-27"
+  status: Completed
+  location: Chicago, IL, US
+  website: "https://www.acs.org/events/fall.html"
 
 - id: pcrm-summer-immersion-2026-ai-ml
   title: "AI/ML for Chemical Data Decision-Making"
   venue: 2026 Summer Immersion on Innovative Approaches in Science
   date: June 2026
+  end_date: "2026-06-17"
+  status: Completed
   location: Baltimore, MD, US
   website: "https://www.pcrm.org/ethical-science/summer-immersion"
-
-- id: biotechx-2026-ai-tox
-  title: "AI/ML for Toxicology Pipelines"
-  venue: BioTechX USA 2026
-  date: September 2026
-  location: Hynes Convention Center, Boston, MA, US
-  website: "https://www.terrapinn.com/conference/biotechxusa/index.stm"
 
 - id: gta-2026-ai-genetic-tox
   title: "Integrating AI into Genetic Toxicology Workflows"
   venue: Genetic Toxicology Association (GTA) CE Course
   date: May 2026
+  status: Completed
   location: Newark, DE, US
   website: "https://gta-us.org"
   
@@ -157,4 +208,3 @@
   date: April 2024
   location:  Cambridge, US
   venue_url: "https://odsc.com/boston/"
-  

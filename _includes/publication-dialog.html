@@ -1,0 +1,22 @@
+<dialog class="paper-dialog" aria-labelledby="paper-dialog-title">
+  <div class="paper-dialog-header">
+    <span class="kicker">Publication details</span>
+    <div class="paper-navigation"><span data-paper-position></span><button type="button" class="icon-control" data-paper-previous title="Previous publication" aria-label="Previous publication"><i class="fas fa-arrow-left" aria-hidden="true"></i></button><button type="button" class="icon-control" data-paper-next title="Next publication" aria-label="Next publication"><i class="fas fa-arrow-right" aria-hidden="true"></i></button><button type="button" class="icon-control" data-paper-close title="Close publication" aria-label="Close publication"><i class="fas fa-times" aria-hidden="true"></i></button></div>
+  </div>
+  <div class="paper-dialog-body">
+    <p class="paper-venue" data-paper-venue></p>
+    <h2 id="paper-dialog-title" tabindex="-1"></h2>
+    <div class="paper-actions"><button type="button" data-paper-save aria-pressed="false"><i class="far fa-bookmark" aria-hidden="true"></i><span>Save</span></button><button type="button" data-copy-citation><i class="far fa-copy" aria-hidden="true"></i>Copy citation</button><button type="button" class="icon-control" data-copy-paper-link title="Copy publication link" aria-label="Copy publication link"><i class="fas fa-link" aria-hidden="true"></i></button><button type="button" class="icon-control" data-download-citation title="Download citation" aria-label="Download citation"><i class="fas fa-download" aria-hidden="true"></i></button></div>
+    <p class="action-status" data-paper-status role="status"></p>
+    <textarea class="copy-fallback" aria-label="Text to copy" readonly hidden></textarea>
+    <figure class="paper-figure" hidden>
+      <div class="paper-figure-toolbar"><span>Figure</span><div><a data-paper-figure-source target="_blank" rel="noopener" hidden>Figure source <i class="fas fa-arrow-up" aria-hidden="true"></i></a><button type="button" class="icon-control" data-paper-zoom aria-pressed="false" title="Zoom figure" aria-label="Zoom figure"><i class="fas fa-search-plus" aria-hidden="true"></i></button></div></div>
+      <div class="paper-figure-viewport" tabindex="0" role="region" aria-label="Publication figure"><img alt=""></div>
+    </figure>
+    <div class="paper-resource-links" data-paper-links></div>
+    <p class="paper-metrics" data-paper-metrics hidden></p>
+    <section class="paper-authors-section"><h3>Authors</h3><p data-paper-authors></p></section>
+    <details class="paper-citation"><summary>Citation <i class="fas fa-plus" aria-hidden="true"></i></summary><p data-paper-citation></p></details>
+    <section class="paper-related" aria-labelledby="related-heading" hidden><h3 id="related-heading">Related publications</h3><div data-related-papers></div></section>
+  </div>
+</dialog>

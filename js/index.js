@@ -102,7 +102,7 @@ $(document).ready(function() {
 
         talks.forEach(function(talk) {
             if (!talk.dataset.explicitStatus) {
-                var talkEndDate = parseTalkDate(talk.dataset.date);
+                var talkEndDate = talk.dataset.endDate ? new Date(talk.dataset.endDate + 'T23:59:59') : parseTalkDate(talk.dataset.date);
                 if (talkEndDate && talkEndDate < new Date()) {
                     talk.dataset.status = 'completed';
                     talk.classList.add('is-completed');
@@ -134,8 +134,10 @@ $(document).ready(function() {
                 applyFilter(button.dataset.talkFilter || 'all');
             });
         });
+        var initialButton = buttons.find(function(button) { return button.getAttribute('aria-pressed') === 'true'; });
+        if (initialButton) applyFilter(initialButton.dataset.talkFilter);
     }
 
-    setupPublicationFilters();
+    if (!document.querySelector('.publication-toolbar')) setupPublicationFilters();
     setupTalkFilters();
 })

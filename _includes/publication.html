@@ -1,6 +1,7 @@
 {% assign publication_tags = publication.tags | join: ' ' %}
 {% assign publication_metrics = site.data.publication_metrics[publication.id] %}
-<div class="publication-block columns" data-publication data-tags="{{ publication_tags | escape }}">
+<div class="publication-block columns" data-publication data-publication-id="{{ publication.id | escape }}" data-tags="{{ publication_tags | escape }}" data-image-source="{{ publication.image_source | escape }}">
+  {% if publication.image %}
   <div class="column is-2">
     <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
       {% if publication.image_mouseover contains "mp4" %}
@@ -12,11 +13,17 @@
       <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" loading="lazy" />
     </div>
   </div>
+  {% endif %}
 
-  <div class="column">
+  <div class="column{% unless publication.image %} is-offset-2{% endunless %}">
     <div class="content">
+      <button type="button" class="save-publication icon-control" data-save-publication aria-pressed="false" title="Save publication" aria-label="Save {{ publication.title | escape }}" hidden><i class="far fa-bookmark" aria-hidden="true"></i></button>
       <h3 class="publication-title">{{ publication.title }}</h3>
-      <div class="publication-authors">
+      {% assign first_author_id = publication.authors | first %}
+      {% assign first_author = site.data.authors[first_author_id] %}
+      <details class="author-details">
+        <summary>{{ first_author.first_name }} {{ first_author.last_name }}{% if publication.authors.size > 1 %} et al.{% endif %} <span>{{ publication.authors | size }} authors</span><i class="fas fa-plus" aria-hidden="true"></i></summary>
+        <div class="publication-authors">
         {% for author_id in publication.authors %}
         {% assign author = site.data.authors[author_id] %}
         <span class="author-block {% if author.is_me %}author-me{% endif %}">
@@ -29,11 +36,12 @@
           {% endif %}
         </span>
         {% endfor %}
-      </div>
+        </div>
+      </details>
       <div class="publication-venue">
-        <span>{{ publication.venue }}</span>
+        <span class="publication-venue-label">{{ publication.venue }}{% if publication.type %}, {{ publication.type }}{% endif %}</span>
         {% if publication_metrics and publication_metrics.display %}
-        <span class="publication-citations" title="Citation count from {{ publication_metrics.source | default: 'OpenAlex' }}">Cited by {{ publication_metrics.display }}</span>
+        <span class="publication-citations" data-recorded="{{ publication_metrics.updated_at }}" title="{{ publication_metrics.source }}{% if publication_metrics.updated_at %}, recorded {{ publication_metrics.updated_at }}{% endif %}">Cited by {{ publication_metrics.display }}, {{ publication_metrics.source }}</span>
         {% endif %}
         {% for award in publication.awards %}
         <span class="publication-venue-emph">{{ award }}</span>
@@ -80,12 +88,14 @@
         {% endif %}
 
         {% if publication.biorxiv %}
+        {% unless publication.pdf_link %}
         <a class="external-link button is-small is-ghost" href="https://www.biorxiv.org/content/{{ publication.biorxiv }}.pdf">
           <span class="icon"><i class="fas fa-file-pdf"></i></span>
           <span>PDF</span>
         </a>
+        {% endunless %}
         <a class="external-link button is-small is-ghost" href="https://www.biorxiv.org/content/{{ publication.biorxiv }}">
-          <span class="icon"><i class="ai ai-arxiv"></i></span>
+          <span class="icon"><i class="fas fa-file-alt"></i></span>
           <span>bioRxiv</span>
         </a>
         {% endif %}
@@ -96,7 +106,7 @@
           <span>PDF</span>
         </a>
         <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/{{ publication.arxiv }}">
-          <span class="icon"><i class="ai ai-arxiv"></i></span>
+          <span class="icon"><i class="fas fa-file-alt"></i></span>
           <span>arXiv</span>
         </a>
         {% endif %}

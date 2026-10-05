@@ -106,13 +106,15 @@ layout: null
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/css/refresh.css' | relative_url }}" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
   <script src="{{ '/js/index.js' | relative_url }}"></script>
+  <script defer src="{{ '/js/publications.js' | relative_url }}"></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation bar -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
@@ -130,6 +132,7 @@ layout: null
     </div>
   </nav>
 
+  <main id="main">
   <section class="hero profile-hero">
     <div class="hero-body container is-max-widescreen">
       <div class="hero-layout">
@@ -155,12 +158,12 @@ layout: null
           {% if live_stats %}
           <div class="live-snapshot" aria-label="Live research snapshot">
             <span class="live-stat">
-              <strong>{{ live_stats.publications.display | default: live_stats.publications.value }}</strong>
+              <strong>{{ site.data.publications | size }}</strong>
               <span>{{ live_stats.publications.label }}</span>
             </span>
             <span class="live-stat" title="Citation count from {{ live_stats.citations.source }}">
               <strong>{{ live_stats.citations.display | default: live_stats.citations.value }}</strong>
-              <span>{{ live_stats.citations.label }}</span>
+              <span>{{ live_stats.citations.label }} ({{ live_stats.citations.source }})</span>
             </span>
             <span class="live-stat" title="Total public repository stars from {{ live_stats.github_stars.source }}">
               <strong>{{ live_stats.github_stars.display | default: live_stats.github_stars.value }}</strong>
@@ -171,6 +174,7 @@ layout: null
             {% endif %}
           </div>
           {% endif %}
+          <p class="scholar-snapshot"><a href="https://scholar.google.com/citations?user={{ site.google_scholar }}">Google Scholar: {{ site.data.scholar_snapshot.citations }} citations</a>, checked {{ site.data.scholar_snapshot.checked_label }}.</p>
 
           <div class="buttons hero-actions">
             <a class="button is-primary" href="#publications">
@@ -198,7 +202,7 @@ layout: null
               <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="A portrait of Srijit Seal" />
             </div>
             <div class="profile-details">
-              <p>Cambridge, MA · Cambridge, UK</p>
+              <p>Cambridge, MA and Cambridge, UK</p>
               <p>FCPS AFHEA AMRSC PhD MPhil</p>
               <p>srijit [dot] seal [at] uu [dot] se</p>
             </div>
@@ -269,8 +273,8 @@ layout: null
       </div>
 
       <div class="filter-bar" role="group" aria-label="Filter talks">
-        <button class="filter-button is-active" type="button" data-talk-filter="all" aria-pressed="true">All</button>
-        <button class="filter-button" type="button" data-talk-filter="upcoming" aria-pressed="false">Upcoming</button>
+        <button class="filter-button" type="button" data-talk-filter="all" aria-pressed="false">All</button>
+        <button class="filter-button is-active" type="button" data-talk-filter="upcoming" aria-pressed="true">Upcoming</button>
         <button class="filter-button" type="button" data-talk-filter="completed" aria-pressed="false">Completed</button>
         <button class="filter-button" type="button" data-talk-filter="2026" aria-pressed="false">2026</button>
         <button class="filter-button" type="button" data-talk-filter="2025" aria-pressed="false">2025</button>
@@ -298,7 +302,7 @@ layout: null
         {% if talk.status == 'Completed' %}
         {% assign talk_status = "completed" %}
         {% endif %}
-        <article class="talk-item {% if talk_status == 'completed' %}is-completed{% endif %}" data-talk data-date="{{ talk.date }}" data-status="{{ talk_status }}" data-explicit-status="{% if talk.status %}{{ talk_status }}{% endif %}" data-year="{{ talk_year }}" data-kind="{{ talk_kind }}">
+        <article class="talk-item {% if talk_status == 'completed' %}is-completed{% endif %}" data-talk data-date="{{ talk.date }}" data-end-date="{{ talk.end_date }}" data-status="{{ talk_status }}" data-explicit-status="{% if talk.status %}{{ talk_status }}{% endif %}" data-year="{{ talk_year }}" data-kind="{{ talk_kind }}">
           <div class="talk-date">{{ talk.date }}</div>
           <div class="talk-content">
             {% if talk_url %}
@@ -307,6 +311,8 @@ layout: null
             <h3>{{ talk.venue }}</h3>
             {% endif %}
             <p>{{ talk.title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            {% if talk.session_date and talk.session_time %}<p class="talk-session"><time datetime="{{ talk.session_date }}">{{ talk.session_date | date: '%b %-d, %Y' }}</time>, {{ talk.session_time }}{% if talk.session_end_time %} to {{ talk.session_end_time }}{% endif %} {{ talk.session_timezone }}{% if talk.track %}, {{ talk.track }}{% endif %}</p>{% endif %}
+            {% if talk.speaker_affiliation %}<p class="talk-affiliation">{{ talk.speaker_affiliation }}</p>{% endif %}
             <span>{{ talk.location }}</span>
           </div>
         </article>
@@ -354,8 +360,18 @@ layout: null
   <section class="section" id="publications">
     <div class="container is-max-widescreen">
       <div class="section-heading">
-        <p class="eyebrow">Publications</p>
-        <h2 class="title is-3">Recent Publications</h2>
+        <p class="eyebrow">Research record</p>
+        <h2 class="title is-3">Publications</h2>
+      </div>
+
+      <div class="publication-toolbar" hidden>
+        <label class="search-field"><i class="fas fa-search" aria-hidden="true"></i><span class="sr-only">Search publications by title, author, or venue</span><input type="search" id="publication-search" placeholder="Search publications" autocomplete="off"></label>
+        <div class="publication-controls">
+          <label><span class="sr-only">Publication year</span><select id="publication-year"><option value="all">All years</option></select></label>
+          <div class="view-controls" role="group" aria-label="Publication view"><button type="button" data-publication-view="figures" aria-pressed="true" title="Figure view"><i class="fas fa-th-large" aria-hidden="true"></i><span>Figures</span></button><button type="button" data-publication-view="list" aria-pressed="false" title="List view"><i class="fas fa-list" aria-hidden="true"></i><span>List</span></button></div>
+          <button type="button" class="saved-filter" data-saved-filter aria-pressed="false" title="Show saved publications"><i class="far fa-bookmark" aria-hidden="true"></i> Saved <span data-saved-count>0</span></button>
+          <button type="button" class="icon-control" data-download-saved title="Download saved citations" aria-label="Download saved citations" disabled><i class="fas fa-download" aria-hidden="true"></i></button>
+        </div>
       </div>
 
       <div class="filter-bar" role="group" aria-label="Filter publications by topic">
@@ -368,8 +384,10 @@ layout: null
         <button class="filter-button" type="button" data-publication-filter="reviews" aria-pressed="false">Reviews</button>
         <button class="filter-button" type="button" data-publication-filter="tools" aria-pressed="false">Tools</button>
       </div>
+      <div class="publication-results-heading" hidden><span class="result-count" data-publication-count aria-live="polite"></span><button type="button" class="reset-filters" data-reset-publications hidden><i class="fas fa-undo" aria-hidden="true"></i> Reset filters</button><button type="button" class="explore-paper" data-explore-paper title="Open a random publication from these results" hidden><i class="fas fa-random" aria-hidden="true"></i> Explore a paper</button><span class="action-status" data-action-status role="status"></span></div>
       <p class="filter-empty" data-publication-empty hidden>No publications match this filter.</p>
 
+      <div class="publication-collection">
       {% for publication in site.data.publications %}
       {% if forloop.index <= 12 %}
       {% include publication.html %}
@@ -384,6 +402,7 @@ layout: null
         {% endif %}
         {% endfor %}
       </details>
+      </div>
     </div>
   </section>
 
@@ -405,6 +424,8 @@ layout: null
     </div>
   </section>
 
+  </main>
+  {% include publication-dialog.html %}
   <footer class="footer">
     <div class="container">
       <div class="content footer-links has-text-centered">
@@ -433,7 +454,7 @@ layout: null
     </div>
   </footer>
 
-  <a class="meeting-float" href="https://srijitseal.com/calendly" target="_blank" rel="noopener">
+  <a class="meeting-float" href="https://srijitseal.com/calendly" target="_blank" rel="noopener" aria-label="Book a meeting with Srijit Seal" title="Book a meeting with Srijit Seal">
     <span class="icon"><i class="fas fa-calendar-alt"></i></span>
     <span>Book here?</span>
   </a>
