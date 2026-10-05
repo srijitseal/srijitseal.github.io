@@ -247,13 +247,6 @@
       copy.rel = 'noopener';
       return copy;
     }));
-    const explanation = { small_molecule_bioactivity: 'cellcount', infoalign: 'infoalign', PKSmart: 'pksmart' }[record.id];
-    if (explanation) {
-      const link = document.createElement('a');
-      link.href = '/studies.html?study=' + explanation;
-      link.textContent = 'Figure explanation';
-      dialog.querySelector('[data-paper-links]').append(link);
-    }
     const metrics = record.element.querySelector('.publication-citations');
     const metricsOutput = dialog.querySelector('[data-paper-metrics]');
     metricsOutput.hidden = !metrics;

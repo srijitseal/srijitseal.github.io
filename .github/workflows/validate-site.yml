@@ -1,0 +1,36 @@
+name: Validate website
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'codex/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.4'
+          bundler-cache: true
+      - name: Check content
+        run: ruby scripts/check_site_content.rb
+      - name: Test citation retention
+        run: python3 -m unittest discover -s scripts -p 'test_update_live_stats.py'
+      - name: Check JavaScript
+        run: |
+          node --check js/index.js
+          node --check js/publications.js
+      - name: Build GitHub Pages site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --trace
+      - name: Check built pages and local assets
+        run: python3 scripts/check_built_site.py
