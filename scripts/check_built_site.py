@@ -18,6 +18,7 @@ class Page(HTMLParser):
         self.references = []
         self.publication_ids = []
         self.citation_sources = []
+        self.icon_classes = []
         self.meeting_links = []
         self.structured_data = []
         self.json_buffer = None
@@ -26,6 +27,8 @@ class Page(HTMLParser):
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
         classes = attrs.get("class", "").split()
+        if tag == "i":
+            self.icon_classes.append(classes)
         if "data-publication-id" in attrs:
             self.publication_ids.append(attrs["data-publication-id"])
         if "publication-citations" in classes:
@@ -75,6 +78,9 @@ if home.meeting_links != ["https://srijitseal.com/calendly"]:
     errors.append("Meeting button destination changed")
 if not home.structured_data:
     errors.append("Structured metadata is missing")
+for classes in home.icon_classes:
+    if "fa-github" in classes and ("fab" not in classes or "fa" in classes):
+        errors.append("GitHub icon must use the Brands font without the conflicting fa class")
 for citation in home.citation_sources:
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", citation.get("data-recorded", "")):
         errors.append("Citation badge has no observation date")
