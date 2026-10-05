@@ -109,14 +109,6 @@
   location: Online
   website: "https://www.drugdiscoveryonline.com"
   
-- id: mcbios-2026-ai-adverse-events
-  title: "From Data to Detection: AI-Driven Frameworks for Adverse Event Prediction"
-  venue: MCBIOS Annual Conference
-  date: March 2026
-  location: Tampa, FL, US
-  website: "https://mcbios.org"
-  
-
 - id: sot-2026-omics-ce
   title: "Pitfalls in Prediction: How Not to Use Omics Data for Toxicity Forecasting"
   venue: SOT 2026 Continuing Education (CE) Course
