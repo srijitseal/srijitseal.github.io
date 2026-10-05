@@ -17,6 +17,8 @@ class Page(HTMLParser):
         super().__init__()
         self.references = []
         self.publication_ids = []
+        self.publication_attributes = {}
+        self.images = {}
         self.citation_sources = []
         self.icon_classes = []
         self.meeting_links = []
@@ -31,6 +33,9 @@ class Page(HTMLParser):
             self.icon_classes.append(classes)
         if "data-publication-id" in attrs:
             self.publication_ids.append(attrs["data-publication-id"])
+            self.publication_attributes[attrs["data-publication-id"]] = attrs
+        if tag == "img" and attrs.get("src"):
+            self.images[attrs["src"]] = attrs
         if "publication-citations" in classes:
             self.citation_sources.append(attrs)
         if "meeting-float" in classes:
@@ -78,6 +83,20 @@ if home.meeting_links != ["https://srijitseal.com/calendly"]:
     errors.append("Meeting button destination changed")
 if not home.structured_data:
     errors.append("Structured metadata is missing")
+illustrations = {
+    "vsa_explainer": "vsa_explainer_illustration.png",
+    "adme_ml_chapter": "adme_ml_illustration.png",
+    "medchem_map_dl": "medchem_deep_learning_illustration.png",
+}
+for publication_id, filename in illustrations.items():
+    attrs = home.publication_attributes.get(publication_id, {})
+    if not attrs.get("data-image-credit", "").startswith("AI-generated illustration"):
+        errors.append(f"{publication_id}: missing illustration provenance")
+    if attrs.get("data-image-source"):
+        errors.append(f"{publication_id}: illustration must not be attributed to a paper figure")
+    image = home.images.get(f"./images/{filename}", {})
+    if not image.get("alt", "").startswith("Conceptual illustration"):
+        errors.append(f"{publication_id}: missing illustration or descriptive alt text")
 for classes in home.icon_classes:
     if "fa-github" in classes and ("fab" not in classes or "fa" in classes):
         errors.append("GitHub icon must use the Brands font without the conflicting fa class")

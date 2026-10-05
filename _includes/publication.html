@@ -1,6 +1,6 @@
 {% assign publication_tags = publication.tags | join: ' ' %}
 {% assign publication_metrics = site.data.publication_metrics[publication.id] %}
-<div class="publication-block columns" data-publication data-publication-id="{{ publication.id | escape }}" data-tags="{{ publication_tags | escape }}" data-image-source="{{ publication.image_source | escape }}">
+<div class="publication-block columns" data-publication data-publication-id="{{ publication.id | escape }}" data-tags="{{ publication_tags | escape }}" data-image-source="{{ publication.image_source | escape }}" data-image-credit="{{ publication.image_credit | escape }}">
   {% if publication.image %}
   <div class="column is-2">
     <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
@@ -10,7 +10,7 @@
         Your browser does not support the video tag.
       </video>
       {% endif %}
-      <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" loading="lazy" />
+      <img alt="{{ publication.image_alt | default: publication.title | escape }}" src="./images/{{ publication.image }}" loading="lazy" />
     </div>
   </div>
   {% endif %}

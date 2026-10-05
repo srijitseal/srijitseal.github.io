@@ -94,6 +94,7 @@ html { scroll-behavior: smooth; }
 .paper-actions > button[aria-pressed="true"], .paper-actions > button:hover { color: var(--accent); }
 .paper-dialog .action-status { margin: 6px 0; }
 .paper-figure { margin: 24px 0; background: var(--paper); }
+.paper-image-credit { padding-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .paper-figure-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); font-size: 12px; color: var(--muted); }
 .paper-figure-toolbar > div { display: flex; align-items: center; gap: 16px; }
 .paper-figure-viewport { height: 340px; overflow: auto; overscroll-behavior: contain; background: #fff; }

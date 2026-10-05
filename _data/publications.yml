@@ -71,6 +71,9 @@
 - id: vsa_explainer
   title: "Interpreting and Visualizing VSA Descriptors through VSA Explainer"
   venue: "ChemRxiv preprint, 2026"
+  image: vsa_explainer_illustration.png
+  image_alt: "Conceptual illustration of molecular surface regions and a magnified atom-level detail."
+  image_credit: "AI-generated illustration for this website; not a figure or result from the publication."
   OAlink: "https://doi.org/10.26434/chemrxiv.15002374/v1"
   tags:
     - cheminformatics
@@ -152,6 +155,9 @@
 - id: adme_ml_chapter
   title: "Application of machine learning and artificial intelligence methods in predictions of absorption, distribution, metabolism, and excretion properties of chemicals"
   venue: Machine Learning and Artificial Intelligence in Toxicology and Environmental Health (book chapter), Elsevier, 2026
+  image: adme_ml_illustration.png
+  image_alt: "Conceptual illustration of molecular inputs and a neural network predicting absorption, distribution, metabolism, and excretion."
+  image_credit: "AI-generated illustration for this website; not a figure or result from the publication."
   Journal_notOA_link: "https://doi.org/10.1016/b978-0-443-30010-3.00012-x"
   tags:
     - ai-ml
@@ -193,6 +199,9 @@
 - id: medchem_map_dl
   title: "The medicinal chemist's map to deep learning: Concepts, applications, and case studies"
   venue: Reference Module in Chemistry, Molecular Sciences and Chemical Engineering, Elsevier, 2025
+  image: medchem_deep_learning_illustration.png
+  image_alt: "Conceptual illustration connecting molecules to deep learning and medicinal chemistry applications."
+  image_credit: "AI-generated illustration for this website; not a figure or result from the publication."
   OAlink: "https://doi.org/10.1016/B978-0-443-29808-0.00066-2"
   tags:
     - ai-ml

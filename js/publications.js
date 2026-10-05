@@ -261,6 +261,9 @@
     const source = dialog.querySelector('[data-paper-figure-source]');
     source.hidden = !record.element.dataset.imageSource;
     if (!source.hidden) source.href = record.element.dataset.imageSource;
+    const credit = dialog.querySelector('[data-paper-image-credit]');
+    credit.textContent = record.element.dataset.imageCredit || '';
+    credit.hidden = !credit.textContent;
     const zoom = dialog.querySelector('[data-paper-zoom]');
     zoom.setAttribute('aria-pressed', 'false');
     zoom.title = zoom.ariaLabel = 'Zoom figure';
