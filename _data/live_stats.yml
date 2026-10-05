@@ -3,14 +3,16 @@ publications:
   display: "31"
   label: "Publications"
 citations:
-  value: 856
-  display: "856"
+  value: 1027
+  display: "1,027"
   label: "Citations"
-  source: "OpenAlex"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ"
+  updated_at: "2026-10-05"
 github_stars:
   value: 151
   display: "151"
   label: "GitHub stars"
   source: "GitHub"
-updated_at: "2026-10-04"
-updated_label: "Oct 4, 2026"
+updated_at: "2026-10-05"
+updated_label: "Oct 5, 2026"

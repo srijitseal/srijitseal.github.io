@@ -26,6 +26,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PUBLICATIONS_FILE = ROOT / "_data" / "publications.yml"
 LIVE_STATS_FILE = ROOT / "_data" / "live_stats.yml"
 PUBLICATION_METRICS_FILE = ROOT / "_data" / "publication_metrics.yml"
+SCHOLAR_BASELINE_FILE = ROOT / "_data" / "scholar_baseline.json"
 CONFIG_FILE = ROOT / "_config.yml"
 
 
@@ -119,7 +120,7 @@ def previous_publication_metric(publication_id: str) -> dict[str, str]:
     if not PUBLICATION_METRICS_FILE.exists():
         return {}
     text = read_text(PUBLICATION_METRICS_FILE)
-    match = re.search(rf"(?ms)^{re.escape(publication_id)}:\n((?:  .+\n)+)", text)
+    match = re.search(rf"(?m)^{re.escape(publication_id)}:\n((?:  [^\n]*(?:\n|$))+)", text)
     if not match:
         return {}
     fields: dict[str, str] = {}
@@ -128,6 +129,88 @@ def previous_publication_metric(publication_id: str) -> dict[str, str]:
         if field_match:
             fields[field_match.group(1)] = clean_yaml_value(field_match.group(2))
     return fields
+
+
+def citation_value(value: Any) -> int | None:
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value if value >= 0 else None
+    if isinstance(value, str) and re.fullmatch(r"[0-9]+(?:,[0-9]{3})*", value):
+        return int(value.replace(",", ""))
+    return None
+
+
+def scholar_baseline() -> dict[str, Any]:
+    baseline = json.loads(read_text(SCHOLAR_BASELINE_FILE))
+    datetime.strptime(baseline["checked_at"], "%Y-%m-%d")
+    if citation_value(baseline["citations"]) is None:
+        raise ValueError("Scholar baseline needs a verified total citation count")
+    known_ids = {publication["id"] for publication in publications()}
+    for publication_id, record in baseline["publications"].items():
+        if publication_id not in known_ids:
+            raise ValueError(f"Unknown publication in Scholar baseline: {publication_id}")
+        if record["citations"] is not None and citation_value(record["citations"]) is None:
+            raise ValueError(f"Invalid Scholar citation count: {publication_id}")
+    return baseline
+
+
+def scholar_metric(baseline: dict[str, Any], publication_id: str | None = None) -> dict[str, Any]:
+    record = baseline if publication_id is None else baseline["publications"].get(publication_id, {})
+    source_url = baseline["source_url"]
+    if record.get("scholar_id"):
+        source_url += "&view_op=view_citation&citation_for_view=" + record["scholar_id"]
+    return {
+        "citations": record.get("citations"),
+        "source": "Google Scholar",
+        "source_url": source_url,
+        "updated_at": baseline["checked_at"],
+    }
+
+
+def select_citation_metric(*candidates: dict[str, Any]) -> dict[str, Any]:
+    """Keep the highest verified count; ties retain the first candidate's provenance."""
+    selected: dict[str, Any] = {}
+    for candidate in candidates:
+        count = citation_value(candidate.get("citations"))
+        if count is not None and (not selected or count > selected["citations"]):
+            selected = {
+                key: candidate[key]
+                for key in ("source", "source_url", "updated_at")
+                if candidate.get(key)
+            }
+            selected.update(citations=count, display=format_int(count))
+    return selected
+
+
+def previous_citation_metric() -> dict[str, Any]:
+    metric = {
+        field: previous_field("citations", field)
+        for field in ("source", "source_url", "updated_at")
+    }
+    metric["citations"] = previous_int("citations")
+    if not metric["updated_at"] and LIVE_STATS_FILE.exists():
+        match = re.search(r"(?m)^updated_at:\s*(.+)$", read_text(LIVE_STATS_FILE))
+        if match:
+            metric["updated_at"] = clean_yaml_value(match.group(1))
+    return metric
+
+
+def total_citation_metric(baseline: dict[str, Any], updated_date: str) -> dict[str, Any]:
+    fresh: dict[str, Any] = {}
+    try:
+        author = openalex_author()
+        if not author or citation_value(author.get("cited_by_count")) is None:
+            raise RuntimeError("No valid OpenAlex author citation count")
+        fresh = {
+            "citations": author["cited_by_count"],
+            "source": "OpenAlex",
+            "source_url": author.get("id", ""),
+            "updated_at": updated_date,
+        }
+    except (RuntimeError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+        print(f"warning: using saved total citation counts: {exc}", file=sys.stderr)
+    return select_citation_metric(scholar_metric(baseline), previous_citation_metric(), fresh)
 
 
 def request_json(url: str, token: str | None = None) -> Any:
@@ -189,13 +272,6 @@ def openalex_author() -> dict[str, Any] | None:
     return max(pool, key=lambda a: int(a.get("cited_by_count", 0)))
 
 
-def citation_count() -> int:
-    author = openalex_author()
-    if not author:
-        raise RuntimeError("No OpenAlex author match found")
-    return int(author.get("cited_by_count", 0))
-
-
 def normalize_title(title: str) -> str:
     title = title.casefold()
     title = re.sub(r"[^a-z0-9]+", " ", title)
@@ -236,25 +312,34 @@ def openalex_work_for_publication(publication: dict[str, str]) -> dict[str, Any]
     return best
 
 
-def publication_metrics() -> dict[str, dict[str, Any]]:
+def publication_metrics(baseline: dict[str, Any], updated_date: str) -> dict[str, dict[str, Any]]:
     metrics: dict[str, dict[str, Any]] = {}
+    previous_date = previous_publication_metric("_meta").get("updated_at", "")
     for index, publication in enumerate(publications()):
+        previous = previous_publication_metric(publication["id"])
+        if not previous.get("updated_at"):
+            previous["updated_at"] = previous_date
+        previous.setdefault("source_url", previous.get("openalex_id", ""))
+        openalex_id = previous.get("openalex_id", "")
+        fresh: dict[str, Any] = {}
         try:
             work = openalex_work_for_publication(publication)
-            if not work:
-                raise RuntimeError("No OpenAlex work match found")
-            citations = int(work.get("cited_by_count", 0))
-            metrics[publication["id"]] = {
-                "citations": citations,
-                "display": format_int(citations),
+            if not work or citation_value(work.get("cited_by_count")) is None:
+                raise RuntimeError("No valid OpenAlex work citation count")
+            openalex_id = work.get("id", "") or openalex_id
+            fresh = {
+                "citations": work["cited_by_count"],
                 "source": "OpenAlex",
-                "openalex_id": work.get("id", ""),
+                "source_url": openalex_id,
+                "updated_at": updated_date,
             }
         except (RuntimeError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
-            print(f"warning: keeping previous citation metric for {publication['id']}: {exc}", file=sys.stderr)
-            previous = previous_publication_metric(publication["id"])
-            if previous:
-                metrics[publication["id"]] = previous
+            print(f"warning: using saved citation counts for {publication['id']}: {exc}", file=sys.stderr)
+        selected = select_citation_metric(scholar_metric(baseline, publication["id"]), previous, fresh)
+        if selected:
+            if openalex_id:
+                selected["openalex_id"] = openalex_id
+            metrics[publication["id"]] = selected
         if index:
             time.sleep(0.1)
     return metrics
@@ -299,7 +384,7 @@ def write_publication_metrics(metrics: dict[str, dict[str, Any]], updated_at: da
         if not values:
             continue
         lines.append(f"{publication['id']}:")
-        for key in ("citations", "display", "source", "openalex_id"):
+        for key in ("citations", "display", "source", "source_url", "updated_at", "openalex_id"):
             if key in values:
                 lines.append(f"  {key}: {yaml_scalar(values[key])}")
     PUBLICATION_METRICS_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -308,14 +393,8 @@ def write_publication_metrics(metrics: dict[str, dict[str, Any]], updated_at: da
 def main() -> int:
     publication_count = count_publications()
     updated_at = datetime.now(ZoneInfo(os.environ.get("LIVE_STATS_TIMEZONE", "America/New_York")))
-
-    try:
-        citations = citation_count()
-        citation_display = format_int(citations)
-    except (RuntimeError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
-        print(f"warning: keeping previous citation display: {exc}", file=sys.stderr)
-        citations = previous_int("citations")
-        citation_display = previous_display("citations")
+    baseline = scholar_baseline()
+    citations = total_citation_metric(baseline, updated_at.strftime("%Y-%m-%d"))
 
     try:
         stars = github_stars(config_value("github_username", "srijitseal"))
@@ -333,10 +412,10 @@ def main() -> int:
                 "label": "Publications",
             },
             "citations": {
-                "value": citations,
-                "display": citation_display,
+                "value": citations["citations"],
+                "display": citations["display"],
                 "label": "Citations",
-                "source": "OpenAlex",
+                **{key: citations.get(key, "") for key in ("source", "source_url", "updated_at")},
             },
             "github_stars": {
                 "value": stars,
@@ -347,7 +426,7 @@ def main() -> int:
         },
         updated_at,
     )
-    write_publication_metrics(publication_metrics(), updated_at)
+    write_publication_metrics(publication_metrics(baseline, updated_at.strftime("%Y-%m-%d")), updated_at)
     return 0
 
 

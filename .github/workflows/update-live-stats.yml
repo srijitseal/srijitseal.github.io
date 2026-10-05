@@ -9,7 +9,9 @@ on:
       - main
     paths:
       - "_data/publications.yml"
+      - "_data/scholar_baseline.json"
       - "scripts/update_live_stats.py"
+      - "scripts/test_update_live_stats.py"
       - ".github/workflows/update-live-stats.yml"
 
 permissions:
@@ -21,6 +23,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Test citation retention
+        run: python3 -m unittest discover -s scripts -p 'test_update_live_stats.py'
 
       - name: Refresh live stats
         env:

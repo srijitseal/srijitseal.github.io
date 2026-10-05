@@ -161,20 +161,19 @@ layout: null
               <strong>{{ site.data.publications | size }}</strong>
               <span>{{ live_stats.publications.label }}</span>
             </span>
-            <span class="live-stat" title="Citation count from {{ live_stats.citations.source }}">
+            <span class="live-stat" title="{{ live_stats.citations.source }}, recorded {{ live_stats.citations.updated_at }}">
               <strong>{{ live_stats.citations.display | default: live_stats.citations.value }}</strong>
-              <span>{{ live_stats.citations.label }} ({{ live_stats.citations.source }})</span>
+              <span>{{ live_stats.citations.label }} (<a href="{{ live_stats.citations.source_url }}">{{ live_stats.citations.source }}</a>)</span>
             </span>
             <span class="live-stat" title="Total public repository stars from {{ live_stats.github_stars.source }}">
               <strong>{{ live_stats.github_stars.display | default: live_stats.github_stars.value }}</strong>
               <span>{{ live_stats.github_stars.label }}</span>
             </span>
             {% if live_stats.updated_label %}
-            <span class="live-stat live-updated">Updated {{ live_stats.updated_label }}</span>
+            <span class="live-stat live-updated">Checked {{ live_stats.updated_label }}</span>
             {% endif %}
           </div>
           {% endif %}
-          <p class="scholar-snapshot"><a href="https://scholar.google.com/citations?user={{ site.google_scholar }}">Google Scholar: {{ site.data.scholar_snapshot.citations }} citations</a>, checked {{ site.data.scholar_snapshot.checked_label }}.</p>
 
           <div class="buttons hero-actions">
             <a class="button is-primary" href="#publications">

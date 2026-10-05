@@ -1,148 +1,213 @@
 _meta:
-  updated_at: "2026-10-04"
-  updated_label: "Oct 4, 2026"
+  updated_at: "2026-10-05"
+  updated_label: "Oct 5, 2026"
 model_validation_protocols:
   citations: 0
   display: "0"
   source: "OpenAlex"
+  source_url: "https://openalex.org/W7204087051"
+  updated_at: "2026-10-04"
   openalex_id: "https://openalex.org/W7204087051"
 nrdd_ai_discovery_review:
-  citations: 7
-  display: "7"
-  source: "OpenAlex"
+  citations: 14
+  display: "14"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:8AbLer7MMksC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W7201884562"
+vsa_explainer:
+  citations: 0
+  display: "0"
+  source: "OpenAlex"
+  source_url: "https://openalex.org/W7155564099"
+  updated_at: "2026-10-05"
+  openalex_id: "https://openalex.org/W7155564099"
 repuragent:
   citations: 1
   display: "1"
   source: "OpenAlex"
+  source_url: "https://openalex.org/W7155213115"
+  updated_at: "2026-10-04"
   openalex_id: "https://openalex.org/W7155213115"
 shot_ccr:
   citations: 0
   display: "0"
   source: "OpenAlex"
+  source_url: "https://openalex.org/W7148403077"
+  updated_at: "2026-10-04"
   openalex_id: "https://openalex.org/W7148403077"
 capricho:
-  citations: 0
-  display: "0"
-  source: "OpenAlex"
-  openalex_id: "https://openalex.org/W7214122975"
-adme_ml_chapter:
   citations: 1
   display: "1"
-  source: "OpenAlex"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:V3AGJWp-ZtQC"
+  updated_at: "2026-10-05"
+  openalex_id: "https://openalex.org/W7214122975"
+adme_ml_chapter:
+  citations: 4
+  display: "4"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:vV6vV6tmYwMC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4414436996"
 oasis_consortium:
   citations: 13
   display: "13"
   source: "OpenAlex"
+  source_url: "https://openalex.org/W4414369905"
+  updated_at: "2026-10-04"
   openalex_id: "https://openalex.org/W4414369905"
 graph_neural_processes:
   citations: 6
   display: "6"
-  source: "OpenAlex"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:7PzlFSSx8tAC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4403682236"
 step_forward_cv:
-  citations: 5
-  display: "5"
-  source: "OpenAlex"
+  citations: 6
+  display: "6"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:Tiz5es2fbqcC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4400311053"
 ai_agents_drug_discovery:
-  citations: 16
-  display: "16"
-  source: "OpenAlex"
+  citations: 39
+  display: "39"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:VOx2b1Wkg3QC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W7140173398"
 transfer_learning_eskape:
-  citations: 3
-  display: "3"
-  source: "OpenAlex"
+  citations: 5
+  display: "5"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:GnPB-g6toBAC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4414245130"
 infoalign:
-  citations: 7
-  display: "7"
-  source: "OpenAlex"
+  citations: 25
+  display: "25"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:lSLTfruPkqcC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4399836800"
 Progress_image_profiling:
-  citations: 7
-  display: "7"
-  source: "OpenAlex"
+  citations: 23
+  display: "23"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:tOudhMTPpwUC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W7141130446"
 ML_toxicity_pillars:
-  citations: 133
-  display: "133"
-  source: "OpenAlex"
+  citations: 164
+  display: "164"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:JV2RwH3_ST0C"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4410038804"
 small_molecule_bioactivity:
-  citations: 4
-  display: "4"
-  source: "OpenAlex"
+  citations: 9
+  display: "9"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:_xSYboBqXhAC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W7128159852"
 cell_painting_hepatocytes:
-  citations: 12
-  display: "12"
-  source: "OpenAlex"
+  citations: 18
+  display: "18"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:r0BpntZqJG4C"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4406815690"
 Advice:
   citations: 3
   display: "3"
-  source: "OpenAlex"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:mvPsJ3kp5DgC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4409902161"
 CPReview:
-  citations: 114
-  display: "114"
-  source: "OpenAlex"
+  citations: 190
+  display: "190"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:RHpTSmoSYBkC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4405079632"
 DICTrank:
-  citations: 50
-  display: "50"
-  source: "OpenAlex"
+  citations: 65
+  display: "65"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:roLk4NBRz8UC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4391429075"
 mitochondrial_toxicity_detection:
-  citations: 101
-  display: "101"
-  source: "OpenAlex"
+  citations: 115
+  display: "115"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:YFjsv_pBGBYC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4292738946"
 cytotoxicity_prediction:
-  citations: 61
-  display: "61"
-  source: "OpenAlex"
+  citations: 62
+  display: "62"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:d1gkVwhDpl0C"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W3128205954"
 AI_in_biology:
-  citations: 0
-  display: "0"
-  source: "OpenAlex"
+  citations: 20
+  display: "20"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:b0M2c_1WBrUC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W7128315782"
 drug_toxicity_prediction:
-  citations: 58
-  display: "58"
-  source: "OpenAlex"
+  citations: 64
+  display: "64"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:Tyk-4Ss8FVUC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4315488007"
 bioactivity_predictions_merging:
-  citations: 35
-  display: "35"
-  source: "OpenAlex"
+  citations: 47
+  display: "47"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:W7OEmFMy1HYC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4379197245"
 pixels_to_phenotypes:
-  citations: 27
-  display: "27"
-  source: "OpenAlex"
+  citations: 36
+  display: "36"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:hqOjcs7Dif8C"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4390546797"
 generative_modeling_potency:
-  citations: 14
-  display: "14"
-  source: "OpenAlex"
+  citations: 20
+  display: "20"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:LkGwnXOMwfcC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4391130256"
 liver_injury_early_detection:
-  citations: 43
-  display: "43"
-  source: "OpenAlex"
+  citations: 58
+  display: "58"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:ufrVoPGSRksC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4400446175"
 PKSmart:
-  citations: 6
-  display: "6"
-  source: "OpenAlex"
+  citations: 19
+  display: "19"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:35N4QoGY0k4C"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4414555054"
 CNS_sideeffect:
   citations: 1
   display: "1"
-  source: "OpenAlex"
+  source: "Google Scholar"
+  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:KlAtU1dfN6UC"
+  updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4399493516"
