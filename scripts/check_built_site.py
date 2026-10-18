@@ -106,7 +106,7 @@ for citation in home.citation_sources:
     if not any(source in citation.get("title", "") for source in ("Google Scholar", "OpenAlex")):
         errors.append("Citation badge has no source")
 
-pages = [SITE / "index.html", SITE / "AIDDCourse.html", SITE / "media-kit/index.html", SITE / "tools.html"]
+pages = [SITE / "index.html", SITE / "AIDDCourse.html", SITE / "media-kit/index.html", SITE / "tools.html", SITE / "linkedin/index.html"]
 for page_path in pages:
     if not page_path.is_file():
         errors.append(f"Missing built page: {page_path.relative_to(SITE)}")
@@ -117,9 +117,36 @@ for page_path in pages:
         if target and not exists_on_pages(target):
             errors.append(f"{page_path.relative_to(SITE)}: missing local target {reference}")
 
-for filename in ("css/refresh.css", "js/publications.js", "webfonts/fa-solid-900.woff2", "webfonts/fa-regular-400.woff2", "webfonts/fa-brands-400.woff2"):
+for filename in ("css/refresh.css", "js/publications.js", "css/linkedin.css", "js/linkedin.js", "webfonts/fa-solid-900.woff2", "webfonts/fa-regular-400.woff2", "webfonts/fa-brands-400.woff2"):
     if not (SITE / filename).is_file():
         errors.append(f"Missing deployed asset: {filename}")
+
+linkedin_path = SITE / "linkedin/index.html"
+if linkedin_path.is_file():
+    linkedin_text = linkedin_path.read_text()
+    snapshot = json.loads((ROOT / "_data/linkedin.json").read_text())
+    if "{{" in linkedin_text or "{%" in linkedin_text:
+        errors.append("Unrendered Liquid in LinkedIn archive")
+    if len(re.findall(r'data-post-id=', linkedin_text)) != len(snapshot["posts"]):
+        errors.append("LinkedIn post count differs from the snapshot")
+    for post in snapshot["posts"]:
+        if post["url"] not in linkedin_text:
+            errors.append(f"Missing LinkedIn post: {post['id']}")
+    month_count = len(snapshot["combined"]["monthly_impressions"]) + sum(len(year.get("monthly_impressions", [])) for year in snapshot["years"].values())
+    if len(re.findall(r'class="chart-column', linkedin_text)) != month_count:
+        errors.append("LinkedIn chart does not contain every month")
+    panel_years = re.findall(r'class="year-snapshot" data-year="([^"]*)"', linkedin_text)
+    if sorted(panel_years) != sorted(["all", *snapshot["years"]]):
+        errors.append("LinkedIn year panels are missing or duplicated")
+    for attribute, key in (("h-all", "h_index"), ("i10-all", "i10_index")):
+        expected = f'data-index="{attribute}">{snapshot["post_indices"]["all"][key]}</td>'
+        if linkedin_text.count(expected) != len(panel_years):
+            errors.append(f"Missing or incorrect reaction index: {key}")
+    if "not academic citations" not in linkedin_text or 'class="chart-gridline"' not in linkedin_text:
+        errors.append("LinkedIn indices lack their scope or chart scale")
+    for warning in ("snapshots, not live", "Reactions include likes", "Period totals cover all posts", "lower bound"):
+        if warning not in linkedin_text:
+            errors.append(f"Missing LinkedIn metric definition: {warning}")
 
 if errors:
     raise SystemExit("\n".join(errors))

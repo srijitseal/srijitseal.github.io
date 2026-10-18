@@ -1,0 +1,60 @@
+{% assign snapshot = include.snapshot %}
+{% assign indices = site.data.linkedin.post_indices %}
+{% if include.year == 'all' %}
+  {% assign comparison = indices.recent %}
+{% else %}
+  {% assign comparison = indices.years[include.year] %}
+{% endif %}
+<section class="year-snapshot" data-year="{{ include.year }}" aria-labelledby="activity-{{ include.year }}"{% if include.year != site.data.linkedin.default_year %} hidden{% endif %}>
+  <h2 id="activity-{{ include.year }}" class="section-heading">Post impact</h2>
+  <table class="indices-table">
+    <caption class="sr-only">Reaction-based indices for archived LinkedIn posts, not academic citation indices.</caption>
+    <thead><tr><th scope="col"><span class="sr-only">Metric</span></th><th scope="col">All</th><th scope="col">{% if include.year == 'all' %}Since {{ indices.recent_year }}{% else %}{{ include.year }}{% endif %}</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Reactions</th><td data-count="{{ indices.all.reactions }}">{{ indices.all.reactions }}</td><td data-count="{{ comparison.reactions }}">{{ comparison.reactions }}</td></tr>
+      <tr><th scope="row"><abbr title="The largest h for which at least h archived posts each have h or more reactions">h-index</abbr></th><td data-index="h-all">{{ indices.all.h_index }}</td><td data-index="h-period">{{ comparison.h_index }}</td></tr>
+      <tr><th scope="row"><abbr title="Number of archived posts with at least 10 reactions each">i10-index</abbr></th><td data-index="i10-all">{{ indices.all.i10_index }}</td><td data-index="i10-period">{{ comparison.i10_index }}</td></tr>
+    </tbody>
+  </table>
+  <p class="index-scope">Based on {{ indices.all.posts }} archived posts and their reactions, not academic citations.</p>
+  {% if snapshot.period %}
+  <section class="chart-section" aria-labelledby="chart-{{ include.year }}">
+    <h2 id="chart-{{ include.year }}">Monthly impressions</h2>
+    {% assign months = snapshot.monthly_impressions %}
+    {% assign label_interval = 1 %}
+    {% if months.size > 8 %}{% assign label_interval = 2 %}{% endif %}
+    <p class="chart-readout sr-only" aria-live="polite"><span></span> <strong></strong></p>
+    <div class="chart-plot">
+      <div class="chart-grid" aria-hidden="true">
+        {% for tick in snapshot.chart_scale.ticks %}
+        <div class="chart-gridline" style="bottom: {{ tick.position }}%"><span>{{ tick.label }}</span></div>
+        {% endfor %}
+      </div>
+      <ol class="chart" aria-label="Monthly impressions" style="grid-template-columns: repeat({{ months.size }}, minmax(0, 1fr))">
+        {% for month in months %}
+        {% assign month_date = month.month | append: '-01' %}
+        {% assign label_remainder = forloop.index | modulo: label_interval %}
+        <li tabindex="0" class="chart-column{% if month.partial %} partial{% endif %}" data-month="{{ month_date | date: '%b %Y' }}" data-value="{{ month.impressions }}" data-partial="{{ month.partial }}" aria-label="{{ month_date | date: '%B %Y' }}: {{ month.impressions }} impressions{% if month.partial %}, partial month{% endif %}">
+          <span class="bar-track"><span class="bar" style="height: {{ month.impressions | times: 100.0 | divided_by: snapshot.chart_scale.maximum }}%"><span class="chart-tooltip" aria-hidden="true"><strong data-count="{{ month.impressions }}">{{ month.impressions }}</strong></span></span></span>
+          <span class="month-label" aria-hidden="true">{% if label_remainder == 0 %}{{ month_date | date: '%b' }}{% endif %}</span>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <p class="chart-period">{{ snapshot.period.start | date: '%-d %b %Y' }} to {{ snapshot.period.end | date: '%-d %b %Y' }}</p>
+  </section>
+  <dl class="metric-list period-metrics">
+    <div><dt>Period impressions</dt><dd data-count="{{ snapshot.totals.impressions }}">{{ snapshot.totals.impressions }}</dd></div>
+    <div><dt>Period reactions</dt><dd{% if snapshot.totals.reactions != nil %} data-count="{{ snapshot.totals.reactions }}"{% endif %}>{% if snapshot.totals.reactions != nil %}{{ snapshot.totals.reactions }}{% else %}N/A{% endif %}</dd></div>
+    {% if snapshot.totals.members_reached != nil %}<div><dt>Members reached</dt><dd data-count="{{ snapshot.totals.members_reached }}">{{ snapshot.totals.members_reached }}</dd></div>{% endif %}
+    {% if include.year == 'all' %}<div class="follower-metric"><dt>Followers <small>at last check</small></dt><dd data-count="{{ snapshot.totals.followers }}">{{ snapshot.totals.followers }}</dd></div>{% endif %}
+  </dl>
+  <p class="coverage">Period totals cover all posts, including posts published in earlier years. First and last months may be partial.</p>
+  {% if include.year == 'all' %}
+  <details class="coverage-details"><summary>Export coverage</summary>{% for period in snapshot.periods %}<p>{{ period.start | date: '%-d %b %Y' }} to {{ period.end | date: '%-d %b %Y' }}</p>{% endfor %}<p>Exports do not overlap. Unique members reached are not added across periods.</p></details>
+  {% endif %}
+  <p class="coverage">Analytics recorded {{ snapshot.observed_at | date: '%-d %b %Y' }} (UTC).{% if snapshot.reactions_observed_at %} Reactions recorded {{ snapshot.reactions_observed_at | date: '%-d %b %Y' }}.{% endif %}</p>
+  {% else %}
+  <p class="unavailable">Analytics are not available for {{ include.year }}. Verified post reactions are listed; impressions are marked N/A.</p>
+  {% endif %}
+</section>

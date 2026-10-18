@@ -1,0 +1,114 @@
+---
+layout: null
+permalink: /linkedin/
+---
+{% assign archive = site.data.linkedin %}
+{% assign posts = archive.posts | sort: 'published_at' | reverse %}
+{% assign years = archive.years %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LinkedIn Scholar | {{ site.name }}</title>
+  <meta name="description" content="Selected LinkedIn posts by Srijit Seal, with dated impressions and reaction counts.">
+  <link rel="canonical" href="{{ site.url }}/linkedin/">
+  <meta property="og:title" content="LinkedIn Scholar | {{ site.name }}">
+  <meta property="og:description" content="Research, scientific practice, and conversations about AI and drug discovery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}/linkedin/">
+  <meta property="og:image" content="{{ site.url }}/images/portrait.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/fontawesome.all.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/linkedin.css' | relative_url }}">
+  <script defer src="{{ '/js/linkedin.js' | relative_url }}"></script>
+</head>
+<body>
+  <a class="skip-link" href="#posts">Skip to posts</a>
+  <header class="archive-header">
+    <nav aria-label="Main navigation">
+      <details class="site-menu">
+        <summary aria-label="Site navigation" title="Site navigation"><i class="fas fa-bars" aria-hidden="true"></i></summary>
+        <div><a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/#publications' | relative_url }}">Publications</a><a href="{{ archive.profile_url }}" target="_blank" rel="noopener">LinkedIn profile</a></div>
+      </details>
+      <a class="wordmark" href="{{ '/linkedin/' | relative_url }}">LinkedIn <span>Scholar</span></a>
+      <a class="home-link" href="{{ '/' | relative_url }}">My website</a>
+    </nav>
+  </header>
+
+  <main class="page-width archive-layout">
+    <section class="profile" aria-labelledby="profile-name">
+      <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="Srijit Seal" width="128" height="128">
+      <div class="profile-copy">
+        <h1 id="profile-name">{{ site.name }}</h1>
+        <p class="affiliation">Principal Scientist, Human Chemical Company<br>Visiting Researcher, Uppsala University</p>
+        <p class="profile-links"><a href="{{ '/' | relative_url }}">Homepage</a> <a href="{{ archive.profile_url }}" target="_blank" rel="noopener">LinkedIn profile</a></p>
+        <p class="interests"><a href="?topic=Research#posts">Drug discovery</a> <a href="?topic=AI#posts">Artificial intelligence</a> <a href="?topic=Scientific%20practice#posts">Scientific practice</a></p>
+      </div>
+      <a class="follow-link" href="{{ archive.profile_url }}" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> Follow</a>
+    </section>
+
+    <aside class="activity" aria-label="LinkedIn activity snapshot">
+      {% include linkedin-stats.html snapshot=archive.combined year='all' %}
+      {% for entry in years reversed %}
+      {% assign year_snapshot = entry[1] %}
+      {% assign year_key = entry[0] %}
+      {% include linkedin-stats.html snapshot=year_snapshot year=year_key %}
+      {% endfor %}
+      <section class="source-notes" aria-labelledby="data-title">
+        <h2 id="data-title">About the numbers</h2>
+        <p>The reaction h-index is the largest h where h archived posts each have at least h reactions. The i10-index counts archived posts with at least 10 reactions.</p>
+        <p>Impressions count displays, not unique people. Reactions include likes and other reactions.</p>
+        <p>The table contains selected posts, with an optional publication-year filter. Each post's reactions are lifetime counts, recorded separately from period analytics.</p>
+        <p>LinkedIn did not provide an export for 2024 or early 2025. The 2025 totals cover only 14 September to 31 December.</p>
+        <p>Source: LinkedIn analytics and public posts. Counts are snapshots, not live. Last checked <time datetime="{{ archive.snapshot_date }}">{{ archive.snapshot_date | date: '%-d %b %Y' }}</time> (UTC).</p>
+      </section>
+    </aside>
+
+    <section class="posts-section" id="posts" aria-labelledby="posts-title">
+      <h2 id="posts-title" class="sr-only">Selected posts</h2>
+      <form class="filters" id="post-filters" role="search" data-default-year="{{ archive.default_year }}" hidden>
+        <div class="search-field">
+          <label for="post-search" class="sr-only">Search posts</label>
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input id="post-search" name="q" type="search" placeholder="Search posts" autocomplete="off">
+        </div>
+        <label class="select-field"><span class="sr-only">Topic</span><select name="topic" id="post-topic"><option value="">All topics</option>{% assign topics = archive.posts | map: 'topic' | uniq | sort %}{% for topic in topics %}<option value="{{ topic | escape }}">{{ topic }}</option>{% endfor %}</select></label>
+        <label class="select-field year-field"><span class="sr-only">Year</span><select name="year" id="post-year"><option value="all" selected>All posts</option>{% for entry in years reversed %}<option value="{{ entry[0] }}"{% if entry[0] == archive.default_year %} selected{% endif %}>{{ entry[0] }}</option>{% endfor %}</select></label>
+      </form>
+      <noscript><p class="table-note">Showing selected posts. <a href="{{ archive.profile_url }}recent-activity/all/">All posts on LinkedIn</a></p></noscript>
+      <table class="post-table">
+        <caption class="sr-only">Selected LinkedIn posts. Reactions are lifetime counts; impressions cover the available export periods. A plus sign marks an incomplete count.</caption>
+        <thead><tr>
+          <th scope="col" class="title-column">Title</th>
+          <th scope="col" class="reactions-column" aria-sort="none"><button type="button" data-sort="reactions" disabled>Reactions <i class="fas fa-sort" aria-hidden="true"></i></button></th>
+          <th scope="col" class="impressions-column" aria-sort="none"><button type="button" data-sort="impressions" disabled>Impressions <i class="fas fa-sort" aria-hidden="true"></i></button></th>
+          <th scope="col" class="date-column" aria-sort="descending"><button type="button" data-sort="date" disabled>Year <i class="fas fa-sort-down" aria-hidden="true"></i></button></th>
+        </tr></thead>
+        <tbody id="post-rows">
+          {% for post in posts %}
+          {% assign post_year = post.published_at | date: '%Y' %}
+          <tr data-post-id="{{ post.id }}" data-topic="{{ post.topic | escape }}" data-date="{{ post.published_at }}" data-reactions="{{ post.reactions }}" data-impressions="{{ post.impressions }}" data-combined-impressions="{{ post.impressions }}" data-combined-partial="{{ post.impressions_is_partial }}" data-combined-period="{{ post.impressions_period | jsonify | escape }}" data-metrics="{{ post.impression_snapshots | jsonify | escape }}"{% if archive.default_year != 'all' and post_year != archive.default_year %} hidden{% endif %}>
+            <td class="post-description">
+              <a class="post-title" href="{{ post.url | escape }}" target="_blank" rel="noopener">{{ post.title | escape }}</a>
+              <p>{{ post.summary | escape }}</p>
+              <span class="post-topic">{{ site.name }}, {{ post.topic }}</span>
+            </td>
+            <td class="post-number" data-label="Reactions"><span data-count="{{ post.reactions }}" title="Lifetime reactions recorded {{ post.reactions_observed_at }} (UTC)">{{ post.reactions }}</span></td>
+            <td class="post-number" data-label="Impressions"><span class="impression-value">{% if post.impressions != nil %}<span data-count="{{ post.impressions }}" title="Impressions from {{ post.impressions_period.start }} to {{ post.impressions_period.end }}, recorded {{ post.impressions_observed_at }} (UTC)">{{ post.impressions }}</span>{% if post.impressions_is_partial %}+{% endif %}{% else %}<abbr title="No verified impression count is available for this period">N/A</abbr>{% endif %}</span></td>
+            <td class="post-date" data-label="Year"><time datetime="{{ post.published_at }}" title="Published {{ post.published_at | date: '%-d %b %Y' }}">{{ post_year }}</time></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div id="empty-results" class="empty-results" hidden><p>No posts match your search.</p><button type="button" id="reset-filters">Clear filters</button></div>
+      <div class="table-footer"><span id="post-count" role="status"></span><button type="button" id="show-more" hidden>Show more</button><a href="{{ archive.profile_url }}recent-activity/all/" target="_blank" rel="noopener">All posts on LinkedIn</a></div>
+      <p class="table-note metric-note">Post impressions cover the available export periods. A + marks a lower bound where an export lacks that post; N/A means no verified count.</p>
+      <p class="table-note">Selected posts, not a complete archive. Titles and summaries are edited for this page. Each title links to the original.</p>
+    </section>
+  </main>
+
+  <footer class="page-width archive-footer"><a href="{{ '/' | relative_url }}">Srijit Seal</a><p>Inspired by <a href="https://wenhaochai.com/pages/x-scholar.html" target="_blank" rel="noopener">X Scholar</a>. An independent personal archive, not affiliated with Google or LinkedIn.</p></footer>
+</body>
+</html>

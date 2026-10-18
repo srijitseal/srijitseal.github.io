@@ -24,10 +24,13 @@ jobs:
         run: ruby scripts/check_site_content.rb
       - name: Test citation retention
         run: python3 -m unittest discover -s scripts -p 'test_update_live_stats.py'
+      - name: Test LinkedIn analytics import
+        run: python3 -m unittest discover -s scripts -p 'test_linkedin_analytics.py'
       - name: Check JavaScript
         run: |
           node --check js/index.js
           node --check js/publications.js
+          node --check js/linkedin.js
       - name: Build GitHub Pages site
         env:
           JEKYLL_ENV: production
