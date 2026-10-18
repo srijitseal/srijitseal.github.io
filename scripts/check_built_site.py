@@ -132,12 +132,14 @@ if linkedin_path.is_file():
     for post in snapshot["posts"]:
         if post["url"] not in linkedin_text:
             errors.append(f"Missing LinkedIn post: {post['id']}")
-    month_count = len(snapshot["combined"]["monthly_impressions"]) + sum(len(year.get("monthly_impressions", [])) for year in snapshot["years"].values())
+    month_count = len(snapshot["combined"]["monthly_impressions"])
     if len(re.findall(r'class="chart-column', linkedin_text)) != month_count:
         errors.append("LinkedIn chart does not contain every month")
     panel_years = re.findall(r'class="year-snapshot" data-year="([^"]*)"', linkedin_text)
-    if sorted(panel_years) != sorted(["all", *snapshot["years"]]):
-        errors.append("LinkedIn year panels are missing or duplicated")
+    if panel_years != ["all"]:
+        errors.append("LinkedIn archive must show only the combined analytics panel")
+    if 'id="post-year"' in linkedin_text or 'name="year"' in linkedin_text:
+        errors.append("LinkedIn archive must not contain a year filter")
     for attribute, key in (("h-all", "h_index"), ("i10-all", "i10_index")):
         expected = f'data-index="{attribute}">{snapshot["post_indices"]["all"][key]}</td>'
         if linkedin_text.count(expected) != len(panel_years):

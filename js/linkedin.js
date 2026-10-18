@@ -13,9 +13,6 @@
   const rows = Array.from(tbody.rows);
   const search = document.getElementById("post-search");
   const topic = document.getElementById("post-topic");
-  const year = document.getElementById("post-year");
-  const defaultYear = form.dataset.defaultYear;
-  const years = new Set(Array.from(year.options, (option) => option.value));
   const counter = document.getElementById("post-count");
   const more = document.getElementById("show-more");
   const empty = document.getElementById("empty-results");
@@ -33,7 +30,6 @@
     const params = new URLSearchParams(location.search);
     search.value = params.get("q") || "";
     topic.value = params.get("topic") || "";
-    year.value = years.has(params.get("year")) ? params.get("year") : defaultYear;
     if (!topic.value) topic.value = "";
     sortBy = ["impressions", "reactions", "date"].includes(params.get("sort")) ? params.get("sort") : "impressions";
     direction = params.get("direction") === "ascending" ? "ascending" : "descending";
@@ -42,7 +38,8 @@
 
   function updateURL() {
     const url = new URL(location.href);
-    const values = { q: search.value.trim(), topic: topic.value, year: year.value,
+    url.searchParams.delete("year");
+    const values = { q: search.value.trim(), topic: topic.value,
       sort: sortBy === "impressions" ? "" : sortBy,
       direction: direction === "descending" ? "" : direction };
     Object.entries(values).forEach(([key, value]) => {
@@ -62,13 +59,11 @@
     return (direction === "descending" ? -diff : diff) || b.dataset.date.localeCompare(a.dataset.date);
   }
 
-  function render(syncURL = true) {
+  function render() {
     rows.forEach((row) => {
-      const metrics = JSON.parse(row.dataset.metrics);
-      const combined = year.value === "all";
-      const value = combined ? (row.dataset.combinedImpressions === "" ? null : Number(row.dataset.combinedImpressions)) : metrics[year.value]?.impressions;
-      const partial = combined && row.dataset.combinedPartial === "true";
-      const period = combined ? JSON.parse(row.dataset.combinedPeriod) : metrics[year.value]?.period;
+      const value = row.dataset.combinedImpressions === "" ? null : Number(row.dataset.combinedImpressions);
+      const partial = row.dataset.combinedPartial === "true";
+      const period = JSON.parse(row.dataset.combinedPeriod);
       row.dataset.impressions = value == null ? "" : String(value);
       const cell = row.querySelector(".impression-value");
       cell.textContent = value == null ? "N/A" : number.format(value) + (partial ? "+" : "");
@@ -79,8 +74,7 @@
     const filtered = rows.filter((row) => {
       const text = normalize(row.querySelector(".post-description").textContent);
       return terms.every((term) => text.includes(term)) &&
-        (!topic.value || row.dataset.topic === topic.value) &&
-        (year.value === "all" || row.dataset.date.startsWith(year.value + "-"));
+        (!topic.value || row.dataset.topic === topic.value);
     }).sort(compare);
     rows.forEach((row) => { row.hidden = true; });
     filtered.forEach((row, index) => {
@@ -91,24 +85,21 @@
     counter.textContent = `${shown} of ${filtered.length} posts`;
     more.hidden = shown >= filtered.length;
     empty.hidden = filtered.length > 0;
-    document.querySelectorAll(".year-snapshot").forEach((panel) => {
-      panel.hidden = panel.dataset.year !== year.value;
-    });
     sortButtons.forEach((button) => {
       const active = button.dataset.sort === sortBy;
       button.closest("th").setAttribute("aria-sort", active ? direction : "none");
       button.querySelector("i").className = `fas ${active ? (direction === "ascending" ? "fa-sort-up" : "fa-sort-down") : "fa-sort"}`;
     });
-    if (syncURL) updateURL();
+    updateURL();
   }
 
   form.hidden = false;
   form.addEventListener("submit", (event) => event.preventDefault());
   search.addEventListener("input", () => { visibleLimit = pageSize; render(); });
-  [topic, year].forEach((select) => select.addEventListener("change", () => {
+  topic.addEventListener("change", () => {
     visibleLimit = pageSize;
     render();
-  }));
+  });
   sortButtons.forEach((button) => {
     button.disabled = false;
     button.addEventListener("click", () => {
@@ -132,9 +123,9 @@
     render();
     search.focus();
   });
-  window.addEventListener("popstate", () => { applyURL(); render(false); });
+  window.addEventListener("popstate", () => { applyURL(); render(); });
   applyURL();
-  render(false);
+  render();
 
   document.querySelectorAll(".chart-column").forEach((column) => {
     const readout = column.closest(".chart-section").querySelector(".chart-readout");

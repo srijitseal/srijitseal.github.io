@@ -5,7 +5,7 @@
 {% else %}
   {% assign comparison = indices.years[include.year] %}
 {% endif %}
-<section class="year-snapshot" data-year="{{ include.year }}" aria-labelledby="activity-{{ include.year }}"{% if include.year != site.data.linkedin.default_year %} hidden{% endif %}>
+<section class="year-snapshot" data-year="{{ include.year }}" aria-labelledby="activity-{{ include.year }}">
   <h2 id="activity-{{ include.year }}" class="section-heading">Post impact</h2>
   <table class="indices-table">
     <caption class="sr-only">Reaction-based indices for archived LinkedIn posts, not academic citation indices.</caption>

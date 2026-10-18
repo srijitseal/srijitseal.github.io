@@ -4,7 +4,6 @@ permalink: /linkedin/
 ---
 {% assign archive = site.data.linkedin %}
 {% assign posts = archive.posts | sort: 'published_at' | reverse %}
-{% assign years = archive.years %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,16 +50,11 @@ permalink: /linkedin/
 
     <aside class="activity" aria-label="LinkedIn activity snapshot">
       {% include linkedin-stats.html snapshot=archive.combined year='all' %}
-      {% for entry in years reversed %}
-      {% assign year_snapshot = entry[1] %}
-      {% assign year_key = entry[0] %}
-      {% include linkedin-stats.html snapshot=year_snapshot year=year_key %}
-      {% endfor %}
       <section class="source-notes" aria-labelledby="data-title">
         <h2 id="data-title">About the numbers</h2>
         <p>The reaction h-index is the largest h where h archived posts each have at least h reactions. The i10-index counts archived posts with at least 10 reactions.</p>
         <p>Impressions count displays, not unique people. Reactions include likes and other reactions.</p>
-        <p>The table contains selected posts, with an optional publication-year filter. Each post's reactions are lifetime counts, recorded separately from period analytics.</p>
+        <p>The table contains selected posts from all years. Each post's reactions are lifetime counts, recorded separately from period analytics.</p>
         <p>LinkedIn did not provide an export for 2024 or early 2025. The 2025 totals cover only 14 September to 31 December.</p>
         <p>Source: LinkedIn analytics and public posts. Counts are snapshots, not live. Last checked <time datetime="{{ archive.snapshot_date }}">{{ archive.snapshot_date | date: '%-d %b %Y' }}</time> (UTC).</p>
       </section>
@@ -68,14 +62,13 @@ permalink: /linkedin/
 
     <section class="posts-section" id="posts" aria-labelledby="posts-title">
       <h2 id="posts-title" class="sr-only">Selected posts</h2>
-      <form class="filters" id="post-filters" role="search" data-default-year="{{ archive.default_year }}" hidden>
+      <form class="filters" id="post-filters" role="search" hidden>
         <div class="search-field">
           <label for="post-search" class="sr-only">Search posts</label>
           <i class="fas fa-search" aria-hidden="true"></i>
           <input id="post-search" name="q" type="search" placeholder="Search posts" autocomplete="off">
         </div>
         <label class="select-field"><span class="sr-only">Topic</span><select name="topic" id="post-topic"><option value="">All topics</option>{% assign topics = archive.posts | map: 'topic' | uniq | sort %}{% for topic in topics %}<option value="{{ topic | escape }}">{{ topic }}</option>{% endfor %}</select></label>
-        <label class="select-field year-field"><span class="sr-only">Year</span><select name="year" id="post-year"><option value="all" selected>All posts</option>{% for entry in years reversed %}<option value="{{ entry[0] }}"{% if entry[0] == archive.default_year %} selected{% endif %}>{{ entry[0] }}</option>{% endfor %}</select></label>
       </form>
       <noscript><p class="table-note">Showing selected posts. <a href="{{ archive.profile_url }}recent-activity/all/">All posts on LinkedIn</a></p></noscript>
       <table class="post-table">
@@ -89,7 +82,7 @@ permalink: /linkedin/
         <tbody id="post-rows">
           {% for post in posts %}
           {% assign post_year = post.published_at | date: '%Y' %}
-          <tr data-post-id="{{ post.id }}" data-topic="{{ post.topic | escape }}" data-date="{{ post.published_at }}" data-reactions="{{ post.reactions }}" data-impressions="{{ post.impressions }}" data-combined-impressions="{{ post.impressions }}" data-combined-partial="{{ post.impressions_is_partial }}" data-combined-period="{{ post.impressions_period | jsonify | escape }}" data-metrics="{{ post.impression_snapshots | jsonify | escape }}"{% if archive.default_year != 'all' and post_year != archive.default_year %} hidden{% endif %}>
+          <tr data-post-id="{{ post.id }}" data-topic="{{ post.topic | escape }}" data-date="{{ post.published_at }}" data-reactions="{{ post.reactions }}" data-impressions="{{ post.impressions }}" data-combined-impressions="{{ post.impressions }}" data-combined-partial="{{ post.impressions_is_partial }}" data-combined-period="{{ post.impressions_period | jsonify | escape }}">
             <td class="post-description">
               <a class="post-title" href="{{ post.url | escape }}" target="_blank" rel="noopener">{{ post.title | escape }}</a>
               <p>{{ post.summary | escape }}</p>

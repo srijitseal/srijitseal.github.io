@@ -91,7 +91,6 @@ h2 { font-size: 14px; font-weight: 400; margin: 0; }
 .search-field input, .select-field select { width: 100%; height: 34px; border: 1px solid #d9d9d9; border-radius: 1px; background: #fff; color: var(--ink); font-size: 13px; }
 .search-field input { padding: 6px 10px 6px 29px; }
 .select-field select { padding: 4px 7px; max-width: 165px; }
-.year-field select { width: 90px; }
 .post-table { border-collapse: collapse; width: 100%; table-layout: fixed; }
 .post-table th { text-align: left; font-size: 12px; font-weight: 400; color: #555; padding: 8px; background: var(--soft); border-bottom: 1px solid #ddd; text-transform: uppercase; height: 42px; }
 .reactions-column { width: 95px; }
@@ -150,8 +149,6 @@ h2 { font-size: 14px; font-weight: 400; margin: 0; }
   .search-field { flex-basis: 100%; }
   .select-field { flex: 1; }
   .select-field select { max-width: none; }
-  .year-field { flex: 0 0 90px; }
-  .year-field select { width: 100%; }
   .post-table, .post-table tbody { display: block; }
   .post-table thead, .post-table thead tr { display: flex; align-items: center; justify-content: flex-end; }
   .post-table thead { background: var(--soft); border-bottom: 1px solid #ddd; }
