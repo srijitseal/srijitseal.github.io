@@ -69,7 +69,6 @@ permalink: /linkedin/
         </div>
         <label class="select-field"><span class="sr-only">Topic</span><select name="topic" id="post-topic"><option value="">All topics</option>{% assign topics = archive.posts | map: 'topic' | uniq | sort %}{% for topic in topics %}<option value="{{ topic | escape }}">{{ topic }}</option>{% endfor %}</select></label>
       </form>
-      <noscript><p class="table-note">Showing selected posts. <a href="{{ archive.profile_url }}recent-activity/all/">All posts on LinkedIn</a></p></noscript>
       <table class="post-table">
         <caption class="sr-only">Selected LinkedIn posts. Reactions are lifetime counts; impressions cover the available export periods. A plus sign marks an incomplete count.</caption>
         <thead><tr>
@@ -95,9 +94,6 @@ permalink: /linkedin/
         </tbody>
       </table>
       <div id="empty-results" class="empty-results" hidden><p>No posts match your search.</p><button type="button" id="reset-filters">Clear filters</button></div>
-      <div class="table-footer"><span id="post-count" role="status"></span><button type="button" id="show-more" hidden>Show more</button><a href="{{ archive.profile_url }}recent-activity/all/" target="_blank" rel="noopener">All posts on LinkedIn</a></div>
-      <p class="table-note metric-note">Post impressions cover the available export periods. A + marks a lower bound where an export lacks that post; N/A means no verified count.</p>
-      <p class="table-note">Selected posts, not a complete archive. Titles and summaries are edited for this page. Each title links to the original.</p>
     </section>
   </main>
 

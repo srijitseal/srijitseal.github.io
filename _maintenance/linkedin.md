@@ -1,9 +1,10 @@
 # LinkedIn archive
 
 The /linkedin/ page uses _data/linkedin.json. Jekyll renders the data into HTML.
-JavaScript adds search, topic filtering, sorting, pagination, and monthly chart
-readouts. The archive always combines all years; legacy year query parameters
-are ignored and removed from the URL.
+JavaScript adds search, topic filtering, sorting, and monthly chart readouts.
+All posts are shown by default, with no pagination or post counter. Search and
+topic filters show every matching post. The archive always combines all years;
+legacy year query parameters are ignored and removed from the URL.
 
 The first snapshot was recorded on 18 October 2026 UTC. It includes 28 selected
 posts from 2023 through 2026, not a complete activity archive. Titles and summaries
@@ -80,6 +81,6 @@ Validate and build:
     python3 scripts/check_built_site.py
 
 Review desktop and mobile views, the combined chart, legacy year links, empty
-search results, sorting, and pagination before publishing. There is no scheduled
+search results, sorting, and full-list visibility before publishing. There is no scheduled
 LinkedIn scraping, browser session, token, or API credential in this page.
 The existing weekly academic-metrics refresh does not update LinkedIn.

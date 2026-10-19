@@ -13,12 +13,8 @@
   const rows = Array.from(tbody.rows);
   const search = document.getElementById("post-search");
   const topic = document.getElementById("post-topic");
-  const counter = document.getElementById("post-count");
-  const more = document.getElementById("show-more");
   const empty = document.getElementById("empty-results");
   const sortButtons = Array.from(document.querySelectorAll("[data-sort]"));
-  const pageSize = 10;
-  let visibleLimit = pageSize;
   let sortBy = "impressions";
   let direction = "descending";
 
@@ -33,7 +29,6 @@
     if (!topic.value) topic.value = "";
     sortBy = ["impressions", "reactions", "date"].includes(params.get("sort")) ? params.get("sort") : "impressions";
     direction = params.get("direction") === "ascending" ? "ascending" : "descending";
-    visibleLimit = pageSize;
   }
 
   function updateURL() {
@@ -77,13 +72,10 @@
         (!topic.value || row.dataset.topic === topic.value);
     }).sort(compare);
     rows.forEach((row) => { row.hidden = true; });
-    filtered.forEach((row, index) => {
-      row.hidden = index >= visibleLimit;
+    filtered.forEach((row) => {
+      row.hidden = false;
       tbody.appendChild(row);
     });
-    const shown = Math.min(visibleLimit, filtered.length);
-    counter.textContent = `${shown} of ${filtered.length} posts`;
-    more.hidden = shown >= filtered.length;
     empty.hidden = filtered.length > 0;
     sortButtons.forEach((button) => {
       const active = button.dataset.sort === sortBy;
@@ -95,31 +87,19 @@
 
   form.hidden = false;
   form.addEventListener("submit", (event) => event.preventDefault());
-  search.addEventListener("input", () => { visibleLimit = pageSize; render(); });
-  topic.addEventListener("change", () => {
-    visibleLimit = pageSize;
-    render();
-  });
+  search.addEventListener("input", render);
+  topic.addEventListener("change", render);
   sortButtons.forEach((button) => {
     button.disabled = false;
     button.addEventListener("click", () => {
       direction = sortBy === button.dataset.sort && direction === "descending" ? "ascending" : "descending";
       sortBy = button.dataset.sort;
-      visibleLimit = pageSize;
       render();
     });
-  });
-  more.addEventListener("click", () => {
-    const nextIndex = visibleLimit;
-    visibleLimit += pageSize;
-    render();
-    const visibleRows = Array.from(tbody.rows).filter((row) => !row.hidden);
-    visibleRows[nextIndex]?.querySelector("a")?.focus({ preventScroll: true });
   });
   document.getElementById("reset-filters").addEventListener("click", () => {
     search.value = "";
     topic.value = "";
-    visibleLimit = pageSize;
     render();
     search.focus();
   });

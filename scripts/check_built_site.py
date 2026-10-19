@@ -140,16 +140,18 @@ if linkedin_path.is_file():
         errors.append("LinkedIn archive must show only the combined analytics panel")
     if 'id="post-year"' in linkedin_text or 'name="year"' in linkedin_text:
         errors.append("LinkedIn archive must not contain a year filter")
+    if 'id="show-more"' in linkedin_text or 'id="post-count"' in linkedin_text:
+        errors.append("LinkedIn archive must not contain pagination or a post counter")
     for attribute, key in (("h-all", "h_index"), ("i10-all", "i10_index")):
         expected = f'data-index="{attribute}">{snapshot["post_indices"]["all"][key]}</td>'
         if linkedin_text.count(expected) != len(panel_years):
             errors.append(f"Missing or incorrect reaction index: {key}")
     if "not academic citations" not in linkedin_text or 'class="chart-gridline"' not in linkedin_text:
         errors.append("LinkedIn indices lack their scope or chart scale")
-    for removed_note in ("Export coverage", "Exports do not overlap", "LinkedIn did not provide an export", "Source: LinkedIn analytics and public posts", "Counts are snapshots, not live"):
+    for removed_note in ("Export coverage", "Exports do not overlap", "LinkedIn did not provide an export", "Source: LinkedIn analytics and public posts", "Counts are snapshots, not live", "All posts on LinkedIn", "Post impressions cover the available export periods", "Selected posts, not a complete archive"):
         if removed_note in linkedin_text:
             errors.append(f"Removed LinkedIn note is still displayed: {removed_note}")
-    for warning in ("Last checked", "Reactions include likes", "Period totals cover all posts", "lower bound"):
+    for warning in ("Last checked", "Reactions include likes", "Period totals cover all posts"):
         if warning not in linkedin_text:
             errors.append(f"Missing LinkedIn metric definition: {warning}")
 
