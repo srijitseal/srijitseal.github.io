@@ -1,6 +1,6 @@
 _meta:
-  updated_at: "2026-10-12"
-  updated_label: "Oct 12, 2026"
+  updated_at: "2026-10-19"
+  updated_label: "Oct 19, 2026"
 model_validation_protocols:
   citations: 0
   display: "0"
@@ -51,11 +51,11 @@ adme_ml_chapter:
   updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4414436996"
 oasis_consortium:
-  citations: 14
-  display: "14"
+  citations: 16
+  display: "16"
   source: "OpenAlex"
   source_url: "https://openalex.org/W4414369905"
-  updated_at: "2026-10-12"
+  updated_at: "2026-10-19"
   openalex_id: "https://openalex.org/W4414369905"
 graph_neural_processes:
   citations: 8
