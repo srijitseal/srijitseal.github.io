@@ -50,9 +50,6 @@
     {% if include.year == 'all' %}<div class="follower-metric"><dt>Followers <small>at last check</small></dt><dd data-count="{{ snapshot.totals.followers }}">{{ snapshot.totals.followers }}</dd></div>{% endif %}
   </dl>
   <p class="coverage">Period totals cover all posts, including posts published in earlier years. First and last months may be partial.</p>
-  {% if include.year == 'all' %}
-  <details class="coverage-details"><summary>Export coverage</summary>{% for period in snapshot.periods %}<p>{{ period.start | date: '%-d %b %Y' }} to {{ period.end | date: '%-d %b %Y' }}</p>{% endfor %}<p>Exports do not overlap. Unique members reached are not added across periods.</p></details>
-  {% endif %}
   <p class="coverage">Analytics recorded {{ snapshot.observed_at | date: '%-d %b %Y' }} (UTC).{% if snapshot.reactions_observed_at %} Reactions recorded {{ snapshot.reactions_observed_at | date: '%-d %b %Y' }}.{% endif %}</p>
   {% else %}
   <p class="unavailable">Analytics are not available for {{ include.year }}. Verified post reactions are listed; impressions are marked N/A.</p>

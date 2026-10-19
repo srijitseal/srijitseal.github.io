@@ -146,7 +146,10 @@ if linkedin_path.is_file():
             errors.append(f"Missing or incorrect reaction index: {key}")
     if "not academic citations" not in linkedin_text or 'class="chart-gridline"' not in linkedin_text:
         errors.append("LinkedIn indices lack their scope or chart scale")
-    for warning in ("snapshots, not live", "Reactions include likes", "Period totals cover all posts", "lower bound"):
+    for removed_note in ("Export coverage", "Exports do not overlap", "LinkedIn did not provide an export", "Source: LinkedIn analytics and public posts", "Counts are snapshots, not live"):
+        if removed_note in linkedin_text:
+            errors.append(f"Removed LinkedIn note is still displayed: {removed_note}")
+    for warning in ("Last checked", "Reactions include likes", "Period totals cover all posts", "lower bound"):
         if warning not in linkedin_text:
             errors.append(f"Missing LinkedIn metric definition: {warning}")
 
