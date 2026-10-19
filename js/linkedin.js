@@ -15,7 +15,7 @@
   const topic = document.getElementById("post-topic");
   const empty = document.getElementById("empty-results");
   const sortButtons = Array.from(document.querySelectorAll("[data-sort]"));
-  let sortBy = "impressions";
+  let sortBy = "reactions";
   let direction = "descending";
 
   function normalize(value) {
@@ -27,7 +27,7 @@
     search.value = params.get("q") || "";
     topic.value = params.get("topic") || "";
     if (!topic.value) topic.value = "";
-    sortBy = ["impressions", "reactions", "date"].includes(params.get("sort")) ? params.get("sort") : "impressions";
+    sortBy = ["reactions", "date"].includes(params.get("sort")) ? params.get("sort") : "reactions";
     direction = params.get("direction") === "ascending" ? "ascending" : "descending";
   }
 
@@ -35,7 +35,7 @@
     const url = new URL(location.href);
     url.searchParams.delete("year");
     const values = { q: search.value.trim(), topic: topic.value,
-      sort: sortBy === "impressions" ? "" : sortBy,
+      sort: sortBy === "reactions" ? "" : sortBy,
       direction: direction === "descending" ? "" : direction };
     Object.entries(values).forEach(([key, value]) => {
       if (value) url.searchParams.set(key, value);
@@ -47,7 +47,7 @@
   function compare(a, b) {
     const left = a.dataset[sortBy];
     const right = b.dataset[sortBy];
-    // Missing export counts remain unknown and sort last in either direction.
+    // Missing counts remain unknown and sort last in either direction.
     if (!left && right) return 1;
     if (left && !right) return -1;
     const diff = sortBy === "date" ? left.localeCompare(right) : Number(left) - Number(right);
@@ -55,16 +55,6 @@
   }
 
   function render() {
-    rows.forEach((row) => {
-      const value = row.dataset.combinedImpressions === "" ? null : Number(row.dataset.combinedImpressions);
-      const partial = row.dataset.combinedPartial === "true";
-      const period = JSON.parse(row.dataset.combinedPeriod);
-      row.dataset.impressions = value == null ? "" : String(value);
-      const cell = row.querySelector(".impression-value");
-      cell.textContent = value == null ? "N/A" : number.format(value) + (partial ? "+" : "");
-      cell.title = value == null ? "No verified count for this period" :
-        `${partial ? "At least " : ""}${number.format(value)} impressions in available exports from ${period.start} to ${period.end}`;
-    });
     const terms = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
     const filtered = rows.filter((row) => {
       const text = normalize(row.querySelector(".post-description").textContent);

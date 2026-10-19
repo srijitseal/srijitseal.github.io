@@ -5,6 +5,9 @@ JavaScript adds search, topic filtering, sorting, and monthly chart readouts.
 All posts are shown by default, with no pagination or post counter. Search and
 topic filters show every matching post. The archive always combines all years;
 legacy year query parameters are ignored and removed from the URL.
+The post table shows reactions and publication year, ordered by reactions by
+default. Post-level impressions remain in the source data but are not displayed;
+the monthly impressions chart and account totals are unchanged.
 
 The first snapshot was recorded on 18 October 2026 UTC. It includes 28 selected
 posts from 2023 through 2026, not a complete activity archive. Titles and summaries

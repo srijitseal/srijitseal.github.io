@@ -3,7 +3,7 @@ layout: null
 permalink: /linkedin/
 ---
 {% assign archive = site.data.linkedin %}
-{% assign posts = archive.posts | sort: 'published_at' | reverse %}
+{% assign posts = archive.posts | sort: 'reactions' | reverse %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,24 +70,22 @@ permalink: /linkedin/
         <label class="select-field"><span class="sr-only">Topic</span><select name="topic" id="post-topic"><option value="">All topics</option>{% assign topics = archive.posts | map: 'topic' | uniq | sort %}{% for topic in topics %}<option value="{{ topic | escape }}">{{ topic }}</option>{% endfor %}</select></label>
       </form>
       <table class="post-table">
-        <caption class="sr-only">Selected LinkedIn posts. Reactions are lifetime counts; impressions cover the available export periods. A plus sign marks an incomplete count.</caption>
+        <caption class="sr-only">Selected LinkedIn posts, with lifetime reactions and publication year.</caption>
         <thead><tr>
           <th scope="col" class="title-column">Title</th>
-          <th scope="col" class="reactions-column" aria-sort="none"><button type="button" data-sort="reactions" disabled>Reactions <i class="fas fa-sort" aria-hidden="true"></i></button></th>
-          <th scope="col" class="impressions-column" aria-sort="none"><button type="button" data-sort="impressions" disabled>Impressions <i class="fas fa-sort" aria-hidden="true"></i></button></th>
-          <th scope="col" class="date-column" aria-sort="descending"><button type="button" data-sort="date" disabled>Year <i class="fas fa-sort-down" aria-hidden="true"></i></button></th>
+          <th scope="col" class="reactions-column" aria-sort="descending"><button type="button" data-sort="reactions" disabled>Reactions <i class="fas fa-sort-down" aria-hidden="true"></i></button></th>
+          <th scope="col" class="date-column" aria-sort="none"><button type="button" data-sort="date" disabled>Year <i class="fas fa-sort" aria-hidden="true"></i></button></th>
         </tr></thead>
         <tbody id="post-rows">
           {% for post in posts %}
           {% assign post_year = post.published_at | date: '%Y' %}
-          <tr data-post-id="{{ post.id }}" data-topic="{{ post.topic | escape }}" data-date="{{ post.published_at }}" data-reactions="{{ post.reactions }}" data-impressions="{{ post.impressions }}" data-combined-impressions="{{ post.impressions }}" data-combined-partial="{{ post.impressions_is_partial }}" data-combined-period="{{ post.impressions_period | jsonify | escape }}">
+          <tr data-post-id="{{ post.id }}" data-topic="{{ post.topic | escape }}" data-date="{{ post.published_at }}" data-reactions="{{ post.reactions }}">
             <td class="post-description">
               <a class="post-title" href="{{ post.url | escape }}" target="_blank" rel="noopener">{{ post.title | escape }}</a>
               <p>{{ post.summary | escape }}</p>
               <span class="post-topic">{{ site.name }}, {{ post.topic }}</span>
             </td>
             <td class="post-number" data-label="Reactions"><span data-count="{{ post.reactions }}" title="Lifetime reactions recorded {{ post.reactions_observed_at }} (UTC)">{{ post.reactions }}</span></td>
-            <td class="post-number" data-label="Impressions"><span class="impression-value">{% if post.impressions != nil %}<span data-count="{{ post.impressions }}" title="Impressions from {{ post.impressions_period.start }} to {{ post.impressions_period.end }}, recorded {{ post.impressions_observed_at }} (UTC)">{{ post.impressions }}</span>{% if post.impressions_is_partial %}+{% endif %}{% else %}<abbr title="No verified impression count is available for this period">N/A</abbr>{% endif %}</span></td>
             <td class="post-date" data-label="Year"><time datetime="{{ post.published_at }}" title="Published {{ post.published_at | date: '%-d %b %Y' }}">{{ post_year }}</time></td>
           </tr>
           {% endfor %}

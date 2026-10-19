@@ -142,6 +142,8 @@ if linkedin_path.is_file():
         errors.append("LinkedIn archive must not contain a year filter")
     if 'id="show-more"' in linkedin_text or 'id="post-count"' in linkedin_text:
         errors.append("LinkedIn archive must not contain pagination or a post counter")
+    if 'data-sort="impressions"' in linkedin_text or 'data-label="Impressions"' in linkedin_text:
+        errors.append("LinkedIn post table must not contain an impressions column")
     for attribute, key in (("h-all", "h_index"), ("i10-all", "i10_index")):
         expected = f'data-index="{attribute}">{snapshot["post_indices"]["all"][key]}</td>'
         if linkedin_text.count(expected) != len(panel_years):
