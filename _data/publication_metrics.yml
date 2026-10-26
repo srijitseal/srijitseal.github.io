@@ -1,6 +1,6 @@
 _meta:
-  updated_at: "2026-10-19"
-  updated_label: "Oct 19, 2026"
+  updated_at: "2026-10-26"
+  updated_label: "Oct 26, 2026"
 model_validation_protocols:
   citations: 0
   display: "0"
@@ -23,11 +23,11 @@ vsa_explainer:
   updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W7155564099"
 repuragent:
-  citations: 1
-  display: "1"
+  citations: 2
+  display: "2"
   source: "OpenAlex"
   source_url: "https://openalex.org/W7155213115"
-  updated_at: "2026-10-04"
+  updated_at: "2026-10-26"
   openalex_id: "https://openalex.org/W7155213115"
 shot_ccr:
   citations: 0
@@ -51,11 +51,11 @@ adme_ml_chapter:
   updated_at: "2026-10-05"
   openalex_id: "https://openalex.org/W4414436996"
 oasis_consortium:
-  citations: 16
-  display: "16"
+  citations: 17
+  display: "17"
   source: "OpenAlex"
   source_url: "https://openalex.org/W4414369905"
-  updated_at: "2026-10-19"
+  updated_at: "2026-10-26"
   openalex_id: "https://openalex.org/W4414369905"
 graph_neural_processes:
   citations: 8
