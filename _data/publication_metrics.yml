@@ -1,6 +1,6 @@
 _meta:
-  updated_at: "2026-10-26"
-  updated_label: "Oct 26, 2026"
+  updated_at: "2026-11-02"
+  updated_label: "Nov 2, 2026"
 model_validation_protocols:
   citations: 0
   display: "0"
@@ -9,11 +9,11 @@ model_validation_protocols:
   updated_at: "2026-10-04"
   openalex_id: "https://openalex.org/W7204087051"
 nrdd_ai_discovery_review:
-  citations: 14
-  display: "14"
-  source: "Google Scholar"
-  source_url: "https://scholar.google.com/citations?user=0WxbtaAAAAAJ&view_op=view_citation&citation_for_view=0WxbtaAAAAAJ:8AbLer7MMksC"
-  updated_at: "2026-10-05"
+  citations: 16
+  display: "16"
+  source: "OpenAlex"
+  source_url: "https://openalex.org/W7201884562"
+  updated_at: "2026-11-02"
   openalex_id: "https://openalex.org/W7201884562"
 vsa_explainer:
   citations: 0
@@ -57,6 +57,13 @@ oasis_consortium:
   source_url: "https://openalex.org/W4414369905"
   updated_at: "2026-10-26"
   openalex_id: "https://openalex.org/W4414369905"
+medchem_map_dl:
+  citations: 0
+  display: "0"
+  source: "OpenAlex"
+  source_url: "https://openalex.org/W4415740114"
+  updated_at: "2026-11-02"
+  openalex_id: "https://openalex.org/W4415740114"
 graph_neural_processes:
   citations: 8
   display: "8"
