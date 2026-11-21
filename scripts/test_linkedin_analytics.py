@@ -218,8 +218,11 @@ class SnapshotTests(unittest.TestCase):
             for key in ("published_at", "reactions_observed_at", "impressions_observed_at"):
                 if post.get(key):
                     self.assertLessEqual(date.fromisoformat(post[key]), date.fromisoformat(self.data["snapshot_date"]))
-            self.assertGreaterEqual(post["reactions"], 0)
-            self.assertTrue(post["title"] and post["summary"] and post["topic"])
+            if post["reactions"] is not None:
+                self.assertGreaterEqual(post["reactions"], 0)
+                self.assertTrue(post["reactions_observed_at"])
+            self.assertTrue(post["title"] and post["topic"])
+            self.assertIsInstance(post["summary"], str)
 
     def test_combined_snapshot_is_reproducible(self):
         regenerated = deepcopy(self.data)

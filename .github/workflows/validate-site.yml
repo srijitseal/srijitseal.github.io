@@ -25,7 +25,7 @@ jobs:
       - name: Test citation retention
         run: python3 -m unittest discover -s scripts -p 'test_update_live_stats.py'
       - name: Test LinkedIn analytics import
-        run: python3 -m unittest discover -s scripts -p 'test_linkedin_analytics.py'
+        run: python3 -m unittest discover -s scripts -p 'test_linkedin*.py'
       - name: Check JavaScript
         run: |
           node --check js/index.js

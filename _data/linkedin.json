@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "snapshot_date": "2026-10-18",
+  "snapshot_date": "2026-11-21",
   "profile_url": "https://www.linkedin.com/in/srijitseal/",
   "default_year": "all",
   "years": {
@@ -170,120 +170,285 @@
   },
   "posts": [
     {
-      "id": "fabricated-references",
-      "title": "Fabricated references in scientific papers",
-      "summary": "Reference managers, DOI checks, and the responsibility to verify citations.",
-      "topic": "Scientific practice",
-      "url": "https://www.linkedin.com/posts/srijitseal_an-honest-question-how-do-people-even-end-share-7461177975892238336-EPTJ",
-      "reactions": 187,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-05-15",
-      "impressions": 84816,
-      "impressions_observed_at": "2026-10-18",
+      "id": "linkedin-7529036942089363456",
+      "title": "We had over a 160 people attend our CE on AI agents in drug discovery and toxicology at the American College of Toxicology (ACT)!",
+      "summary": "At Human Chemical, we are designing AI agents that help you do all the way from risk assessments and early discovery toxicology to evaluating data from studies, and mechanistic reasoning and investigative toxicology. If you attended this year, let us know what you thought...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_we-had-over-a-160-people-attend-our-ce-on-activity-7529036942089363456-52BU",
+      "published_at": "2026-11-19",
+      "reactions": 36,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
       "impressions_period": {
         "start": "2025-09-14",
         "end": "2026-10-17"
       },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": null,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": 84816,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": false
+      "impressions_observed_at": null
     },
     {
-      "id": "ai-job-requirements",
-      "title": "Unrealistic experience requirements in AI jobs",
-      "summary": "A job asking for more years of PyTorch experience than PyTorch has existed.",
-      "topic": "Careers",
-      "url": "https://www.linkedin.com/posts/srijitseal_happy-to-refer-anyone-to-this-job-posting-share-7389773695965216768-jcv4",
-      "reactions": 334,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2025-10-30",
-      "impressions": 56919,
-      "impressions_observed_at": "2026-10-18",
+      "id": "linkedin-7528967485040152577",
+      "title": "I’m on a Delta flight again, at the same time as Anthropic confirmations come through for the final share allocations.",
+      "summary": "I’m gonna be so mad if the WiFi doesn’t work. 😂😂😂",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_im-on-a-delta-flight-again-at-the-same-activity-7528967485040152577-YwP3",
+      "published_at": "2026-11-18",
+      "reactions": 9,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
       "impressions_period": {
         "start": "2025-09-14",
         "end": "2026-10-17"
       },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": 56919,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": null,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": true
+      "impressions_observed_at": null
     },
     {
-      "id": "ai-drug-discovery-perspective",
-      "title": "Artificial intelligence in drug discovery: where we stand",
-      "summary": "Our Perspective in Nature Reviews Drug Discovery on the current state of AI in the field.",
-      "topic": "Research",
-      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-share-our-new-perspective-in-nature-share-7491461765306941440-OdEd",
-      "reactions": 993,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-08-07",
-      "impressions": 54181,
-      "impressions_observed_at": "2026-10-18",
+      "id": "linkedin-7528474304066265088",
+      "title": "Very happy to announce our work with Physicians Committee for Responsible Medicine to advance novel human-relevant approaches to chemical safety!",
+      "summary": "",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_very-happy-to-announce-our-work-with-physicians-activity-7528474304066265088-VpgQ",
+      "published_at": "2026-11-17",
+      "reactions": 14,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
       "impressions_period": {
         "start": "2025-09-14",
         "end": "2026-10-17"
       },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": null,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": 54181,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": false
+      "impressions_observed_at": null
     },
     {
-      "id": "llm-benchmarks",
-      "title": "Evaluating LLM-generated benchmarks",
-      "summary": "Reflections on reviewing datasets and evaluations for NeurIPS.",
-      "topic": "Scientific practice",
-      "url": "https://www.linkedin.com/posts/srijitseal_reviewing-5-papers-neurips-evaluations-and-share-7475730224765202432-x0i0",
-      "reactions": 386,
+      "id": "linkedin-7528317463596335104",
+      "title": "I am so happy to announce our work with The Coca-Cola Company!",
+      "summary": "The Coca-Cola Company's scientific and regulatory teams are now using Human Chemical's agentic AI platform to support their ingredient and packaging safety work. Our agents combine computational toxicology with retrieval across the relevant scientific and regulatory sources...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_i-am-so-happy-to-announce-our-work-with-the-activity-7528317463596335104-abFq",
+      "published_at": "2026-11-17",
+      "reactions": 76,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7527943630959845376",
+      "title": "Very happy to present today at American College of Toxicology (ACT) meeting today on AI agents!",
+      "summary": "Thanks to all those who attended, and to my co-chairs and speakers, Abhijat Vatsyayan, Andrea Dimitracopoulos, Layla Hosseini-Gerami, Deidre Dalmas, PhD, Fellow, fRSB, Nicole Principato. We covered the basics of Agents and what they are, and then...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_very-happy-to-present-today-at-american-college-activity-7527943630959845376-rtgV",
+      "published_at": "2026-11-16",
+      "reactions": 44,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7527536338829737984",
+      "title": "Excited to be in San Antonio for American College of Toxicology (ACT)!",
+      "summary": "Also excited to report that Delta flights are indeed extremely safe environments to test AI agents. Given they have no internet connection most of the flight time, no agent can escape into the internet :D",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-be-in-san-antonio-for-american-activity-7527536338829737984-XVx2",
+      "published_at": "2026-11-15",
+      "reactions": 16,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7527385248972603392",
+      "title": "As flights in the US get back to normal, I made a list of all kinds of delay I have faced over the years.",
+      "summary": "1. Bird strikes. 2. Cabin software that would not restart. 3. Incoming flights that arrived late. 4. Crew shortages. 5. Diverted flights. 6. Missed connections 7. And today, a full ground stop in the US. In every case, the airline was very helpful. For delays on international...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_as-flights-in-the-us-get-back-to-normal-activity-7527385248972603392-Cypa",
+      "published_at": "2026-11-14",
+      "reactions": 11,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7527038150146179073",
+      "title": "Why do AI models trained on omics data so often look excellent in validation and then fall apart on the next dataset?",
+      "summary": "Is the problem the data, the way it is split, or the way success is scored? And when a model’s output looks convincing, where does professional judgment come...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_why-do-ai-models-trained-on-omics-data-so-activity-7527038150146179073-BvNB",
+      "published_at": "2026-11-13",
+      "reactions": 29,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7526694461578436608",
+      "title": "Delighted to present today's National Capital Area Chapter of the Society of Toxicology Fall Virtual Symposium!",
+      "summary": "Tune in at 12:35 ET, and link in comments!",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_delighted-to-present-todays-national-capital-activity-7526694461578436608-wNRU",
+      "published_at": "2026-11-12",
+      "reactions": 55,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7526333304187420673",
+      "title": "The largest Cell Painting dataset in the world, generated across 18 partner organizations, including Amgen, AstraZeneca, Bayer, Biogen, Eisai US...",
+      "summary": "Delighted to work with Niranj Chandrasekaran, Anne Carpenter, and Shantanu Singh, and more than 100 scientists on this work! 115,796 compounds. 1.53 billion single-cell profiles. 12 laboratories. Transcriptomics has had large, public, standardized reference datasets for...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_the-largest-cell-painting-dataset-in-the-activity-7526333304187420673-_TF8",
+      "published_at": "2026-11-11",
+      "reactions": 151,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7525906625367289856",
+      "title": "“Single-cell foundation models in perturbation prediction: progress, pitfalls and moving forward” is now published Digital Discovery, with insights...",
+      "summary": "We explore how these models predict cellular responses to genetic and chemical perturbations, why promising results in original studies often differ from subsequent benchmarks, and what’s needed to make predictions more reliable for drug discovery. Link in comments. Grateful...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_single-cell-foundation-models-in-perturbation-activity-7525906625367289856-iYAV",
+      "published_at": "2026-11-10",
+      "reactions": 58,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7525717584378335232",
+      "title": "google scholar 👉 linkedin scholar",
+      "summary": "We evaluate research impact usually with long-term citation persistence, peer review, and sometimes, the h-index. On the other hand, LinkedIn is ruled by short-lived algorithms, fleeting impressions, and 24-hour shelf lives. To merge the two worlds, I built LinkedIn Scholar...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_google-scholar-linkedin-scholar-we-evaluate-activity-7525717584378335232-z27U",
+      "published_at": "2026-11-10",
+      "reactions": 87,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7525604819676413952",
+      "title": "Excited to attend ACT 2026!",
+      "summary": "Human Chemical will be at the American College of Toxicology (ACT) 47th Annual Meeting, and giving five talks across four sessions. On Sunday morning, November 15, we are speaking in the continuing education course “The Role of Agentic AI in the Future of Toxicology” (CE2)...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-attend-act-2026-human-chemical-activity-7525604819676413952-TeAE",
+      "published_at": "2026-11-09",
+      "reactions": 37,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7524144039093489664",
+      "title": "We’re seeking new Associate Editors for the Journal of Cheminformatics!",
+      "summary": "If you work in cheminformatics, please feel free to reach out; we'd be happy to chat. Editing a journal is mostly about getting to see cutting-edge science (and differentiating it from what isn't), reading new papers, and learning about where the field is heading, so this is...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_cheminformatics-as-a-core-driver-of-molecular-activity-7524144039093489664-UIO8",
+      "published_at": "2026-11-05",
+      "reactions": 47,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "linkedin-7523356777963491330",
+      "title": "50 citations in 6 months!",
+      "summary": "🎉 Excited to see our review, “AI agents in drug discovery: applications and case studies,” in Drug Discovery Today reach this milestone. Grateful to Dinh Long Huynh, Dylan Reid, Moudather Chelbi, Sara Khosravi, Ankur Kumar, Mattson Thieme, Isaac...",
+      "topic": "Posts",
+      "url": "https://www.linkedin.com/posts/srijitseal_50-citations-in-6-months-excited-to-activity-7523356777963491330-DEzM",
+      "published_at": "2026-11-03",
+      "reactions": 52,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "scaling-ai",
+      "title": "Scaling AI for drug discovery",
+      "summary": "Questions about the quality of future discoveries, as well as their number.",
+      "topic": "AI",
+      "url": "https://www.linkedin.com/posts/srijitseal_openai-solved-722-math-problems-with-the-share-7513579310578860033-PmPn",
+      "reactions": 36,
       "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-06-24",
-      "impressions": 52997,
+      "published_at": "2026-10-07",
+      "impressions": 22558,
       "impressions_observed_at": "2026-10-18",
       "impressions_period": {
         "start": "2025-09-14",
@@ -299,7 +464,7 @@
           "observed_at": "2026-10-18"
         },
         "2026": {
-          "impressions": 52997,
+          "impressions": 22558,
           "period": {
             "start": "2026-01-01",
             "end": "2026-10-17"
@@ -380,181 +545,6 @@
       "impressions_is_partial": false
     },
     {
-      "id": "agent-review",
-      "title": "AI agents in drug discovery: a review with industry case studies",
-      "summary": "A collaboration between researchers, startups, and venture partners.",
-      "topic": "Research",
-      "url": "https://www.linkedin.com/posts/srijitseal_im-thrilled-to-share-our-latest-review-paper-share-7391173954012618752-WD2M",
-      "reactions": 503,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2025-11-03",
-      "impressions": 43243,
-      "impressions_observed_at": "2026-10-18",
-      "impressions_period": {
-        "start": "2025-09-14",
-        "end": "2026-10-17"
-      },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": 43243,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": null,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": true
-    },
-    {
-      "id": "cell-count-benchmarks",
-      "title": "Cell count as a bioactivity benchmark",
-      "summary": "Our Nature Communications paper on cell count, cytotoxicity, and benchmark design.",
-      "topic": "Research",
-      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-share-our-new-paper-in-nature-share-7426015126970888192-Biq2",
-      "reactions": 400,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-02-07",
-      "impressions": 39026,
-      "impressions_observed_at": "2026-10-18",
-      "impressions_period": {
-        "start": "2025-09-14",
-        "end": "2026-10-17"
-      },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": null,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": 39026,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": false
-    },
-    {
-      "id": "arxiv-review-policy",
-      "title": "arXiv policies for review articles",
-      "summary": "A discussion of preprint policies and concerns about LLM-generated submissions.",
-      "topic": "Scientific practice",
-      "url": "https://www.linkedin.com/posts/srijitseal_still-cant-believe-we-might-be-the-last-share-7390842157798141952-ecF2",
-      "reactions": 109,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2025-11-02",
-      "impressions": 30662,
-      "impressions_observed_at": "2026-10-18",
-      "impressions_period": {
-        "start": "2025-09-14",
-        "end": "2026-10-17"
-      },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": 30662,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": null,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": true
-    },
-    {
-      "id": "p-value-precision",
-      "title": "What very small p values tell us",
-      "summary": "Statistical precision, model assumptions, and real-world sources of error.",
-      "topic": "Scientific practice",
-      "url": "https://www.linkedin.com/posts/srijitseal_we-often-report-p-values-with-extreme-precision-share-7422721552032608258-e5GW",
-      "reactions": 37,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-01-29",
-      "impressions": 28784,
-      "impressions_observed_at": "2026-10-18",
-      "impressions_period": {
-        "start": "2025-09-14",
-        "end": "2026-10-17"
-      },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": null,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": 28784,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": false
-    },
-    {
-      "id": "cell-painting-hepatocytes",
-      "title": "Cell Painting in primary human hepatocytes",
-      "summary": "Our Cell Systems paper on cytotoxicity and mode-of-action analysis.",
-      "topic": "Research",
-      "url": "https://www.linkedin.com/posts/srijitseal_thrilled-to-share-our-latest-work-published-share-7444243693001420800-UFze",
-      "reactions": 388,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-03-29",
-      "impressions": 28093,
-      "impressions_observed_at": "2026-10-18",
-      "impressions_period": {
-        "start": "2025-09-14",
-        "end": "2026-10-17"
-      },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": null,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": 28093,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": false
-    },
-    {
       "id": "polaris-validation",
       "title": "Model validation for small-molecule drug discovery",
       "summary": "The Polaris collaboration on testing whether models generalize to new chemistry.",
@@ -590,15 +580,15 @@
       "impressions_is_partial": false
     },
     {
-      "id": "chemistry-roles-march",
-      "title": "Roles in cheminformatics, ADMET, and computational chemistry",
-      "summary": "A March 2026 collection of positions in pharma and biotech. Some roles may now be closed.",
-      "topic": "Careers",
-      "url": "https://www.linkedin.com/posts/srijitseal_updated-with-new-positions-on-march-30-share-7443465157806063616-25O7",
-      "reactions": 252,
+      "id": "ai-drug-discovery-perspective",
+      "title": "Artificial intelligence in drug discovery: where we stand",
+      "summary": "Our Perspective in Nature Reviews Drug Discovery on the current state of AI in the field.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-share-our-new-perspective-in-nature-share-7491461765306941440-OdEd",
+      "reactions": 993,
       "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-03-27",
-      "impressions": 25837,
+      "published_at": "2026-08-07",
+      "impressions": 54181,
       "impressions_observed_at": "2026-10-18",
       "impressions_period": {
         "start": "2025-09-14",
@@ -614,7 +604,7 @@
           "observed_at": "2026-10-18"
         },
         "2026": {
-          "impressions": 25837,
+          "impressions": 54181,
           "period": {
             "start": "2026-01-01",
             "end": "2026-10-17"
@@ -625,15 +615,15 @@
       "impressions_is_partial": false
     },
     {
-      "id": "leaving-merck",
-      "title": "Reflections on my time at Merck",
-      "summary": "What I learned from colleagues across discovery science and computational toxicology.",
-      "topic": "Careers",
-      "url": "https://www.linkedin.com/posts/srijitseal_yesterday-was-my-last-day-at-merck-as-i-move-share-7436065207409504256-uQlk",
-      "reactions": 340,
+      "id": "llm-benchmarks",
+      "title": "Evaluating LLM-generated benchmarks",
+      "summary": "Reflections on reviewing datasets and evaluations for NeurIPS.",
+      "topic": "Scientific practice",
+      "url": "https://www.linkedin.com/posts/srijitseal_reviewing-5-papers-neurips-evaluations-and-share-7475730224765202432-x0i0",
+      "reactions": 386,
       "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-03-07",
-      "impressions": 24885,
+      "published_at": "2026-06-24",
+      "impressions": 52997,
       "impressions_observed_at": "2026-10-18",
       "impressions_period": {
         "start": "2025-09-14",
@@ -649,7 +639,7 @@
           "observed_at": "2026-10-18"
         },
         "2026": {
-          "impressions": 24885,
+          "impressions": 52997,
           "period": {
             "start": "2026-01-01",
             "end": "2026-10-17"
@@ -660,15 +650,15 @@
       "impressions_is_partial": false
     },
     {
-      "id": "scaling-ai",
-      "title": "Scaling AI for drug discovery",
-      "summary": "Questions about the quality of future discoveries, as well as their number.",
-      "topic": "AI",
-      "url": "https://www.linkedin.com/posts/srijitseal_openai-solved-722-math-problems-with-the-share-7513579310578860033-PmPn",
-      "reactions": 36,
+      "id": "fabricated-references",
+      "title": "Fabricated references in scientific papers",
+      "summary": "Reference managers, DOI checks, and the responsibility to verify citations.",
+      "topic": "Scientific practice",
+      "url": "https://www.linkedin.com/posts/srijitseal_an-honest-question-how-do-people-even-end-share-7461177975892238336-EPTJ",
+      "reactions": 187,
       "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-10-07",
-      "impressions": 22558,
+      "published_at": "2026-05-15",
+      "impressions": 84816,
       "impressions_observed_at": "2026-10-18",
       "impressions_period": {
         "start": "2025-09-14",
@@ -684,7 +674,7 @@
           "observed_at": "2026-10-18"
         },
         "2026": {
-          "impressions": 22558,
+          "impressions": 84816,
           "period": {
             "start": "2026-01-01",
             "end": "2026-10-17"
@@ -730,41 +720,6 @@
       "impressions_is_partial": false
     },
     {
-      "id": "agents-published",
-      "title": "AI agents in drug discovery, published in Drug Discovery Today",
-      "summary": "The published review of applications and case studies from academia and industry.",
-      "topic": "Research",
-      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-share-our-latest-publication-share-7442659898506625024-ibA3",
-      "reactions": 242,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-03-25",
-      "impressions": 20900,
-      "impressions_observed_at": "2026-10-18",
-      "impressions_period": {
-        "start": "2025-09-14",
-        "end": "2026-10-17"
-      },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": null,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": 20900,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": false
-    },
-    {
       "id": "chemistry-roles-april",
       "title": "AI and computational chemistry job opportunities",
       "summary": "An April 2026 collection of positions in pharma and biotech. Some roles may now be closed.",
@@ -800,15 +755,15 @@
       "impressions_is_partial": false
     },
     {
-      "id": "peer-review-quality",
-      "title": "The quality of scientific peer review",
-      "summary": "A reflection on factual errors in reviews and the use of AI by reviewers.",
-      "topic": "Scientific practice",
-      "url": "https://www.linkedin.com/posts/srijitseal_ive-been-genuinely-concerned-about-the-quality-share-7425963293426561024-ZKGH",
-      "reactions": 68,
+      "id": "cell-painting-hepatocytes",
+      "title": "Cell Painting in primary human hepatocytes",
+      "summary": "Our Cell Systems paper on cytotoxicity and mode-of-action analysis.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_thrilled-to-share-our-latest-work-published-share-7444243693001420800-UFze",
+      "reactions": 388,
       "reactions_observed_at": "2026-10-18",
-      "published_at": "2026-02-07",
-      "impressions": 18009,
+      "published_at": "2026-03-29",
+      "impressions": 28093,
       "impressions_observed_at": "2026-10-18",
       "impressions_period": {
         "start": "2025-09-14",
@@ -824,7 +779,77 @@
           "observed_at": "2026-10-18"
         },
         "2026": {
-          "impressions": 18009,
+          "impressions": 28093,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": false
+    },
+    {
+      "id": "chemistry-roles-march",
+      "title": "Roles in cheminformatics, ADMET, and computational chemistry",
+      "summary": "A March 2026 collection of positions in pharma and biotech. Some roles may now be closed.",
+      "topic": "Careers",
+      "url": "https://www.linkedin.com/posts/srijitseal_updated-with-new-positions-on-march-30-share-7443465157806063616-25O7",
+      "reactions": 252,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2026-03-27",
+      "impressions": 25837,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": null,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": 25837,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": false
+    },
+    {
+      "id": "agents-published",
+      "title": "AI agents in drug discovery, published in Drug Discovery Today",
+      "summary": "The published review of applications and case studies from academia and industry.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-share-our-latest-publication-share-7442659898506625024-ibA3",
+      "reactions": 242,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2026-03-25",
+      "impressions": 20900,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": null,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": 20900,
           "period": {
             "start": "2026-01-01",
             "end": "2026-10-17"
@@ -870,85 +895,15 @@
       "impressions_is_partial": false
     },
     {
-      "id": "biomorph",
-      "title": "BioMorph: interpreting Cell Painting features",
-      "summary": "Linking image-based profiling to biological measurements and sharing ML-ready datasets.",
-      "topic": "Research",
-      "url": "https://www.linkedin.com/posts/srijitseal_from-pixels-to-phenotypes-integrating-image-based-activity-7159572643279458304-uihO",
-      "reactions": 104,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2024-02-03",
-      "impressions": null,
-      "impressions_observed_at": "2026-10-18",
-      "impressions_period": {
-        "start": "2025-09-14",
-        "end": "2026-10-17"
-      },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": null,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": null,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": false
-    },
-    {
-      "id": "cambridge-meeting",
-      "title": "Foundation models at the Cambridge Cheminformatics Meeting",
-      "summary": "An invitation to discuss foundation models for non-clinical safety.",
-      "topic": "Events",
-      "url": "https://www.linkedin.com/posts/srijitseal_have-you-heard-of-foundational-models-and-activity-7236793801829167105-qQiT",
-      "reactions": 6,
-      "reactions_observed_at": "2026-10-18",
-      "published_at": "2024-09-03",
-      "impressions": null,
-      "impressions_observed_at": "2026-10-18",
-      "impressions_period": {
-        "start": "2025-09-14",
-        "end": "2026-10-17"
-      },
-      "impression_snapshots": {
-        "2025": {
-          "impressions": null,
-          "period": {
-            "start": "2025-09-14",
-            "end": "2025-12-31"
-          },
-          "observed_at": "2026-10-18"
-        },
-        "2026": {
-          "impressions": null,
-          "period": {
-            "start": "2026-01-01",
-            "end": "2026-10-17"
-          },
-          "observed_at": "2026-10-18"
-        }
-      },
-      "impressions_is_partial": false
-    },
-    {
-      "id": "mphil-graduation",
-      "title": "An MPhil graduation at Clare Hall",
-      "summary": "Celebrating a postponed graduation ceremony and the support behind my research.",
+      "id": "leaving-merck",
+      "title": "Reflections on my time at Merck",
+      "summary": "What I learned from colleagues across discovery science and computational toxicology.",
       "topic": "Careers",
-      "url": "https://www.linkedin.com/posts/srijitseal_officially-an-mphil-graduate-and-nearing-activity-7058223384051998720-ITYe",
-      "reactions": 173,
+      "url": "https://www.linkedin.com/posts/srijitseal_yesterday-was-my-last-day-at-merck-as-i-move-share-7436065207409504256-uQlk",
+      "reactions": 340,
       "reactions_observed_at": "2026-10-18",
-      "published_at": "2023-04-29",
-      "impressions": null,
+      "published_at": "2026-03-07",
+      "impressions": 24885,
       "impressions_observed_at": "2026-10-18",
       "impressions_period": {
         "start": "2025-09-14",
@@ -964,7 +919,7 @@
           "observed_at": "2026-10-18"
         },
         "2026": {
-          "impressions": null,
+          "impressions": 24885,
           "period": {
             "start": "2026-01-01",
             "end": "2026-10-17"
@@ -975,14 +930,224 @@
       "impressions_is_partial": false
     },
     {
-      "id": "cell-painting-review",
-      "title": "Cell Painting: a decade of discovery and innovation",
-      "summary": "Our Nature Methods review of the assay, its applications, and the community using it.",
+      "id": "cell-count-benchmarks",
+      "title": "Cell count as a bioactivity benchmark",
+      "summary": "Our Nature Communications paper on cell count, cytotoxicity, and benchmark design.",
       "topic": "Research",
-      "url": "https://www.linkedin.com/posts/srijitseal_cell-painting-a-decade-of-discovery-and-activity-7270492266136231936-djEp",
-      "reactions": 225,
+      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-share-our-new-paper-in-nature-share-7426015126970888192-Biq2",
+      "reactions": 400,
       "reactions_observed_at": "2026-10-18",
-      "published_at": "2024-12-05",
+      "published_at": "2026-02-07",
+      "impressions": 39026,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": null,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": 39026,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": false
+    },
+    {
+      "id": "peer-review-quality",
+      "title": "The quality of scientific peer review",
+      "summary": "A reflection on factual errors in reviews and the use of AI by reviewers.",
+      "topic": "Scientific practice",
+      "url": "https://www.linkedin.com/posts/srijitseal_ive-been-genuinely-concerned-about-the-quality-share-7425963293426561024-ZKGH",
+      "reactions": 68,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2026-02-07",
+      "impressions": 18009,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": null,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": 18009,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": false
+    },
+    {
+      "id": "p-value-precision",
+      "title": "What very small p values tell us",
+      "summary": "Statistical precision, model assumptions, and real-world sources of error.",
+      "topic": "Scientific practice",
+      "url": "https://www.linkedin.com/posts/srijitseal_we-often-report-p-values-with-extreme-precision-share-7422721552032608258-e5GW",
+      "reactions": 37,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2026-01-29",
+      "impressions": 28784,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": null,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": 28784,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": false
+    },
+    {
+      "id": "agent-review",
+      "title": "AI agents in drug discovery: a review with industry case studies",
+      "summary": "A collaboration between researchers, startups, and venture partners.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_im-thrilled-to-share-our-latest-review-paper-share-7391173954012618752-WD2M",
+      "reactions": 503,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2025-11-03",
+      "impressions": 43243,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": 43243,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": null,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": true
+    },
+    {
+      "id": "arxiv-review-policy",
+      "title": "arXiv policies for review articles",
+      "summary": "A discussion of preprint policies and concerns about LLM-generated submissions.",
+      "topic": "Scientific practice",
+      "url": "https://www.linkedin.com/posts/srijitseal_still-cant-believe-we-might-be-the-last-share-7390842157798141952-ecF2",
+      "reactions": 109,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2025-11-02",
+      "impressions": 30662,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": 30662,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": null,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": true
+    },
+    {
+      "id": "ai-job-requirements",
+      "title": "Unrealistic experience requirements in AI jobs",
+      "summary": "A job asking for more years of PyTorch experience than PyTorch has existed.",
+      "topic": "Careers",
+      "url": "https://www.linkedin.com/posts/srijitseal_happy-to-refer-anyone-to-this-job-posting-share-7389773695965216768-jcv4",
+      "reactions": 334,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2025-10-30",
+      "impressions": 56919,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": 56919,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": null,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": true
+    },
+    {
+      "id": "review-reading-link",
+      "title": "An open reading link for our Cell Painting review",
+      "summary": "Sharing a free reading link and thanking the review's co-authors.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-share-that-our-systematic-review-activity-7366520333161373696-UyAt",
+      "reactions": 179,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2025-08-27",
       "impressions": null,
       "impressions_observed_at": "2026-10-18",
       "impressions_period": {
@@ -1045,6 +1210,76 @@
       "impressions_is_partial": false
     },
     {
+      "id": "cell-painting-review",
+      "title": "Cell Painting: a decade of discovery and innovation",
+      "summary": "Our Nature Methods review of the assay, its applications, and the community using it.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_cell-painting-a-decade-of-discovery-and-activity-7270492266136231936-djEp",
+      "reactions": 225,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2024-12-05",
+      "impressions": null,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": null,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": null,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": false
+    },
+    {
+      "id": "cambridge-meeting",
+      "title": "Foundation models at the Cambridge Cheminformatics Meeting",
+      "summary": "An invitation to discuss foundation models for non-clinical safety.",
+      "topic": "Events",
+      "url": "https://www.linkedin.com/posts/srijitseal_have-you-heard-of-foundational-models-and-activity-7236793801829167105-qQiT",
+      "reactions": 6,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2024-09-03",
+      "impressions": null,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": null,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": null,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": false
+    },
+    {
       "id": "ai-models",
       "title": "AI models for drug discovery",
       "summary": "Models for liver toxicity, cardiotoxicity, cell imaging, and pharmacokinetics.",
@@ -1080,14 +1315,14 @@
       "impressions_is_partial": false
     },
     {
-      "id": "review-reading-link",
-      "title": "An open reading link for our Cell Painting review",
-      "summary": "Sharing a free reading link and thanking the review's co-authors.",
+      "id": "biomorph",
+      "title": "BioMorph: interpreting Cell Painting features",
+      "summary": "Linking image-based profiling to biological measurements and sharing ML-ready datasets.",
       "topic": "Research",
-      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-share-that-our-systematic-review-activity-7366520333161373696-UyAt",
-      "reactions": 179,
+      "url": "https://www.linkedin.com/posts/srijitseal_from-pixels-to-phenotypes-integrating-image-based-activity-7159572643279458304-uihO",
+      "reactions": 104,
       "reactions_observed_at": "2026-10-18",
-      "published_at": "2025-08-27",
+      "published_at": "2024-02-03",
       "impressions": null,
       "impressions_observed_at": "2026-10-18",
       "impressions_period": {
@@ -1123,6 +1358,41 @@
       "reactions": 70,
       "reactions_observed_at": "2026-10-18",
       "published_at": "2023-05-26",
+      "impressions": null,
+      "impressions_observed_at": "2026-10-18",
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impression_snapshots": {
+        "2025": {
+          "impressions": null,
+          "period": {
+            "start": "2025-09-14",
+            "end": "2025-12-31"
+          },
+          "observed_at": "2026-10-18"
+        },
+        "2026": {
+          "impressions": null,
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-10-17"
+          },
+          "observed_at": "2026-10-18"
+        }
+      },
+      "impressions_is_partial": false
+    },
+    {
+      "id": "mphil-graduation",
+      "title": "An MPhil graduation at Clare Hall",
+      "summary": "Celebrating a postponed graduation ceremony and the support behind my research.",
+      "topic": "Careers",
+      "url": "https://www.linkedin.com/posts/srijitseal_officially-an-mphil-graduate-and-nearing-activity-7058223384051998720-ITYe",
+      "reactions": 173,
+      "reactions_observed_at": "2026-10-18",
+      "published_at": "2023-04-29",
       "impressions": null,
       "impressions_observed_at": "2026-10-18",
       "impressions_period": {
@@ -1278,17 +1548,17 @@
   },
   "post_indices": {
     "all": {
-      "posts": 28,
-      "reactions": 6536,
-      "h_index": 27,
-      "i10_index": 27
+      "posts": 43,
+      "reactions": 7258,
+      "h_index": 36,
+      "i10_index": 41
     },
     "recent_year": "2026",
     "recent": {
-      "posts": 17,
-      "reactions": 4580,
-      "h_index": 17,
-      "i10_index": 17
+      "posts": 32,
+      "reactions": 5302,
+      "h_index": 28,
+      "i10_index": 31
     },
     "years": {
       "2023": {
@@ -1310,10 +1580,10 @@
         "i10_index": 5
       },
       "2026": {
-        "posts": 17,
-        "reactions": 4580,
-        "h_index": 17,
-        "i10_index": 17
+        "posts": 32,
+        "reactions": 5302,
+        "h_index": 28,
+        "i10_index": 31
       }
     }
   }

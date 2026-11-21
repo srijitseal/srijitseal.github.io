@@ -38,7 +38,7 @@ def post_url(value):
 
 
 def reaction_indices(posts):
-    counts = sorted((number(post["reactions"]) for post in posts), reverse=True)
+    counts = sorted((number(post["reactions"]) for post in posts if post.get("reactions") is not None), reverse=True)
     return {
         "posts": len(counts), "reactions": sum(counts),
         "h_index": max((rank for rank, count in enumerate(counts, 1) if count >= rank), default=0),
@@ -202,7 +202,7 @@ def main():
         result = import_metrics(data, sheets, args.observed_at, args.reactions)
     finally:
         workbook.close()
-    args.data.write_text(json.dumps(result, indent=2, ensure_ascii=True) + "\n")
+    args.data.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Updated one year; preserved {len(result['posts'])} selected posts across {len(result['years'])} years.")
 
 
