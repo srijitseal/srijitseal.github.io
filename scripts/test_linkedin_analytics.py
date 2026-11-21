@@ -229,6 +229,18 @@ class SnapshotTests(unittest.TestCase):
         combine_snapshots(regenerated)
         self.assertEqual(regenerated, self.data)
 
+    def test_verified_high_reaction_originals_are_retained(self):
+        posts = {post["id"]: post for post in self.data["posts"]}
+        for post_id, activity_id, published_at, minimum in (
+            ("graduate-admissions", "7345066696073768960", "2025-06-29", 3244),
+            ("modern-python-packages", "7344118274483232768", "2025-06-26", 2420),
+        ):
+            with self.subTest(post_id=post_id):
+                post = posts[post_id]
+                self.assertIn("-activity-" + activity_id + "-", post["url"])
+                self.assertEqual(post["published_at"], published_at)
+                self.assertGreaterEqual(post["reactions"], minimum)
+
     def test_archive_covers_at_least_three_years(self):
         self.assertTrue({"2024", "2025", "2026"} <= {p["published_at"][:4] for p in self.data["posts"]})
         self.assertEqual(self.data["default_year"], "all")
