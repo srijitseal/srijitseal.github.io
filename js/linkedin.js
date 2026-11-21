@@ -96,15 +96,4 @@
   window.addEventListener("popstate", () => { applyURL(); render(); });
   applyURL();
   render();
-
-  document.querySelectorAll(".chart-column").forEach((column) => {
-    const readout = column.closest(".chart-section").querySelector(".chart-readout");
-    const showMonth = () => {
-      readout.querySelector("span").textContent = column.dataset.month + (column.dataset.partial === "true" ? " (partial)" : "");
-      readout.querySelector("strong").textContent = number.format(Number(column.dataset.value));
-    };
-    column.addEventListener("mouseenter", showMonth);
-    column.addEventListener("focus", showMonth);
-    column.addEventListener("click", showMonth);
-  });
 })();

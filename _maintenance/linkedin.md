@@ -1,7 +1,7 @@
 # LinkedIn archive
 
 The /linkedin/ page uses _data/linkedin.json. Jekyll renders the data into HTML.
-JavaScript adds search, topic filtering, sorting, and monthly chart readouts.
+JavaScript adds search, topic filtering, sorting, and number formatting.
 The list shows only original posts with more than 50 verified reactions, with no
 pagination or post counter. Exactly 50 and unknown counts do not qualify. The
 cutoff is applied at build time, including without JavaScript; search, topic,
@@ -10,8 +10,11 @@ in the data and continue to contribute to the reaction indices. Search and
 topic filters show every qualifying match. The archive always combines all years;
 legacy year query parameters are ignored and removed from the URL.
 The post table shows reactions and publication year, ordered by reactions by
-default. Post-level impressions remain in the source data but are not displayed;
-the monthly impressions chart and account totals are unchanged.
+default. Impressions, the monthly chart, follower counts, reach, and period-wide
+analytics are not displayed. The owner requested a simpler page focused on
+original posts, their reactions, and reaction-based indices. The historical
+analytics remain in the source data and offline importer for possible restoration;
+this display change does not refresh or discard any measurements.
 
 The first snapshot was recorded on 18 October 2026 UTC. It includes 28 selected
 posts from 2023 through 2026, not a complete activity archive. Titles and summaries
@@ -24,10 +27,10 @@ Two non-overlapping LinkedIn exports provide the analytics:
 - 14 September to 31 December 2025: 915,534 impressions and 8,884 reactions.
 - 1 January to 17 October 2026: 1,726,356 impressions and 16,667 reactions.
 
-The combined chart has 14 monthly bars. September 2025 and October 2026 are
-partial months. Combined impressions are 2,641,890; combined reactions are 25,551.
-Unique members reached cannot be added across exports. Followers are shown only
-as a current snapshot, not as historical year-end values.
+The preserved combined chart data has 14 monthly bars. September 2025 and
+October 2026 are partial months. Combined impressions are 2,641,890; combined
+reactions are 25,551. Unique members reached cannot be added across exports.
+Followers are stored as a point-in-time snapshot, not historical year-end values.
 
 The Scholar-style index table uses lifetime reactions on the archived posts,
 not period-wide reactions or academic citations. The reaction h-index is the
@@ -297,7 +300,7 @@ Validate and build:
     bundle exec jekyll build
     python3 scripts/check_built_site.py
 
-Review desktop and mobile views, the combined chart, legacy year links, empty
+Review desktop and mobile views, reaction indices, legacy year links, empty
 search results, sorting, and full-list visibility before publishing. There is no scheduled
 LinkedIn scraping, browser session, token, or API credential in this page.
 The existing weekly academic-metrics refresh does not update LinkedIn.

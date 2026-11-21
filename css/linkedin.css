@@ -48,12 +48,6 @@ h1 { font-size: 24px; font-weight: 400; line-height: 1.3; margin: 0 90px 5px 0; 
 h2 { font-size: 14px; font-weight: 400; margin: 0; }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 8px; border-bottom: 1px solid #ddd; }
 .section-heading > span { font-size: 13px; color: var(--muted); }
-.period { color: var(--muted); font-size: 12px; margin: 12px 0 8px; }
-.metric-list { margin: 0; font-size: 13px; font-variant-numeric: tabular-nums; }
-.metric-list > div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 4px 0; }
-.metric-list dd { margin: 0; }
-.metric-list .follower-metric { border-top: 1px solid #eee; margin-top: 7px; padding-top: 9px; }
-.follower-metric small { font-size: 11px; color: var(--muted); margin-left: 3px; }
 .indices-table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
 .indices-table th, .indices-table td { padding: 3px 0; text-align: right; font-weight: 400; }
 .indices-table thead th { height: 32px; border-bottom: 1px solid var(--line); }
@@ -61,25 +55,6 @@ h2 { font-size: 14px; font-weight: 400; margin: 0; }
 .indices-table th:first-child { text-align: left; width: 42%; }
 .indices-table abbr { text-decoration: none; cursor: help; }
 .index-scope { color: #777; font-size: 11px; margin: 10px 0 0; }
-.chart-section { margin-top: 26px; }
-.chart-section h2 { font-size: 13px; }
-.chart-plot { position: relative; height: 160px; margin: 20px 48px 0 0; }
-.chart-grid { position: absolute; inset: 0; pointer-events: none; }
-.chart-gridline { position: absolute; left: 0; right: 0; border-top: 1px solid #eee; }
-.chart-gridline > span { position: absolute; left: calc(100% + 6px); bottom: 0; transform: translateY(50%); font-size: 10px; color: #777; line-height: 1; white-space: nowrap; }
-.chart { position: relative; height: 100%; display: grid; gap: 4px; list-style: none; margin: 0; padding: 0; }
-.chart-column { min-width: 0; position: relative; }
-.bar-track { height: 160px; display: flex; align-items: flex-end; }
-.bar { position: relative; display: block; background: #777; width: 100%; max-width: 15px; margin-inline: auto; }
-.month-label { display: block; font-size: 10px; color: #777; text-align: center; padding-top: 3px; white-space: nowrap; width: 30px; position: absolute; left: 50%; transform: translateX(-50%); }
-.chart-tooltip { position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); z-index: 2; width: max-content; max-width: 155px; padding: 1px 3px; border: 1px solid #777; border-radius: 1px; background: #fff; color: #222; font-size: 11px; line-height: 1.4; visibility: hidden; pointer-events: none; }
-.chart-tooltip strong { display: block; font-weight: 400; }
-.chart-column:first-child .chart-tooltip { left: 0; transform: none; }
-.chart-column:last-child .chart-tooltip { left: auto; right: 0; transform: none; }
-.chart-column:hover .chart-tooltip, .chart-column:focus .chart-tooltip { visibility: visible; }
-.chart-period { color: #777; font-size: 11px; margin: 28px 0 0; }
-.period-metrics { border-top: 1px solid var(--line); margin-top: 20px; padding-top: 8px; }
-.coverage, .unavailable { font-size: 12px; color: var(--muted); margin: 16px 0 0; }
 .source-notes { margin-top: 28px; padding-top: 10px; border-top: 1px solid #ddd; }
 .source-notes p { font-size: 12px; color: var(--muted); line-height: 1.5; margin: 10px 0 0; }
 .posts-section { grid-column: 1; min-width: 0; margin-top: 32px; }

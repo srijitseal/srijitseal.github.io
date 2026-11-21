@@ -50,12 +50,12 @@ permalink: /linkedin/
     </section>
 
     <aside class="activity" aria-label="LinkedIn activity snapshot">
-      {% include linkedin-stats.html snapshot=archive.combined year='all' %}
+      {% include linkedin-stats.html year='all' %}
       <section class="source-notes" aria-labelledby="data-title">
         <h2 id="data-title">About the numbers</h2>
         <p>The reaction h-index is the largest h where h archived posts each have at least h reactions. The i10-index counts archived posts with at least 10 reactions.</p>
-        <p>Impressions count displays, not unique people. Reactions include likes and other reactions.</p>
-        <p>Original posts with more than 50 reactions. Indices cover all verified archived posts. Reaction counts are lifetime snapshots, recorded separately from period analytics.</p>
+        <p>Reactions include likes and other reactions.</p>
+        <p>Original posts with more than 50 reactions. Indices cover all verified archived posts. Reaction counts are lifetime snapshots.</p>
         <p>Last checked <time datetime="{{ archive.snapshot_date }}">{{ archive.snapshot_date | date: '%-d %b %Y' }}</time> (UTC).</p>
       </section>
     </aside>
