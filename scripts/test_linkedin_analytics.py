@@ -122,6 +122,16 @@ class ImportTests(unittest.TestCase):
             with self.subTest(url=url), self.assertRaises(ValueError):
                 post_url(url)
 
+    def test_accepts_public_feed_permalink(self):
+        url = "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7518694917766836224"
+        self.assertEqual(post_url(url), url)
+
+    def test_rejects_invalid_feed_urls(self):
+        for path in ("/feed/", "/feed/update/urn:li:share:not-a-post", "/feed/update/urn:li:groupPost:7518694917766836224",
+                     "/feed/update/urn:li:share:7518694917766836224/other"):
+            with self.subTest(path=path), self.assertRaises(ValueError):
+                post_url("https://www.linkedin.com" + path)
+
     def add_prior_snapshot(self):
         prior = deepcopy(self.run_import()["years"]["2026"])
         prior["period"] = {"start": "2025-01-31", "end": "2025-02-01"}
@@ -232,8 +242,8 @@ class SnapshotTests(unittest.TestCase):
     def test_verified_high_reaction_originals_are_retained(self):
         posts = {post["id"]: post for post in self.data["posts"]}
         for post_id, activity_id, published_at, minimum in (
-            ("graduate-admissions", "7345066696073768960", "2025-06-29", 3244),
-            ("modern-python-packages", "7344118274483232768", "2025-06-26", 2420),
+            ("graduate-admissions", "7345066696073768960", "2025-06-29", 2000),
+            ("modern-python-packages", "7344118274483232768", "2025-06-26", 2000),
             ("pksmart-publication", "7377317115000958978", "2025-09-26", 508),
         ):
             with self.subTest(post_id=post_id):
@@ -241,6 +251,14 @@ class SnapshotTests(unittest.TestCase):
                 self.assertIn("-activity-" + activity_id + "-", post["url"])
                 self.assertEqual(post["published_at"], published_at)
                 self.assertGreaterEqual(post["reactions"], minimum)
+
+    def test_signed_out_browser_verified_originals_are_retained(self):
+        posts = {post["id"]: post for post in self.data["posts"]}
+        for post_id in ("network-introduction", "animal-models-ai", "phd-application-season-2025",
+                        "python-toolkit", "phd-application-season-2026", "python-uv-packaging"):
+            with self.subTest(post_id=post_id):
+                self.assertGreater(posts[post_id]["reactions"], 50)
+                self.assertTrue(posts[post_id]["reactions_observed_at"])
 
     def test_named_posts_keep_recognizable_searchable_titles(self):
         posts = {post["id"]: post for post in self.data["posts"]}

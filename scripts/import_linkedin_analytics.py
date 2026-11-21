@@ -11,7 +11,8 @@ from datetime import date, datetime, timedelta
 import json
 import math
 from pathlib import Path
-from urllib.parse import urlsplit
+import re
+from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,8 +32,11 @@ def export_date(value):
 
 
 def post_url(value):
+    """Validate URL shape; ownership and public counts need separate evidence."""
     parsed = urlsplit(value)
-    if parsed.scheme != "https" or parsed.netloc != "www.linkedin.com" or not parsed.path.startswith("/posts/srijitseal_"):
+    own_slug = parsed.path.startswith("/posts/srijitseal_")
+    feed = re.fullmatch(r"/feed/update/urn:li:(?:activity|share|ugcPost):[0-9]{19}/?", unquote(parsed.path))
+    if parsed.scheme != "https" or parsed.netloc != "www.linkedin.com" or not (own_slug or feed):
         raise ValueError(f"Unexpected LinkedIn post URL: {value}")
     return value
 

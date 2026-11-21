@@ -170,6 +170,114 @@
   },
   "posts": [
     {
+      "id": "network-introduction",
+      "title": "Over the past few months, my network here has grown significantly",
+      "summary": "An introduction to my research in AI, chemistry, and biology, with a look back at my first US conference poster on PKSmart.",
+      "topic": "Careers",
+      "url": "https://www.linkedin.com/posts/srijitseal_over-the-past-few-months-my-network-here-activity-7382799979628691456-mjzX",
+      "published_at": "2025-10-11",
+      "reactions": 427,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "animal-models-ai",
+      "title": "So, you want to replace animal models with AI?",
+      "summary": "Our Chemical Research in Toxicology paper on practical requirements for machine-learning toxicity prediction, developed with scientists across pharma and research institutes.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_machine-learning-for-toxicity-prediction-activity-7324054277176389632-3-Mi",
+      "published_at": "2025-05-02",
+      "reactions": 440,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "phd-application-season-2025",
+      "title": "It's almost PhD application season: your statement of purpose matters",
+      "summary": "My experience of writing PhD applications for US and European programs, and the different emphasis on personal narrative and research fit.",
+      "topic": "Careers",
+      "url": "https://www.linkedin.com/posts/srijitseal_its-almost-phd-application-season-and-statement-activity-7346594975947665408-ooKa",
+      "published_at": "2025-07-03",
+      "reactions": 718,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "python-toolkit",
+      "title": "Here's what's in my Python toolkit (and why your team should care)",
+      "summary": "The tools I use for APIs, development, data analysis, model evaluation, and cheminformatics, including FastAPI, uv, Polars, marimo, and RDKit.",
+      "topic": "Tools",
+      "url": "https://www.linkedin.com/posts/srijitseal_heres-whats-in-my-python-toolkit-and-why-activity-7346537508970655747-5slB",
+      "published_at": "2025-07-03",
+      "reactions": 210,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "phd-application-season-2026",
+      "title": "It's PhD application season once again: writing a statement of purpose",
+      "summary": "Revisiting US and European PhD applications, with examples of how to explain your research interests, experience, and fit for a program.",
+      "topic": "Careers",
+      "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7518694917766836224",
+      "published_at": "2026-10-21",
+      "reactions": 79,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "python-uv-packaging",
+      "title": "Stop waiting on pip install: there's a new guy in town, uv",
+      "summary": "Why I switched to uv for Python packages and environments, with a short example using marimo.",
+      "topic": "Tools",
+      "url": "https://www.linkedin.com/posts/srijitseal_stop-waiting-on-pip-install-theres-a-new-activity-7344609472415252480-AxiX",
+      "published_at": "2025-06-28",
+      "reactions": 452,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
       "id": "pksmart-publication",
       "title": "PKSmart: our new publication in the Journal of Cheminformatics",
       "summary": "Open-source models, code, and a web application for predicting intravenous pharmacokinetics of small molecules.",
@@ -194,7 +302,7 @@
       "topic": "Careers",
       "url": "https://www.linkedin.com/posts/srijitseal_we-rarely-talk-about-how-graduate-admissions-activity-7345066696073768960-q-bJ",
       "published_at": "2025-06-29",
-      "reactions": 3244,
+      "reactions": 3242,
       "reactions_observed_at": "2026-11-21",
       "impression_snapshots": {},
       "impressions": null,
@@ -212,7 +320,7 @@
       "topic": "Tools",
       "url": "https://www.linkedin.com/posts/srijitseal_unpopular-opinion-many-of-the-python-packages-activity-7344118274483232768-JxEi",
       "published_at": "2025-06-26",
-      "reactions": 2420,
+      "reactions": 2418,
       "reactions_observed_at": "2026-11-21",
       "impression_snapshots": {},
       "impressions": null,
@@ -284,7 +392,7 @@
       "topic": "Research",
       "url": "https://www.linkedin.com/posts/srijitseal_cheminformatics-doesnt-have-to-feel-complicated-activity-7374214050324598784-NQwf",
       "published_at": "2025-09-17",
-      "reactions": 747,
+      "reactions": 745,
       "reactions_observed_at": "2026-11-21",
       "impression_snapshots": {},
       "impressions": null,
@@ -1692,17 +1800,17 @@
   },
   "post_indices": {
     "all": {
-      "posts": 51,
-      "reactions": 14713,
-      "h_index": 41,
-      "i10_index": 49
+      "posts": 57,
+      "reactions": 17033,
+      "h_index": 46,
+      "i10_index": 55
     },
     "recent_year": "2026",
     "recent": {
-      "posts": 34,
-      "reactions": 5514,
-      "h_index": 29,
-      "i10_index": 33
+      "posts": 35,
+      "reactions": 5593,
+      "h_index": 30,
+      "i10_index": 34
     },
     "years": {
       "2023": {
@@ -1718,16 +1826,16 @@
         "i10_index": 3
       },
       "2025": {
-        "posts": 11,
-        "reactions": 8483,
-        "h_index": 11,
-        "i10_index": 11
+        "posts": 16,
+        "reactions": 10724,
+        "h_index": 16,
+        "i10_index": 16
       },
       "2026": {
-        "posts": 34,
-        "reactions": 5514,
-        "h_index": 29,
-        "i10_index": 33
+        "posts": 35,
+        "reactions": 5593,
+        "h_index": 30,
+        "i10_index": 34
       }
     }
   }
