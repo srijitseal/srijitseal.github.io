@@ -170,8 +170,26 @@
   },
   "posts": [
     {
+      "id": "pksmart-publication",
+      "title": "PKSmart: our new publication in the Journal of Cheminformatics",
+      "summary": "Open-source models, code, and a web application for predicting intravenous pharmacokinetics of small molecules.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-share-our-new-publication-in-the-activity-7377317115000958978-dK-m",
+      "published_at": "2025-09-26",
+      "reactions": 508,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
       "id": "graduate-admissions",
-      "title": "How graduate admissions have changed",
+      "title": "We rarely talk about how graduate admissions have quietly changed",
       "summary": "Why PhD admissions should assess research potential rather than reward applicants who already have publications and years of experience.",
       "topic": "Careers",
       "url": "https://www.linkedin.com/posts/srijitseal_we-rarely-talk-about-how-graduate-admissions-activity-7345066696073768960-q-bJ",
@@ -189,7 +207,7 @@
     },
     {
       "id": "modern-python-packages",
-      "title": "Rethinking the Python packages in your toolkit",
+      "title": "Unpopular opinion: Python packages and modern alternatives",
       "summary": "A comparison of newer Python tools for data processing, web APIs, visualization, validation, and package management.",
       "topic": "Tools",
       "url": "https://www.linkedin.com/posts/srijitseal_unpopular-opinion-many-of-the-python-packages-activity-7344118274483232768-JxEi",
@@ -261,7 +279,7 @@
     },
     {
       "id": "aidd-course-launch",
-      "title": "A hands-on introduction to cheminformatics and AI in drug discovery",
+      "title": "Cheminformatics doesn't have to feel complicated",
       "summary": "A free Colab-based course covering SMILES standardization, target prediction, mitochondrial toxicity, and model evaluation.",
       "topic": "Research",
       "url": "https://www.linkedin.com/posts/srijitseal_cheminformatics-doesnt-have-to-feel-complicated-activity-7374214050324598784-NQwf",
@@ -1674,10 +1692,10 @@
   },
   "post_indices": {
     "all": {
-      "posts": 50,
-      "reactions": 14205,
-      "h_index": 40,
-      "i10_index": 48
+      "posts": 51,
+      "reactions": 14713,
+      "h_index": 41,
+      "i10_index": 49
     },
     "recent_year": "2026",
     "recent": {
@@ -1700,10 +1718,10 @@
         "i10_index": 3
       },
       "2025": {
-        "posts": 10,
-        "reactions": 7975,
-        "h_index": 10,
-        "i10_index": 10
+        "posts": 11,
+        "reactions": 8483,
+        "h_index": 11,
+        "i10_index": 11
       },
       "2026": {
         "posts": 34,

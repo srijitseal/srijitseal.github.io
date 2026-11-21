@@ -234,12 +234,23 @@ class SnapshotTests(unittest.TestCase):
         for post_id, activity_id, published_at, minimum in (
             ("graduate-admissions", "7345066696073768960", "2025-06-29", 3244),
             ("modern-python-packages", "7344118274483232768", "2025-06-26", 2420),
+            ("pksmart-publication", "7377317115000958978", "2025-09-26", 508),
         ):
             with self.subTest(post_id=post_id):
                 post = posts[post_id]
                 self.assertIn("-activity-" + activity_id + "-", post["url"])
                 self.assertEqual(post["published_at"], published_at)
                 self.assertGreaterEqual(post["reactions"], minimum)
+
+    def test_named_posts_keep_recognizable_searchable_titles(self):
+        posts = {post["id"]: post for post in self.data["posts"]}
+        for post_id, phrase in (
+            ("modern-python-packages", "unpopular opinion"),
+            ("aidd-course-launch", "cheminformatics doesn't have to feel complicated"),
+            ("pksmart-publication", "pksmart"),
+        ):
+            with self.subTest(post_id=post_id):
+                self.assertIn(phrase, posts[post_id]["title"].lower())
 
     def test_archive_covers_at_least_three_years(self):
         self.assertTrue({"2024", "2025", "2026"} <= {p["published_at"][:4] for p in self.data["posts"]})
