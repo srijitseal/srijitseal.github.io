@@ -270,6 +270,27 @@ class SnapshotTests(unittest.TestCase):
             with self.subTest(post_id=post_id):
                 self.assertIn(phrase, posts[post_id]["title"].lower())
 
+    def test_sequential_browser_originals_keep_verified_identities(self):
+        posts = {post["id"]: post for post in self.data["posts"]}
+        for post_id, activity_id, published_at in (
+            ("reviewer-recruitment-2026", "7521987923727122432", "2026-10-30"),
+            ("unilever-ascct-case-studies", "7521596670762106880", "2026-10-29"),
+            ("ascct-presentation-2026", "7521565443363377152", "2026-10-29"),
+            ("cell-painting-review-200-citations", "7517431314980134912", "2026-10-18"),
+            ("neurips-agentic-drug-repurposing-2026", "7511867258441326593", "2026-10-02"),
+            ("liver-toxicity-model-context", "7511598746971852800", "2026-10-02"),
+            ("discovery-on-target-presentation-2026", "7511100401992220674", "2026-09-30"),
+            ("google-scholar-1000-citations", "7509757013644533760", "2026-09-26"),
+            ("openadmet-cyp3a4-interim-2026", "7509326813672775680", "2026-09-25"),
+            ("capricho-publication", "7508593572250652672", "2026-09-23"),
+        ):
+            with self.subTest(post_id=post_id):
+                post = posts[post_id]
+                self.assertIn("-activity-" + activity_id + "-", post["url"])
+                self.assertEqual(post["published_at"], published_at)
+                self.assertGreater(post["reactions"], 50)
+                self.assertGreaterEqual(post["reactions_observed_at"], "2026-11-21")
+
     def test_archive_covers_at_least_three_years(self):
         self.assertTrue({"2024", "2025", "2026"} <= {p["published_at"][:4] for p in self.data["posts"]})
         self.assertEqual(self.data["default_year"], "all")

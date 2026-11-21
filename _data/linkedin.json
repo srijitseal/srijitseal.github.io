@@ -170,6 +170,186 @@
   },
   "posts": [
     {
+      "id": "reviewer-recruitment-2026",
+      "title": "I'm looking for reviewers in cheminformatics, AI, and toxicology",
+      "summary": "An invitation to researchers, including PhD students and postdocs, to review for the journals I edit.",
+      "topic": "Scientific practice",
+      "url": "https://www.linkedin.com/posts/srijitseal_im-looking-for-reviewers-for-the-journal-activity-7521987923727122432-ymWQ",
+      "published_at": "2026-10-30",
+      "reactions": 79,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "unilever-ascct-case-studies",
+      "title": "Unilever case studies at ASCCT",
+      "summary": "Unilever presented case studies using the Human Chemical platform at the ASCCT annual meeting.",
+      "topic": "Events",
+      "url": "https://www.linkedin.com/posts/srijitseal_great-to-see-real-case-studies-from-unilever-activity-7521596670762106880-zCP-",
+      "published_at": "2026-10-29",
+      "reactions": 51,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "ascct-presentation-2026",
+      "title": "Presenting AI in drug discovery at ASCCT",
+      "summary": "A presentation drawing on our Nature Reviews Drug Discovery perspective, alongside student work on datasets and models for alternatives to animal studies.",
+      "topic": "Events",
+      "url": "https://www.linkedin.com/posts/srijitseal_it-was-great-to-present-this-week-at-ascct-activity-7521565443363377152-ZvHr",
+      "published_at": "2026-10-29",
+      "reactions": 79,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "cell-painting-review-200-citations",
+      "title": "200 citations for our Cell Painting review",
+      "summary": "A milestone for our Nature Methods review, with a look at subsequent work on staining, CRISPR screening, morphological profiles, and validation.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_200-citations-were-delighted-that-activity-7517431314980134912-IJ4Z",
+      "published_at": "2026-10-18",
+      "reactions": 151,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "neurips-agentic-drug-repurposing-2026",
+      "title": "Human-supervised agentic AI for drug repurposing at NeurIPS workshops",
+      "summary": "Our work on hypothesis generation and experimental assistance will be presented at two NeurIPS 2026 workshops.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_excited-to-share-that-our-work-human-supervised-activity-7511867258441326593-iRuX",
+      "published_at": "2026-10-02",
+      "reactions": 51,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "liver-toxicity-model-context",
+      "title": "What can a liver-toxicity model realistically tell us?",
+      "summary": "Why screening models need defined applicability domains, appropriate evidence, and a clear context of use before making claims about safety decisions.",
+      "topic": "Scientific practice",
+      "url": "https://www.linkedin.com/posts/srijitseal_i-think-we-all-know-this-but-there-cannot-activity-7511598746971852800-n8XK",
+      "published_at": "2026-10-02",
+      "reactions": 77,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "discovery-on-target-presentation-2026",
+      "title": "Presenting at Discovery on Target 2026",
+      "summary": "A conference presentation on AI agents in drug discovery and toxicology, including when not to trust model predictions.",
+      "topic": "Events",
+      "url": "https://www.linkedin.com/posts/srijitseal_dot2026-activity-7511100401992220674-Gk-H",
+      "published_at": "2026-09-30",
+      "reactions": 62,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "google-scholar-1000-citations",
+      "title": "Hit 1,000 citations on Google Scholar",
+      "summary": "Thanks to the coauthors and collaborators behind the work, with more papers on AI agents, interpretability, and collaborative research to come.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_hit-1000-citations-on-google-scholar-d-activity-7509757013644533760-kUQi",
+      "published_at": "2026-09-26",
+      "reactions": 164,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "openadmet-cyp3a4-interim-2026",
+      "title": "Fifth on the OpenADMET CYP3A4 TDI interim leaderboard",
+      "summary": "An update on my CYP inhibition challenge submission, made without proprietary data, ahead of the final round.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_im-pleased-to-see-my-submission-ranked-5th-activity-7509326813672775680-Mx7z",
+      "published_at": "2026-09-25",
+      "reactions": 67,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "capricho-publication",
+      "title": "CAPRICHO: what happens to the bioactivity data we exclude?",
+      "summary": "Our Journal of Chemical Information and Modeling paper introduces an open-source Python tool for transparent, reproducible ChEMBL data curation.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_what-happens-to-the-bioactivity-data-we-exclude-activity-7508593572250652672-Ayk6",
+      "published_at": "2026-09-23",
+      "reactions": 199,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
       "id": "network-introduction",
       "title": "Over the past few months, my network here has grown significantly",
       "summary": "An introduction to my research in AI, chemistry, and biology, with a look back at my first US conference poster on PKSmart.",
@@ -697,8 +877,8 @@
       "summary": "Questions about the quality of future discoveries, as well as their number.",
       "topic": "AI",
       "url": "https://www.linkedin.com/posts/srijitseal_openai-solved-722-math-problems-with-the-share-7513579310578860033-PmPn",
-      "reactions": 36,
-      "reactions_observed_at": "2026-10-18",
+      "reactions": 35,
+      "reactions_observed_at": "2026-11-21",
       "published_at": "2026-10-07",
       "impressions": 22558,
       "impressions_observed_at": "2026-10-18",
@@ -1800,17 +1980,17 @@
   },
   "post_indices": {
     "all": {
-      "posts": 57,
-      "reactions": 17033,
-      "h_index": 46,
-      "i10_index": 55
+      "posts": 67,
+      "reactions": 18012,
+      "h_index": 52,
+      "i10_index": 65
     },
     "recent_year": "2026",
     "recent": {
-      "posts": 35,
-      "reactions": 5593,
-      "h_index": 30,
-      "i10_index": 34
+      "posts": 45,
+      "reactions": 6572,
+      "h_index": 37,
+      "i10_index": 44
     },
     "years": {
       "2023": {
@@ -1832,10 +2012,10 @@
         "i10_index": 16
       },
       "2026": {
-        "posts": 35,
-        "reactions": 5593,
-        "h_index": 30,
-        "i10_index": 34
+        "posts": 45,
+        "reactions": 6572,
+        "h_index": 37,
+        "i10_index": 44
       }
     }
   }
