@@ -127,11 +127,16 @@ if linkedin_path.is_file():
     snapshot = json.loads((ROOT / "_data/linkedin.json").read_text())
     if "{{" in linkedin_text or "{%" in linkedin_text:
         errors.append("Unrendered Liquid in LinkedIn archive")
-    if len(re.findall(r'data-post-id=', linkedin_text)) != len(snapshot["posts"]):
-        errors.append("LinkedIn post count differs from the snapshot")
+    listed_posts = [post for post in snapshot["posts"] if post.get("reactions") is not None and post["reactions"] > 50]
+    actual_ids = re.findall(r'data-post-id="([^"]+)"', linkedin_text)
+    if len(actual_ids) != len(listed_posts) or set(actual_ids) != {post["id"] for post in listed_posts}:
+        errors.append("LinkedIn list must contain exactly the posts with more than 50 reactions")
     for post in snapshot["posts"]:
-        if post["url"] not in linkedin_text:
+        qualifies = post.get("reactions") is not None and post["reactions"] > 50
+        if qualifies and post["url"] not in linkedin_text:
             errors.append(f"Missing LinkedIn post: {post['id']}")
+        if not qualifies and post["url"] in linkedin_text:
+            errors.append(f"LinkedIn post below the reaction cutoff is still rendered: {post['id']}")
     month_count = len(snapshot["combined"]["monthly_impressions"])
     if len(re.findall(r'class="chart-column', linkedin_text)) != month_count:
         errors.append("LinkedIn chart does not contain every month")

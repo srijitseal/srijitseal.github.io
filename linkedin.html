@@ -3,9 +3,8 @@ layout: null
 permalink: /linkedin/
 ---
 {% assign archive = site.data.linkedin %}
-{% assign counted_posts = archive.posts | where_exp: 'post', 'post.reactions != nil' | sort: 'reactions' | reverse %}
-{% assign uncounted_posts = archive.posts | where_exp: 'post', 'post.reactions == nil' | sort: 'published_at' | reverse %}
-{% assign posts = counted_posts | concat: uncounted_posts %}
+{% assign counted_posts = archive.posts | where_exp: 'post', 'post.reactions != nil' %}
+{% assign posts = counted_posts | where_exp: 'post', 'post.reactions > 50' | sort: 'reactions' | reverse %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,7 +55,7 @@ permalink: /linkedin/
         <h2 id="data-title">About the numbers</h2>
         <p>The reaction h-index is the largest h where h archived posts each have at least h reactions. The i10-index counts archived posts with at least 10 reactions.</p>
         <p>Impressions count displays, not unique people. Reactions include likes and other reactions.</p>
-        <p>Original posts only. Reaction counts are lifetime snapshots, recorded separately from period analytics.</p>
+        <p>Original posts with more than 50 reactions. Indices cover all verified archived posts. Reaction counts are lifetime snapshots, recorded separately from period analytics.</p>
         <p>Last checked <time datetime="{{ archive.snapshot_date }}">{{ archive.snapshot_date | date: '%-d %b %Y' }}</time> (UTC).</p>
       </section>
     </aside>
@@ -69,10 +68,10 @@ permalink: /linkedin/
           <i class="fas fa-search" aria-hidden="true"></i>
           <input id="post-search" name="q" type="search" placeholder="Search posts" autocomplete="off">
         </div>
-        <label class="select-field"><span class="sr-only">Topic</span><select name="topic" id="post-topic"><option value="">All topics</option>{% assign topics = archive.posts | map: 'topic' | uniq | sort %}{% for topic in topics %}<option value="{{ topic | escape }}">{{ topic }}</option>{% endfor %}</select></label>
+        <label class="select-field"><span class="sr-only">Topic</span><select name="topic" id="post-topic"><option value="">All topics</option>{% assign topics = posts | map: 'topic' | uniq | sort %}{% for topic in topics %}<option value="{{ topic | escape }}">{{ topic }}</option>{% endfor %}</select></label>
       </form>
       <table class="post-table">
-        <caption class="sr-only">Selected LinkedIn posts, with lifetime reactions and publication year.</caption>
+        <caption class="sr-only">Original LinkedIn posts with more than 50 reactions, with lifetime reactions and publication year.</caption>
         <thead><tr>
           <th scope="col" class="title-column">Title</th>
           <th scope="col" class="reactions-column" aria-sort="descending"><button type="button" data-sort="reactions" disabled>Reactions <i class="fas fa-sort-down" aria-hidden="true"></i></button></th>

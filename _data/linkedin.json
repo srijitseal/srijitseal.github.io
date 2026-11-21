@@ -170,6 +170,42 @@
   },
   "posts": [
     {
+      "id": "aidd-course-launch",
+      "title": "A hands-on introduction to cheminformatics and AI in drug discovery",
+      "summary": "A free Colab-based course covering SMILES standardization, target prediction, mitochondrial toxicity, and model evaluation.",
+      "topic": "Research",
+      "url": "https://www.linkedin.com/posts/srijitseal_cheminformatics-doesnt-have-to-feel-complicated-activity-7374214050324598784-NQwf",
+      "published_at": "2025-09-17",
+      "reactions": 747,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
+      "id": "global-talent-recognition",
+      "title": "Recognition through the UK Global Talent program",
+      "summary": "A Royal Society endorsement and thanks to the mentors and collaborators who supported the application.",
+      "topic": "Careers",
+      "url": "https://www.linkedin.com/posts/srijitseal_thrilled-to-share-that-i-was-officially-recognized-activity-7327719887420747776-yuZy",
+      "published_at": "2025-05-12",
+      "reactions": 225,
+      "reactions_observed_at": "2026-11-21",
+      "impression_snapshots": {},
+      "impressions": null,
+      "impressions_is_partial": false,
+      "impressions_period": {
+        "start": "2025-09-14",
+        "end": "2026-10-17"
+      },
+      "impressions_observed_at": null
+    },
+    {
       "id": "linkedin-7529036942089363456",
       "title": "We had over a 160 people attend our CE on AI agents in drug discovery and toxicology at the American College of Toxicology (ACT)!",
       "summary": "At Human Chemical, we are designing AI agents that help you do all the way from risk assessments and early discovery toxicology to evaluating data from studies, and mechanistic reasoning and investigative toxicology. If you attended this year, let us know what you thought...",
@@ -1548,10 +1584,10 @@
   },
   "post_indices": {
     "all": {
-      "posts": 43,
-      "reactions": 7258,
-      "h_index": 36,
-      "i10_index": 41
+      "posts": 45,
+      "reactions": 8230,
+      "h_index": 37,
+      "i10_index": 43
     },
     "recent_year": "2026",
     "recent": {
@@ -1574,10 +1610,10 @@
         "i10_index": 3
       },
       "2025": {
-        "posts": 5,
-        "reactions": 1240,
-        "h_index": 5,
-        "i10_index": 5
+        "posts": 7,
+        "reactions": 2212,
+        "h_index": 7,
+        "i10_index": 7
       },
       "2026": {
         "posts": 32,
