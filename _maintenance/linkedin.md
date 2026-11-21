@@ -145,8 +145,9 @@ public search snapshot of [Basharat Ahmad's profile](https://pk.linkedin.com/in/
 shows the same original with 507 reactions. The higher verified snapshot is
 retained. Neither count is a comment-like count or the number of reposts.
 
-These matches still need a received-reaction count or an explicit owner-approved
-lower-bound display. They are not silently assigned 500 reactions:
+The owner explicitly confirmed that only publicly verified exact counts should
+be shown. These matches still need a received-reaction count. Do not assign
+500 reactions or publish a "500+" placeholder:
 
 | Original post | Export date | Export ID | Public evidence / unresolved detail |
 | --- | --- | --- | --- |
@@ -159,8 +160,8 @@ lower-bound display. They are not silently assigned 500 reactions:
 
 The export contains no received-reaction counts. This pass used only local
 Shares.csv records and public search, with no LinkedIn login, session cookies,
-or scraping. A separate owner confirmation is needed before treating the
-general recollection of "more than 500" as a per-post numeric lower bound.
+or scraping. The general recollection of "more than 500" is not a per-post
+numeric count and must not be used to include these entries in the public list.
 
 ## Refreshing the metrics
 
